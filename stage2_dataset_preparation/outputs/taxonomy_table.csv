@@ -1,0 +1,38 @@
+plantvillage_label,eppo_pathogen,common_name,crop,pathogen_category,plantdoc_label,visual_symptoms,severity,has_plantdoc_equivalent
+Tomato___Spider_mites Two-spotted_spider_mite,Tetranychus urticae (arachnid pest),Tomato Spider Mite Damage,Tomato (Solanum lycopersicum),Abiotic,,Stippled/speckled yellowing; fine webbing underside; bronzing; desiccation,Medium,False
+"Pepper,_bell___Bacterial_spot",Xanthomonas euvesicatoria,Bell Pepper Bacterial Spot,Bell Pepper (Capsicum annuum),Bacterial,,Small water-soaked spots with yellow halo; greasy appearance,Medium,False
+Orange___Haunglongbing_(Citrus_greening),Candidatus Liberibacter spp.,Citrus Greening (HLB),Orange (Citrus sinensis),Bacterial,,Asymmetric blotchy mottling; yellowing not following vein pattern,Very High,False
+Peach___Bacterial_spot,Xanthomonas arboricola pv. pruni,Peach Bacterial Spot,Peach (Prunus persica),Bacterial,,Small water-soaked spots → dark angular lesions; shot-hole effect,Medium,False
+Tomato___Bacterial_spot,Xanthomonas vesicatoria,Tomato Bacterial Spot,Tomato (Solanum lycopersicum),Bacterial,Tomato leaf bacterial spot,Small water-soaked spots; yellow halo; dark brown necrotic centres,Medium,True
+Apple___Apple_scab,Venturia inaequalis,Apple Scab,Apple (Malus domestica),Fungal,Apple Scab Leaf,Olive-green to dark brown velvety lesions; yellowing margins; premature defoliation,High,True
+Apple___Black_rot,Botryosphaeria obtusa,Apple Black Rot,Apple (Malus domestica),Fungal,,Purple-bordered circular lesions; concentric ring frog-eye pattern,High,False
+Apple___Cedar_apple_rust,Gymnosporangium juniperi-virginianae,Cedar Apple Rust,Apple (Malus domestica),Fungal,,Bright orange-yellow spots on upper surface; tube-like structures on underside,Medium,False
+Cherry_(including_sour)___Powdery_mildew,Podosphaera clandestina,Cherry Powdery Mildew,Cherry (Prunus avium / Prunus cerasus),Fungal,,White powdery coating on young leaves; leaf curling; purplish discolouration,Medium,False
+Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Cercospora zeae-maydis,Gray Leaf Spot (Corn),Corn (Zea mays),Fungal,Corn Gray leaf spot,Rectangular grey-tan lesions bounded by leaf veins; parallel edges,High,True
+Corn_(maize)___Common_rust_,Puccinia sorghi,Common Rust (Corn),Corn (Zea mays),Fungal,Corn rust leaf,Brick-red to brown oval pustules (uredia) scattered on both leaf surfaces,Medium,True
+Corn_(maize)___Northern_Leaf_Blight,Setosphaeria turcica,Northern Leaf Blight (Corn),Corn (Zea mays),Fungal,Corn leaf blight,Large cigar-shaped grey-green to tan lesions; 2.5–15 cm long,High,True
+Grape___Black_rot,Guignardia bidwellii,Grape Black Rot,Grape (Vitis vinifera),Fungal,grape leaf black rot,Circular tan lesions with dark border; black pycnidia in lesion centres,Very High,True
+Grape___Esca_(Black_Measles),Phaeomoniella chlamydospora / Phaeoacremonium spp.,Grape Esca (Black Measles),Grape (Vitis vinifera),Fungal,,Interveinal chlorosis and necrosis; tiger-stripe pattern; marginal scorch,Very High,False
+Grape___Leaf_blight_(Isariopsis_Leaf_Spot),Pseudocercospora vitis,Grape Leaf Spot,Grape (Vitis vinifera),Fungal,,Irregular dark brown spots; yellowish halo; premature defoliation,Medium,False
+Potato___Early_blight,Alternaria solani,Potato Early Blight,Potato (Solanum tuberosum),Fungal,Potato leaf early blight,Dark brown concentric-ring lesions (target-board); yellow halo; older leaves first,Medium,True
+Potato___Late_blight,Phytophthora infestans,Potato Late Blight,Potato (Solanum tuberosum),Fungal,Potato leaf late blight,Water-soaked dark lesions; white mould underside in humid conditions; rapid progression,Very High,True
+Squash___Powdery_mildew,Podosphaeria xanthii,Squash Powdery Mildew,Squash (Cucurbita pepo),Fungal,,White powdery circular patches on upper surface; lesions coalesce,Medium,False
+Strawberry___Leaf_scorch,Diplocarpon earlianum,Strawberry Leaf Scorch,Strawberry (Fragaria × ananassa),Fungal,,Irregular dark purple spots; necrotic grey centres; marginal leaf burn,Medium,False
+Tomato___Early_blight,Alternaria solani,Tomato Early Blight,Tomato (Solanum lycopersicum),Fungal,Tomato Early blight leaf,Dark concentric-ring lesions; yellow halo; lower/older leaves first,Medium,True
+Tomato___Late_blight,Phytophthora infestans,Tomato Late Blight,Tomato (Solanum lycopersicum),Fungal,Tomato leaf late blight,Greasy grey-green lesions; white sporulation underside; rapid browning,Very High,True
+Tomato___Leaf_Mold,Passalora fulva,Tomato Leaf Mold,Tomato (Solanum lycopersicum),Fungal,,Pale green-yellow patches upper surface; olive-brown velvety mould underside,Medium,False
+Tomato___Septoria_leaf_spot,Septoria lycopersici,Tomato Septoria Leaf Spot,Tomato (Solanum lycopersicum),Fungal,Tomato Septoria leaf spot,Small circular spots; dark border; grey-white centre with black pycnidia,High,True
+Tomato___Target_Spot,Corynespora cassiicola,Tomato Target Spot,Tomato (Solanum lycopersicum),Fungal,,Concentric ring lesions; dark brown with lighter centre,Medium,False
+Apple___healthy,,Healthy Apple,Apple (Malus domestica),Healthy,Apple leaf,Uniform green; serrated margins; no scab or rust,None,True
+"Pepper,_bell___healthy",,Healthy Bell Pepper,Bell Pepper (Capsicum annuum),Healthy,,Uniform green; ovate; no spots; intact margins,None,False
+Blueberry___healthy,,Healthy Blueberry,Blueberry (Vaccinium corymbosum),Healthy,,Uniform green; no lesions; intact ovate leaves,None,False
+Cherry_(including_sour)___healthy,,Healthy Cherry,Cherry (Prunus avium / Prunus cerasus),Healthy,,Uniform green; no spots; intact lanceolate leaves,None,False
+Corn_(maize)___healthy,,Healthy Corn,Corn (Zea mays),Healthy,,Uniform green; parallel venation; no lesions or pustules,None,False
+Grape___healthy,,Healthy Grape,Grape (Vitis vinifera),Healthy,grape leaf,Uniform green; palmate lobed; no mould or spots,None,True
+Potato___healthy,,Healthy Potato,Potato (Solanum tuberosum),Healthy,,Uniform green; pinnate compound leaves; no lesions,None,False
+Raspberry___healthy,,Healthy Raspberry,Raspberry (Rubus idaeus),Healthy,,Uniform dark green; no lesions; intact serrated margins,None,False
+Soybean___healthy,,Healthy Soybean,Soybean (Glycine max),Healthy,,Uniform green; no spots; intact trifoliate structure,None,False
+Strawberry___healthy,,Healthy Strawberry,Strawberry (Fragaria × ananassa),Healthy,,Uniform green; no spots; intact trifoliate leaves,None,False
+Tomato___healthy,,Healthy Tomato,Tomato (Solanum lycopersicum),Healthy,Tomato leaf,Uniform dark green; pinnate compound leaves; no lesions,None,True
+Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato Yellow Leaf Curl Virus (TYLCV),Tomato YLCV,Tomato (Solanum lycopersicum),Viral,Tomato leaf yellow virus,Upward leaf curl; marginal yellowing; small crumpled leaves; stunted growth,Very High,True
+Tomato___Tomato_mosaic_virus,Tomato Mosaic Virus (ToMV),Tomato Mosaic Virus,Tomato (Solanum lycopersicum),Viral,Tomato leaf mosaic virus,Mottled light/dark green mosaic pattern; leaf distortion; fern-like,High,True

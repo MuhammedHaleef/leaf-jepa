@@ -1,0 +1,60 @@
+{
+  "datasets": {
+    "PlantVillage": {
+      "citation": "Hughes, D. P., & Salath\u00e9, M. (2015). An open access repository of images on plant health to enable the development of mobile disease diagnostics. arXiv:1511.08060.",
+      "paper_link": "https://arxiv.org/abs/1911.10317",
+      "scale": {
+        "images": 54305,
+        "classes": 38,
+        "crop_species": 14
+      },
+      "imaging_conditions": "Controlled lab: uniform backgrounds, consistent lighting, single leaf per image.",
+      "role_in_project": "PRIMARY TRAINING DATA \u2014 SSL pretraining + supervised fine-tuning (PEFT experiments).",
+      "justification": "PlantVillage is the largest publicly available annotated plant disease dataset, providing the scale necessary for ViT-based SSL pretraining. Its 38-class coverage across 14 crop species defines a broad disease taxonomy for a foundational model.",
+      "known_limitations": {
+        "lab_bias": {
+          "description": "All images captured under controlled laboratory conditions.",
+          "implication_for_research": "Directly motivates RQ4: cross-domain transfer to PlantDoc. Model may learn background artefacts rather than disease features."
+        },
+        "class_imbalance": {
+          "description": "Class sizes range ~200\u20135,000 images.",
+          "implication_for_research": "Macro-F1 is the primary metric (not accuracy). All splits are stratified."
+        },
+        "near_duplicates": {
+          "description": "Near-duplicate images from in-dataset augmentation during construction.",
+          "implication_for_research": "pHash deduplication applied across train/test splits (Subtask 7) to prevent test accuracy inflation."
+        },
+        "single_leaf_framing": {
+          "description": "Single isolated leaf per image \u2014 no multi-leaf scenes.",
+          "implication_for_research": "Model may not generalise to multi-leaf field images. Acknowledged as a project limitation in the dissertation."
+        }
+      }
+    },
+    "PlantDoc": {
+      "citation": "Singh, D., Jain, N., Jain, P., Kayal, P., Kumawat, S., & Batra, N. (2020). PlantDoc: A Dataset for Visual Plant Disease Detection. In Proceedings of the 7th ACM IKDD CoDS and 25th COMAD (pp. 249-253).",
+      "paper_link": "https://arxiv.org/abs/1511.08060",
+      "scale": {
+        "images": 2578,
+        "classes": 27,
+        "crop_species": 13
+      },
+      "imaging_conditions": "Real-world field: variable lighting, backgrounds, angles, quality.",
+      "role_in_project": "CROSS-DOMAIN EVALUATION ONLY \u2014 never used for pretraining or fine-tuning.",
+      "justification": "The only large-scale publicly available plant disease dataset with genuine field conditions. Evaluation-only status ensures any accuracy improvement over generic I-JEPA reflects true generalisation, not in-distribution performance.",
+      "known_limitations": {
+        "small_scale": {
+          "description": "~2,569 images \u2014 insufficient for training.",
+          "implication_for_research": "Cannot be used for training. Enforced programmatically in all data loaders."
+        },
+        "label_noise": {
+          "description": "Crowdsourced annotations with estimated 10\u201315% label noise.",
+          "implication_for_research": "PlantDoc accuracy is a noisy lower bound. Small differences (<3%) on PlantDoc should not be over-interpreted."
+        },
+        "incomplete_overlap": {
+          "description": "Only ~17\u201320 disease-crop combinations overlap with PlantVillage.",
+          "implication_for_research": "Cross-domain evaluation uses the intersection only. PlantDoc-exclusive classes constitute a zero-shot sub-experiment."
+        }
+      }
+    }
+  }
+}

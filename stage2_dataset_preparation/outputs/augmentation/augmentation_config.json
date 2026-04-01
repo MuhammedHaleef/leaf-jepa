@@ -1,0 +1,206 @@
+{
+  "pretraining": {
+    "phase": "pretraining",
+    "pytorch_transforms": [
+      {
+        "name": "RandomResizedCrop",
+        "params": {
+          "size": 224,
+          "scale": [
+            0.2,
+            1.0
+          ],
+          "ratio": [
+            0.75,
+            1.33
+          ]
+        },
+        "justification": "Multi-scale sampling: forces SSL model to understand disease at multiple magnifications. Scale 0.2\u20131.0 is standard for I-JEPA (Assran et al., 2023)."
+      },
+      {
+        "name": "RandomHorizontalFlip",
+        "params": {
+          "p": 0.5
+        },
+        "justification": "Disease patterns are orientation-invariant."
+      },
+      {
+        "name": "RandomVerticalFlip",
+        "params": {
+          "p": 0.5
+        },
+        "justification": "Leaf images are captured at arbitrary orientations in field."
+      },
+      {
+        "name": "RandomRotation",
+        "params": {
+          "degrees": 30
+        },
+        "justification": "Rotation invariance. Limited to \u00b130\u00b0 to avoid excessive black padding."
+      },
+      {
+        "name": "ColorJitter",
+        "params": {
+          "brightness": 0.3,
+          "contrast": 0.3,
+          "saturation": 0.1,
+          "hue": 0.05
+        },
+        "justification": "Handles lighting variation. CONSERVATIVE saturation (0.1) and hue (0.05): disease colour IS the signal. Strong colour jitter teaches colour-invariance \u2014 opposite of what we need.",
+        "risk": "MEDIUM if saturation > 0.1 or hue > 0.05. Do not increase these bounds."
+      },
+      {
+        "name": "GaussianBlur",
+        "params": {
+          "kernel_size": [
+            3,
+            9
+          ],
+          "sigma": [
+            0.1,
+            2.0
+          ]
+        },
+        "justification": "Handles camera focus variation in field images."
+      },
+      {
+        "name": "RandomGrayscale",
+        "params": {
+          "p": 0.05
+        },
+        "justification": "Forces minimal colour-independent feature learning. 5% only.",
+        "risk": "DANGEROUS if increased to p > 0.2."
+      },
+      {
+        "name": "RandomErasing",
+        "params": {
+          "p": 0.3,
+          "scale": [
+            0.02,
+            0.15
+          ],
+          "ratio": [
+            0.3,
+            3.3
+          ],
+          "value": 0
+        },
+        "justification": "Simulates partial occlusion (overlapping leaves in field)."
+      }
+    ],
+    "explicitly_excluded": [
+      "Strong hue shifting (hue > 0.2) \u2014 destroys disease colour signal",
+      "Elastic deformation \u2014 may destroy lesion shape morphology (concentric rings in blight)",
+      "CutMix/Mixup \u2014 invalid for SSL (no labels to mix)"
+    ]
+  },
+  "finetuning": {
+    "phase": "fine-tuning",
+    "standard_policy": {
+      "label": ">=10% label fraction",
+      "pytorch_transforms": [
+        {
+          "name": "RandomResizedCrop",
+          "params": {
+            "size": 224,
+            "scale": [
+              0.6,
+              1.0
+            ]
+          },
+          "justification": "Moderate scale. Retains disease context for correct classification."
+        },
+        {
+          "name": "RandomHorizontalFlip",
+          "params": {
+            "p": 0.5
+          }
+        },
+        {
+          "name": "ColorJitter",
+          "params": {
+            "brightness": 0.2,
+            "contrast": 0.2,
+            "saturation": 0.05,
+            "hue": 0.02
+          },
+          "justification": "Very conservative. Disease colour must be preserved for classification."
+        }
+      ],
+      "excluded": [
+        "Gaussian blur \u2014 may soften lesion boundaries needed for classification",
+        "Random grayscale \u2014 colour IS the classification signal during fine-tuning"
+      ]
+    },
+    "low_label_policy": {
+      "label": "1%\u20135% label fraction",
+      "rationale": "At 1\u20135% of 54K images (~380\u20131,900 images across 38 classes), standard augmentation provides insufficient regularisation. CutMix and Mixup are the most effective label-mixing regularisers for this extreme low-data regime.",
+      "additional_transforms": [
+        {
+          "name": "CutMix",
+          "params": {
+            "alpha": 1.0,
+            "p": 0.5
+          },
+          "justification": "Patches crops across images; mixes labels proportionally. Applied at batch level.",
+          "implementation": "Apply in training loop, not in Dataset. Use soft cross-entropy loss."
+        },
+        {
+          "name": "Mixup",
+          "params": {
+            "alpha": 0.2,
+            "p": 0.3
+          },
+          "justification": "Linear interpolation of image pairs and labels. Complementary to CutMix."
+        }
+      ],
+      "caveat": "CutMix/Mixup may slightly reduce performance at >=25% labels. Use standard policy there."
+    },
+    "randaugment_alternative": {
+      "label": "RandAugment (ablation comparison)",
+      "params": {
+        "N": 2,
+        "M": 9
+      },
+      "rationale": "Policy-searched augmentation. Run as ablation vs manual policy. Expected: manual policy better because it explicitly excludes colour-destroying ops.",
+      "constraint": "MUST exclude: Solarize, Equalize, Posterize, AutoContrast",
+      "citation": "Cubuk et al. (2020). RandAugment. CVPR."
+    }
+  },
+  "evaluation": {
+    "phase": "evaluation",
+    "critical_rule": "DETERMINISTIC. IDENTICAL across ALL methods. No random transforms.",
+    "pytorch_transforms": [
+      {
+        "name": "Resize",
+        "params": {
+          "size": 256
+        },
+        "justification": "Standardise scale before crop."
+      },
+      {
+        "name": "CenterCrop",
+        "params": {
+          "size": 224
+        },
+        "justification": "Deterministic crop. Centre typically contains leaf subject."
+      },
+      {
+        "name": "ToTensor",
+        "params": {}
+      },
+      {
+        "name": "Normalize",
+        "params": {
+          "mean": "from outputs/preprocessing/normalisation_stats.json",
+          "std": "from outputs/preprocessing/normalisation_stats.json"
+        },
+        "justification": "Normalise by training set statistics."
+      }
+    ],
+    "explicitly_excluded": [
+      "ANY random transform",
+      "Test-Time Augmentation (TTA) in main results \u2014 use only as labelled ablation"
+    ]
+  }
+}

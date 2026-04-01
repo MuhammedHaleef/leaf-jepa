@@ -1,0 +1,18 @@
+{
+  "target_resolution": {
+    "resize": 256,
+    "crop": 224
+  },
+  "normalisation_method": "Dataset-specific: computed from PlantVillage training split ONLY",
+  "split_protocol": {
+    "method": "Stratified random split",
+    "ratios": {
+      "train": 0.7,
+      "val": 0.15,
+      "test": 0.15
+    },
+    "seed": 42,
+    "why_stratified": "Preserves class distribution across all splits. Non-stratified splitting risks zero test samples for rare classes, making those classes unmeasurable."
+  },
+  "why_not_imagenet_stats": "PlantVillage mean G >> ImageNet mean G (dominated by chlorophyll). Using ImageNet stats over-normalises the green channel \u2014 exactly the channel most diagnostic for disease."
+}

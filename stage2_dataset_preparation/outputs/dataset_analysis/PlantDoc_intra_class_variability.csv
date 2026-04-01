@@ -1,0 +1,29 @@
+,mean_pairwise_l2,std_pairwise_l2,colour_cv,texture_std,n_images_sampled
+Peach leaf,23.3387,6.5774,0.3302,,30.0
+Strawberry leaf,23.3364,5.5556,0.3048,,30.0
+grape leaf,23.1751,7.8898,0.4356,,30.0
+Soyabean leaf,22.8174,7.4706,0.3622,,30.0
+Apple leaf,21.9903,6.8761,0.2715,,30.0
+Blueberry leaf,21.843,7.5319,0.382,,30.0
+Raspberry leaf,21.3123,7.2035,0.3272,,30.0
+Tomato leaf,20.8615,7.609,0.3804,,30.0
+Cherry leaf,20.4405,6.9609,0.3755,,30.0
+Tomato Septoria leaf spot,18.6266,4.7474,0.2666,,30.0
+Bell_pepper leaf spot,17.8617,3.9836,0.2404,,30.0
+Apple Scab Leaf,17.7603,4.9757,0.2775,,30.0
+Bell_pepper leaf,17.7518,5.0051,0.2596,,30.0
+Potato leaf late blight,17.6324,5.3871,0.3057,,30.0
+Potato leaf early blight,17.4669,4.2931,0.2817,,30.0
+grape leaf black rot,16.8021,3.6726,0.2185,,30.0
+Apple rust leaf,16.6468,4.3174,0.2381,,30.0
+Tomato leaf bacterial spot,16.6398,3.9887,0.2572,,30.0
+Tomato leaf mosaic virus,16.1451,3.4501,0.1884,,30.0
+Tomato leaf late blight,15.9131,3.1911,0.1995,,30.0
+Tomato leaf yellow virus,15.6176,4.2011,0.2129,,30.0
+Tomato mold leaf,15.5538,3.6461,0.1999,,30.0
+Corn leaf blight,15.2923,3.1128,0.1613,,30.0
+Corn Gray leaf spot,15.005,3.1753,0.1915,,30.0
+Squash Powdery mildew leaf,14.916,2.4142,0.17,,30.0
+Tomato Early blight leaf,14.8371,2.9049,0.176,,30.0
+Corn rust leaf,14.5191,2.7125,0.1941,,30.0
+Tomato two spotted spider mites leaf,8.5957,0.0,0.0578,,2.0

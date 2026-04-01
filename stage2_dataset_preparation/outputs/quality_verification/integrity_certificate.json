@@ -1,0 +1,43 @@
+{
+  "project": "Leaf-JEPA",
+  "stage": "2 \u2014 Dataset Preparation",
+  "checks": [
+    "train_vs_test",
+    "plantvillage_vs_plantdoc",
+    "sscd_alternative"
+  ],
+  "status": "PASSED",
+  "issues_requiring_action": 0,
+  "message": "\u2705 All checks passed. Stage 3 may begin.",
+  "check_details": {
+    "train_vs_test": {
+      "comparison": "train vs test",
+      "pairs": 0,
+      "contamination_pct": 0.0,
+      "severity": "CLEAN",
+      "action_required": false,
+      "pairs_sample": []
+    },
+    "plantvillage_vs_plantdoc": {
+      "comparison": "PlantVillage vs PlantDoc",
+      "pairs": 0,
+      "contamination_pct": 0.0,
+      "severity": "CLEAN",
+      "action_required": false,
+      "pairs_sample": []
+    },
+    "sscd_alternative": {
+      "method": "SSCD \u2014 Self-Supervised Copy Detection",
+      "citation": "Pizzi et al. (2022). A Self-Supervised Descriptor for Image Copy Detection. CVPR.",
+      "when_to_use": "If pHash detects >0.5% contamination or false positives suspected.",
+      "advantage_over_phash": "pHash is pixel-similarity based. SSCD uses learned copy embeddings: correctly distinguishes (a) two different images of the same disease [NOT duplicates] from (b) two crops of the same physical image [DUPLICATES].",
+      "workflow": [
+        "1. Download: resnet50_hard_mining_0.1.torchscript.pt from Meta AI GitHub",
+        "2. Extract 512-d copy embeddings for all training + test images",
+        "3. Build FAISS index over training embeddings",
+        "4. Query each test image; flag cosine similarity > 0.9 as likely copy",
+        "5. Manual review of flagged pairs before removal"
+      ]
+    }
+  }
+}

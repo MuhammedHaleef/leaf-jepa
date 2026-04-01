@@ -1,0 +1,386 @@
+{
+  "metadata": {
+    "nomenclature": "EPPO Global Database / USDA PLANTS Database",
+    "categories": [
+      "Fungal",
+      "Bacterial",
+      "Viral",
+      "Abiotic",
+      "Healthy"
+    ],
+    "total_entries": 37,
+    "shared_with_plantdoc": 16
+  },
+  "entries": [
+    {
+      "plantvillage_label": "Apple___Apple_scab",
+      "eppo_pathogen": "Venturia inaequalis",
+      "common_name": "Apple Scab",
+      "crop": "Apple (Malus domestica)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": "Apple Scab Leaf",
+      "visual_symptoms": "Olive-green to dark brown velvety lesions; yellowing margins; premature defoliation",
+      "severity": "High"
+    },
+    {
+      "plantvillage_label": "Apple___Black_rot",
+      "eppo_pathogen": "Botryosphaeria obtusa",
+      "common_name": "Apple Black Rot",
+      "crop": "Apple (Malus domestica)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": null,
+      "visual_symptoms": "Purple-bordered circular lesions; concentric ring frog-eye pattern",
+      "severity": "High"
+    },
+    {
+      "plantvillage_label": "Apple___Cedar_apple_rust",
+      "eppo_pathogen": "Gymnosporangium juniperi-virginianae",
+      "common_name": "Cedar Apple Rust",
+      "crop": "Apple (Malus domestica)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": null,
+      "visual_symptoms": "Bright orange-yellow spots on upper surface; tube-like structures on underside",
+      "severity": "Medium"
+    },
+    {
+      "plantvillage_label": "Cherry_(including_sour)___Powdery_mildew",
+      "eppo_pathogen": "Podosphaera clandestina",
+      "common_name": "Cherry Powdery Mildew",
+      "crop": "Cherry (Prunus avium / Prunus cerasus)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": null,
+      "visual_symptoms": "White powdery coating on young leaves; leaf curling; purplish discolouration",
+      "severity": "Medium"
+    },
+    {
+      "plantvillage_label": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "eppo_pathogen": "Cercospora zeae-maydis",
+      "common_name": "Gray Leaf Spot (Corn)",
+      "crop": "Corn (Zea mays)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": "Corn Gray leaf spot",
+      "visual_symptoms": "Rectangular grey-tan lesions bounded by leaf veins; parallel edges",
+      "severity": "High"
+    },
+    {
+      "plantvillage_label": "Corn_(maize)___Common_rust_",
+      "eppo_pathogen": "Puccinia sorghi",
+      "common_name": "Common Rust (Corn)",
+      "crop": "Corn (Zea mays)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": "Corn rust leaf",
+      "visual_symptoms": "Brick-red to brown oval pustules (uredia) scattered on both leaf surfaces",
+      "severity": "Medium"
+    },
+    {
+      "plantvillage_label": "Corn_(maize)___Northern_Leaf_Blight",
+      "eppo_pathogen": "Setosphaeria turcica",
+      "common_name": "Northern Leaf Blight (Corn)",
+      "crop": "Corn (Zea mays)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": "Corn leaf blight",
+      "visual_symptoms": "Large cigar-shaped grey-green to tan lesions; 2.5\u201315 cm long",
+      "severity": "High"
+    },
+    {
+      "plantvillage_label": "Grape___Black_rot",
+      "eppo_pathogen": "Guignardia bidwellii",
+      "common_name": "Grape Black Rot",
+      "crop": "Grape (Vitis vinifera)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": "grape leaf black rot",
+      "visual_symptoms": "Circular tan lesions with dark border; black pycnidia in lesion centres",
+      "severity": "Very High"
+    },
+    {
+      "plantvillage_label": "Potato___Early_blight",
+      "eppo_pathogen": "Alternaria solani",
+      "common_name": "Potato Early Blight",
+      "crop": "Potato (Solanum tuberosum)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": "Potato leaf early blight",
+      "visual_symptoms": "Dark brown concentric-ring lesions (target-board); yellow halo; older leaves first",
+      "severity": "Medium"
+    },
+    {
+      "plantvillage_label": "Potato___Late_blight",
+      "eppo_pathogen": "Phytophthora infestans",
+      "common_name": "Potato Late Blight",
+      "crop": "Potato (Solanum tuberosum)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": "Potato leaf late blight",
+      "visual_symptoms": "Water-soaked dark lesions; white mould underside in humid conditions; rapid progression",
+      "severity": "Very High"
+    },
+    {
+      "plantvillage_label": "Tomato___Early_blight",
+      "eppo_pathogen": "Alternaria solani",
+      "common_name": "Tomato Early Blight",
+      "crop": "Tomato (Solanum lycopersicum)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": "Tomato Early blight leaf",
+      "visual_symptoms": "Dark concentric-ring lesions; yellow halo; lower/older leaves first",
+      "severity": "Medium"
+    },
+    {
+      "plantvillage_label": "Tomato___Late_blight",
+      "eppo_pathogen": "Phytophthora infestans",
+      "common_name": "Tomato Late Blight",
+      "crop": "Tomato (Solanum lycopersicum)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": "Tomato leaf late blight",
+      "visual_symptoms": "Greasy grey-green lesions; white sporulation underside; rapid browning",
+      "severity": "Very High"
+    },
+    {
+      "plantvillage_label": "Tomato___Leaf_Mold",
+      "eppo_pathogen": "Passalora fulva",
+      "common_name": "Tomato Leaf Mold",
+      "crop": "Tomato (Solanum lycopersicum)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": null,
+      "visual_symptoms": "Pale green-yellow patches upper surface; olive-brown velvety mould underside",
+      "severity": "Medium"
+    },
+    {
+      "plantvillage_label": "Tomato___Septoria_leaf_spot",
+      "eppo_pathogen": "Septoria lycopersici",
+      "common_name": "Tomato Septoria Leaf Spot",
+      "crop": "Tomato (Solanum lycopersicum)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": "Tomato Septoria leaf spot",
+      "visual_symptoms": "Small circular spots; dark border; grey-white centre with black pycnidia",
+      "severity": "High"
+    },
+    {
+      "plantvillage_label": "Tomato___Target_Spot",
+      "eppo_pathogen": "Corynespora cassiicola",
+      "common_name": "Tomato Target Spot",
+      "crop": "Tomato (Solanum lycopersicum)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": null,
+      "visual_symptoms": "Concentric ring lesions; dark brown with lighter centre",
+      "severity": "Medium"
+    },
+    {
+      "plantvillage_label": "Strawberry___Leaf_scorch",
+      "eppo_pathogen": "Diplocarpon earlianum",
+      "common_name": "Strawberry Leaf Scorch",
+      "crop": "Strawberry (Fragaria \u00d7 ananassa)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": null,
+      "visual_symptoms": "Irregular dark purple spots; necrotic grey centres; marginal leaf burn",
+      "severity": "Medium"
+    },
+    {
+      "plantvillage_label": "Squash___Powdery_mildew",
+      "eppo_pathogen": "Podosphaeria xanthii",
+      "common_name": "Squash Powdery Mildew",
+      "crop": "Squash (Cucurbita pepo)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": null,
+      "visual_symptoms": "White powdery circular patches on upper surface; lesions coalesce",
+      "severity": "Medium"
+    },
+    {
+      "plantvillage_label": "Grape___Esca_(Black_Measles)",
+      "eppo_pathogen": "Phaeomoniella chlamydospora / Phaeoacremonium spp.",
+      "common_name": "Grape Esca (Black Measles)",
+      "crop": "Grape (Vitis vinifera)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": null,
+      "visual_symptoms": "Interveinal chlorosis and necrosis; tiger-stripe pattern; marginal scorch",
+      "severity": "Very High"
+    },
+    {
+      "plantvillage_label": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "eppo_pathogen": "Pseudocercospora vitis",
+      "common_name": "Grape Leaf Spot",
+      "crop": "Grape (Vitis vinifera)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": null,
+      "visual_symptoms": "Irregular dark brown spots; yellowish halo; premature defoliation",
+      "severity": "Medium"
+    },
+    {
+      "plantvillage_label": "Orange___Haunglongbing_(Citrus_greening)",
+      "eppo_pathogen": "Candidatus Liberibacter spp.",
+      "common_name": "Citrus Greening (HLB)",
+      "crop": "Orange (Citrus sinensis)",
+      "pathogen_category": "Bacterial",
+      "plantdoc_label": null,
+      "visual_symptoms": "Asymmetric blotchy mottling; yellowing not following vein pattern",
+      "severity": "Very High"
+    },
+    {
+      "plantvillage_label": "Peach___Bacterial_spot",
+      "eppo_pathogen": "Xanthomonas arboricola pv. pruni",
+      "common_name": "Peach Bacterial Spot",
+      "crop": "Peach (Prunus persica)",
+      "pathogen_category": "Bacterial",
+      "plantdoc_label": null,
+      "visual_symptoms": "Small water-soaked spots \u2192 dark angular lesions; shot-hole effect",
+      "severity": "Medium"
+    },
+    {
+      "plantvillage_label": "Pepper,_bell___Bacterial_spot",
+      "eppo_pathogen": "Xanthomonas euvesicatoria",
+      "common_name": "Bell Pepper Bacterial Spot",
+      "crop": "Bell Pepper (Capsicum annuum)",
+      "pathogen_category": "Bacterial",
+      "plantdoc_label": null,
+      "visual_symptoms": "Small water-soaked spots with yellow halo; greasy appearance",
+      "severity": "Medium"
+    },
+    {
+      "plantvillage_label": "Tomato___Bacterial_spot",
+      "eppo_pathogen": "Xanthomonas vesicatoria",
+      "common_name": "Tomato Bacterial Spot",
+      "crop": "Tomato (Solanum lycopersicum)",
+      "pathogen_category": "Bacterial",
+      "plantdoc_label": "Tomato leaf bacterial spot",
+      "visual_symptoms": "Small water-soaked spots; yellow halo; dark brown necrotic centres",
+      "severity": "Medium"
+    },
+    {
+      "plantvillage_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "eppo_pathogen": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+      "common_name": "Tomato YLCV",
+      "crop": "Tomato (Solanum lycopersicum)",
+      "pathogen_category": "Viral",
+      "plantdoc_label": "Tomato leaf yellow virus",
+      "visual_symptoms": "Upward leaf curl; marginal yellowing; small crumpled leaves; stunted growth",
+      "severity": "Very High"
+    },
+    {
+      "plantvillage_label": "Tomato___Tomato_mosaic_virus",
+      "eppo_pathogen": "Tomato Mosaic Virus (ToMV)",
+      "common_name": "Tomato Mosaic Virus",
+      "crop": "Tomato (Solanum lycopersicum)",
+      "pathogen_category": "Viral",
+      "plantdoc_label": "Tomato leaf mosaic virus",
+      "visual_symptoms": "Mottled light/dark green mosaic pattern; leaf distortion; fern-like",
+      "severity": "High"
+    },
+    {
+      "plantvillage_label": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "eppo_pathogen": "Tetranychus urticae (arachnid pest)",
+      "common_name": "Tomato Spider Mite Damage",
+      "crop": "Tomato (Solanum lycopersicum)",
+      "pathogen_category": "Abiotic",
+      "plantdoc_label": null,
+      "visual_symptoms": "Stippled/speckled yellowing; fine webbing underside; bronzing; desiccation",
+      "severity": "Medium"
+    },
+    {
+      "plantvillage_label": "Apple___healthy",
+      "eppo_pathogen": null,
+      "common_name": "Healthy Apple",
+      "crop": "Apple (Malus domestica)",
+      "pathogen_category": "Healthy",
+      "plantdoc_label": "Apple leaf",
+      "visual_symptoms": "Uniform green; serrated margins; no scab or rust",
+      "severity": "None"
+    },
+    {
+      "plantvillage_label": "Blueberry___healthy",
+      "eppo_pathogen": null,
+      "common_name": "Healthy Blueberry",
+      "crop": "Blueberry (Vaccinium corymbosum)",
+      "pathogen_category": "Healthy",
+      "plantdoc_label": null,
+      "visual_symptoms": "Uniform green; no lesions; intact ovate leaves",
+      "severity": "None"
+    },
+    {
+      "plantvillage_label": "Cherry_(including_sour)___healthy",
+      "eppo_pathogen": null,
+      "common_name": "Healthy Cherry",
+      "crop": "Cherry (Prunus avium / Prunus cerasus)",
+      "pathogen_category": "Healthy",
+      "plantdoc_label": null,
+      "visual_symptoms": "Uniform green; no spots; intact lanceolate leaves",
+      "severity": "None"
+    },
+    {
+      "plantvillage_label": "Corn_(maize)___healthy",
+      "eppo_pathogen": null,
+      "common_name": "Healthy Corn",
+      "crop": "Corn (Zea mays)",
+      "pathogen_category": "Healthy",
+      "plantdoc_label": null,
+      "visual_symptoms": "Uniform green; parallel venation; no lesions or pustules",
+      "severity": "None"
+    },
+    {
+      "plantvillage_label": "Grape___healthy",
+      "eppo_pathogen": null,
+      "common_name": "Healthy Grape",
+      "crop": "Grape (Vitis vinifera)",
+      "pathogen_category": "Healthy",
+      "plantdoc_label": "grape leaf",
+      "visual_symptoms": "Uniform green; palmate lobed; no mould or spots",
+      "severity": "None"
+    },
+    {
+      "plantvillage_label": "Pepper,_bell___healthy",
+      "eppo_pathogen": null,
+      "common_name": "Healthy Bell Pepper",
+      "crop": "Bell Pepper (Capsicum annuum)",
+      "pathogen_category": "Healthy",
+      "plantdoc_label": null,
+      "visual_symptoms": "Uniform green; ovate; no spots; intact margins",
+      "severity": "None"
+    },
+    {
+      "plantvillage_label": "Potato___healthy",
+      "eppo_pathogen": null,
+      "common_name": "Healthy Potato",
+      "crop": "Potato (Solanum tuberosum)",
+      "pathogen_category": "Healthy",
+      "plantdoc_label": null,
+      "visual_symptoms": "Uniform green; pinnate compound leaves; no lesions",
+      "severity": "None"
+    },
+    {
+      "plantvillage_label": "Raspberry___healthy",
+      "eppo_pathogen": null,
+      "common_name": "Healthy Raspberry",
+      "crop": "Raspberry (Rubus idaeus)",
+      "pathogen_category": "Healthy",
+      "plantdoc_label": null,
+      "visual_symptoms": "Uniform dark green; no lesions; intact serrated margins",
+      "severity": "None"
+    },
+    {
+      "plantvillage_label": "Soybean___healthy",
+      "eppo_pathogen": null,
+      "common_name": "Healthy Soybean",
+      "crop": "Soybean (Glycine max)",
+      "pathogen_category": "Healthy",
+      "plantdoc_label": null,
+      "visual_symptoms": "Uniform green; no spots; intact trifoliate structure",
+      "severity": "None"
+    },
+    {
+      "plantvillage_label": "Strawberry___healthy",
+      "eppo_pathogen": null,
+      "common_name": "Healthy Strawberry",
+      "crop": "Strawberry (Fragaria \u00d7 ananassa)",
+      "pathogen_category": "Healthy",
+      "plantdoc_label": null,
+      "visual_symptoms": "Uniform green; no spots; intact trifoliate leaves",
+      "severity": "None"
+    },
+    {
+      "plantvillage_label": "Tomato___healthy",
+      "eppo_pathogen": null,
+      "common_name": "Healthy Tomato",
+      "crop": "Tomato (Solanum lycopersicum)",
+      "pathogen_category": "Healthy",
+      "plantdoc_label": "Tomato leaf",
+      "visual_symptoms": "Uniform dark green; pinnate compound leaves; no lesions",
+      "severity": "None"
+    }
+  ]
+}

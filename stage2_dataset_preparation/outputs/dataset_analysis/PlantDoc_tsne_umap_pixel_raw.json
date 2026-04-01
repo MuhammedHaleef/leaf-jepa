@@ -1,0 +1,9 @@
+{
+  "n_samples": 1433,
+  "feature_dim": 3072,
+  "n_pca_components": 64,
+  "pca_explained_variance": 0.8301,
+  "tsne_kl_divergence": 1.7117,
+  "silhouette_scores": {},
+  "interpretation": "Low silhouette score in raw pixel space is EXPECTED and motivates representation learning. Compare with Stage 3 B3 (I-JEPA) and B5 (Leaf-JEPA) t-SNE silhouette scores to quantify representation quality improvement."
+}
