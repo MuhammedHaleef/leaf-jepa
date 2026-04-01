@@ -1,0 +1,72 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ── Data — never commit raw or processed images ───────────────────────────────
+data/plantvillage_raw/
+data/plantdoc_raw/
+data/plantvillage_processed/
+data/plantdoc_processed/
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+
+# ── Outputs — all generated; reproduce via notebooks ─────────────────────────
+outputs/splits/
+outputs/preprocessing/
+outputs/analysis/
+outputs/taxonomy/
+outputs/quality_verification/
+outputs/figures/
+outputs/baselines/
+outputs/augmentation/*.png
+outputs/augmentation/*.jpg
+
+# Keep transforms.py (committed code), ignore its output figures
+!outputs/augmentation/transforms.py
+
+# ── Checkpoints ───────────────────────────────────────────────────────────────
+checkpoints/
+*.pth
+*.pth.tar
+*.pt
+*.ckpt
+*.bin
+*.safetensors
+
+# ── Experiment tracking ───────────────────────────────────────────────────────
+wandb/
+mlruns/
+lightning_logs/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+logs/
+*.log
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+Thumbs.db
+desktop.ini
+
