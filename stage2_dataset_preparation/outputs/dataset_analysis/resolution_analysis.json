@@ -1,0 +1,31 @@
+{
+  "plantvillage": {
+    "uniform_resolution": "256x256",
+    "variance": 0,
+    "upscale_required_pct": 0.0,
+    "resize_strategy": "256 -> 224 center crop, no upscaling needed"
+  },
+  "plantdoc": {
+    "width": {
+      "mean": 1065,
+      "std": 855,
+      "min": 115,
+      "max": 6000
+    },
+    "height": {
+      "mean": 911,
+      "std": 755,
+      "min": 69,
+      "max": 6000
+    },
+    "upscale_required_pct": 4.5,
+    "upscaled_count": 90,
+    "worst_upscale_factor": 3.25,
+    "aspect_ratio": {
+      "mean": 1.24,
+      "std": 0.36,
+      "pct_nonsquare": 81.45
+    },
+    "note": "Evaluation only \u2014 no augmentation applied, resolution variance is fixed noise"
+  }
+}

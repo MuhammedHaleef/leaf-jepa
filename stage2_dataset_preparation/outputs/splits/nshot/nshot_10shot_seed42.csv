@@ -1,0 +1,381 @@
+filepath,class_name,label_idx
+..\..\data\plantvillage_raw\Apple___Cedar_apple_rust\70190de6-c93f-4b1e-9c6d-19b0b424f42f___FREC_C.Rust 4315.JPG,Apple___Cedar_apple_rust,2
+..\..\data\plantvillage_raw\Apple___Cedar_apple_rust\1a80b84d-1a5a-4e23-8deb-823ba928e29a___FREC_C.Rust 4431.JPG,Apple___Cedar_apple_rust,2
+..\..\data\plantvillage_raw\Apple___Cedar_apple_rust\0fbdccdc-fb96-475a-92bb-65734592c895___FREC_C.Rust 3619.JPG,Apple___Cedar_apple_rust,2
+..\..\data\plantvillage_raw\Apple___Cedar_apple_rust\b5a75c29-c79a-4db0-8976-e33e48628ccb___FREC_C.Rust 9966.JPG,Apple___Cedar_apple_rust,2
+..\..\data\plantvillage_raw\Apple___Cedar_apple_rust\c16bbb5c-bd59-4568-80a4-ac10eb488a4e___FREC_C.Rust 4274.JPG,Apple___Cedar_apple_rust,2
+..\..\data\plantvillage_raw\Apple___Cedar_apple_rust\98db1965-ab83-41ac-bd9b-a029d42a236c___FREC_C.Rust 9878.JPG,Apple___Cedar_apple_rust,2
+..\..\data\plantvillage_raw\Apple___Cedar_apple_rust\0340baaa-e9cc-4c04-8f9b-c204180d9ae3___FREC_C.Rust 3805.JPG,Apple___Cedar_apple_rust,2
+..\..\data\plantvillage_raw\Apple___Cedar_apple_rust\b14f7df6-7a6c-44e6-80a4-c0c11318a9a9___FREC_C.Rust 4260.JPG,Apple___Cedar_apple_rust,2
+..\..\data\plantvillage_raw\Apple___Cedar_apple_rust\38395894-268c-4ae1-827d-679f97e1a262___FREC_C.Rust 3998.JPG,Apple___Cedar_apple_rust,2
+..\..\data\plantvillage_raw\Apple___Cedar_apple_rust\b1a2c1e8-e1a6-4d25-9d5b-1488e9d8b0ee___FREC_C.Rust 3938.JPG,Apple___Cedar_apple_rust,2
+..\..\data\plantvillage_raw\Raspberry___healthy\23b44f6d-0a70-4587-85ac-534ca483a49e___Mary_HL 9296.JPG,Raspberry___healthy,23
+..\..\data\plantvillage_raw\Raspberry___healthy\366e35f2-7492-49bc-a85c-b8da33fabfa0___Mary_HL 9349.JPG,Raspberry___healthy,23
+..\..\data\plantvillage_raw\Raspberry___healthy\1b32ba52-1a78-4030-9317-ea5d2ea66cd7___Mary_HL 9232.JPG,Raspberry___healthy,23
+..\..\data\plantvillage_raw\Raspberry___healthy\3368e77a-9245-4e4f-89ee-41968b060e56___Mary_HL 6251.JPG,Raspberry___healthy,23
+..\..\data\plantvillage_raw\Raspberry___healthy\a23af825-fd84-4605-bba9-2560a70c576f___Mary_HL 6371.JPG,Raspberry___healthy,23
+..\..\data\plantvillage_raw\Raspberry___healthy\da1c2dba-b75e-4052-bf97-16e66fea830a___Mary_HL 6320.JPG,Raspberry___healthy,23
+..\..\data\plantvillage_raw\Raspberry___healthy\63423c9f-f5c7-4d38-be89-391cbc9ecab9___Mary_HL 6231.JPG,Raspberry___healthy,23
+..\..\data\plantvillage_raw\Raspberry___healthy\f2f03715-9411-4c55-a314-d2dca6176f34___Mary_HL 9215.JPG,Raspberry___healthy,23
+..\..\data\plantvillage_raw\Raspberry___healthy\102dcdc7-69ca-443d-a5e5-7c861092fa4e___Mary_HL 9259.JPG,Raspberry___healthy,23
+..\..\data\plantvillage_raw\Raspberry___healthy\ead8c507-c422-43d2-8efe-855cd9c0a504___Mary_HL 6279.JPG,Raspberry___healthy,23
+..\..\data\plantvillage_raw\Tomato___Late_blight\1e0c01b6-5d75-47ea-b455-c9508882424a___RS_Late.B 6886.JPG,Tomato___Late_blight,30
+..\..\data\plantvillage_raw\Tomato___Late_blight\8cf817c6-56f4-42b3-93b7-222d88b63b2d___RS_Late.B 4827.JPG,Tomato___Late_blight,30
+..\..\data\plantvillage_raw\Tomato___Late_blight\7fe35989-ae3c-4652-931f-820e2cdb7c96___RS_Late.B 6876.JPG,Tomato___Late_blight,30
+..\..\data\plantvillage_raw\Tomato___Late_blight\afa8f963-b75c-4582-922b-c01f78d7d112___GHLB_PS Leaf 50 Day 18.jpg,Tomato___Late_blight,30
+..\..\data\plantvillage_raw\Tomato___Late_blight\d966df9d-0762-4353-8b70-72c9b390013e___RS_Late.B 5591.JPG,Tomato___Late_blight,30
+..\..\data\plantvillage_raw\Tomato___Late_blight\997f68ef-5b78-40e8-a2d2-a91f304cd9c5___RS_Late.B 4944.JPG,Tomato___Late_blight,30
+..\..\data\plantvillage_raw\Tomato___Late_blight\c0767cc9-acc8-4f4b-b9b5-1958899633ef___GHLB2 Leaf 8807.JPG,Tomato___Late_blight,30
+..\..\data\plantvillage_raw\Tomato___Late_blight\7fe41e8b-a062-4403-97b1-0415e2cf8fc5___RS_Late.B 7055.JPG,Tomato___Late_blight,30
+..\..\data\plantvillage_raw\Tomato___Late_blight\4eca7d70-60ff-41cc-8884-e4844f23abeb___GHLB2 Leaf 8641.JPG,Tomato___Late_blight,30
+..\..\data\plantvillage_raw\Tomato___Late_blight\511ea2f2-d960-4cb2-9a0d-e049646a022e___RS_Late.B 5083.JPG,Tomato___Late_blight,30
+..\..\data\plantvillage_raw\Potato___Early_blight\e6d7262c-803d-4346-a36d-4f384196e21c___RS_Early.B 6893.JPG,Potato___Early_blight,20
+..\..\data\plantvillage_raw\Potato___Early_blight\11e974fa-928f-45f6-b983-e74c74c7d163___RS_Early.B 7992.JPG,Potato___Early_blight,20
+..\..\data\plantvillage_raw\Potato___Early_blight\ede5199d-4bf1-4bd0-a460-2168350ed05a___RS_Early.B 8773.JPG,Potato___Early_blight,20
+..\..\data\plantvillage_raw\Potato___Early_blight\38a72c90-ed53-4432-b625-01c1f962f791___RS_Early.B 7302.JPG,Potato___Early_blight,20
+..\..\data\plantvillage_raw\Potato___Early_blight\a29559c6-1d80-4486-a3c9-26986d6e28e0___RS_Early.B 6890.JPG,Potato___Early_blight,20
+..\..\data\plantvillage_raw\Potato___Early_blight\8ce2ee77-109f-4a08-bee9-2877c2201056___RS_Early.B 6834.JPG,Potato___Early_blight,20
+..\..\data\plantvillage_raw\Potato___Early_blight\d1625c19-c90f-4a5f-bfc8-cb406ad20753___RS_Early.B 8649.JPG,Potato___Early_blight,20
+..\..\data\plantvillage_raw\Potato___Early_blight\2a4fd894-0c4f-471b-b80b-d362a7b513f4___RS_Early.B 8038.JPG,Potato___Early_blight,20
+..\..\data\plantvillage_raw\Potato___Early_blight\541b768f-ec74-4f60-8e5a-778a5eb359da___RS_Early.B 8647.JPG,Potato___Early_blight,20
+..\..\data\plantvillage_raw\Potato___Early_blight\c5dc57d8-9a0d-4046-9eb4-b9db2f720a47___RS_Early.B 7047.JPG,Potato___Early_blight,20
+..\..\data\plantvillage_raw\Corn_(maize)___healthy\d128a635-3090-4ca1-904d-d471f67134e3___R.S_HL 0623 copy 3.jpg,Corn_(maize)___healthy,10
+..\..\data\plantvillage_raw\Corn_(maize)___healthy\57414792-9bc5-40c2-b7cb-b764a2531225___R.S_HL 8152 copy.jpg,Corn_(maize)___healthy,10
+..\..\data\plantvillage_raw\Corn_(maize)___healthy\365694a5-6ad3-46c2-a929-5de7b0dce2e2___R.S_HL 8066 copy.jpg,Corn_(maize)___healthy,10
+..\..\data\plantvillage_raw\Corn_(maize)___healthy\a8ce309e-86b8-4a8c-ad2e-0def8c89382c___R.S_HL 7890 copy 2.jpg,Corn_(maize)___healthy,10
+..\..\data\plantvillage_raw\Corn_(maize)___healthy\169f4815-9403-4002-b463-b578b3cf4323___R.S_HL 7929 copy.jpg,Corn_(maize)___healthy,10
+..\..\data\plantvillage_raw\Corn_(maize)___healthy\7623c2f0-68ee-4b41-819d-d49029987c5c___R.S_HL 8125 copy 2.jpg,Corn_(maize)___healthy,10
+..\..\data\plantvillage_raw\Corn_(maize)___healthy\c9223f42-46af-4fa7-bf4e-40a771dafd9f___R.S_HL 0621 copy 3.jpg,Corn_(maize)___healthy,10
+..\..\data\plantvillage_raw\Corn_(maize)___healthy\70b37163-3817-4d1e-98eb-75ba4ef240ea___R.S_HL 7927 copy.jpg,Corn_(maize)___healthy,10
+..\..\data\plantvillage_raw\Corn_(maize)___healthy\a4314e17-4aab-4f16-9ab2-78450618f178___R.S_HL 7910 copy.jpg,Corn_(maize)___healthy,10
+..\..\data\plantvillage_raw\Corn_(maize)___healthy\d5048e5d-a5d4-435c-bac2-7e56d622f4fd___R.S_HL 8205 copy.jpg,Corn_(maize)___healthy,10
+..\..\data\plantvillage_raw\Corn_(maize)___Northern_Leaf_Blight\fcd349a6-5361-40b6-a650-f8319a6d1d58___RS_NLB 3783.JPG,Corn_(maize)___Northern_Leaf_Blight,9
+..\..\data\plantvillage_raw\Corn_(maize)___Northern_Leaf_Blight\e468a247-3cc3-414b-8d9b-efde65b2aad6___RS_NLB 3937.JPG,Corn_(maize)___Northern_Leaf_Blight,9
+..\..\data\plantvillage_raw\Corn_(maize)___Northern_Leaf_Blight\def2064a-8470-447e-bfb2-f76ecb3006cd___RS_NLB 0789.JPG,Corn_(maize)___Northern_Leaf_Blight,9
+..\..\data\plantvillage_raw\Corn_(maize)___Northern_Leaf_Blight\7fb389d4-38a3-49de-8f68-72a87ff4ae0a___RS_NLB 3716.JPG,Corn_(maize)___Northern_Leaf_Blight,9
+..\..\data\plantvillage_raw\Corn_(maize)___Northern_Leaf_Blight\66abbb46-1197-46c1-984e-0141246142b8___RS_NLB 4245.JPG,Corn_(maize)___Northern_Leaf_Blight,9
+..\..\data\plantvillage_raw\Corn_(maize)___Northern_Leaf_Blight\f3a574c8-043a-4804-bdba-addb50450720___RS_NLB 3553 copy.jpg,Corn_(maize)___Northern_Leaf_Blight,9
+..\..\data\plantvillage_raw\Corn_(maize)___Northern_Leaf_Blight\04d8e1d6-766e-4fcc-9bac-42efb9e6ad33___RS_NLB 3620.JPG,Corn_(maize)___Northern_Leaf_Blight,9
+..\..\data\plantvillage_raw\Corn_(maize)___Northern_Leaf_Blight\0c28faf9-15f7-4e78-bb72-0a1035d95f1f___RS_NLB 4236.JPG,Corn_(maize)___Northern_Leaf_Blight,9
+..\..\data\plantvillage_raw\Corn_(maize)___Northern_Leaf_Blight\a3359351-66b0-4774-8165-6e002c8fb96f___RS_NLB 3634.JPG,Corn_(maize)___Northern_Leaf_Blight,9
+..\..\data\plantvillage_raw\Corn_(maize)___Northern_Leaf_Blight\3f7ded82-d9d3-4b3d-9beb-58c5a43f894c___RS_NLB 3656.JPG,Corn_(maize)___Northern_Leaf_Blight,9
+..\..\data\plantvillage_raw\Tomato___Spider_mites Two-spotted_spider_mite\85d02dcc-7d8f-4ba1-a55e-14d5e75444c5___Com.G_SpM_FL 9479.JPG,Tomato___Spider_mites Two-spotted_spider_mite,33
+..\..\data\plantvillage_raw\Tomato___Spider_mites Two-spotted_spider_mite\591a3693-c7a6-4435-8a83-2e7593771788___Com.G_SpM_FL 8949.JPG,Tomato___Spider_mites Two-spotted_spider_mite,33
+..\..\data\plantvillage_raw\Tomato___Spider_mites Two-spotted_spider_mite\f8ffac77-3323-4fdb-814b-4a1967048978___Com.G_SpM_FL 9275.JPG,Tomato___Spider_mites Two-spotted_spider_mite,33
+..\..\data\plantvillage_raw\Tomato___Spider_mites Two-spotted_spider_mite\ff9a52b5-b200-4f23-9e0d-629b1a0e89db___Com.G_SpM_FL 8634.JPG,Tomato___Spider_mites Two-spotted_spider_mite,33
+..\..\data\plantvillage_raw\Tomato___Spider_mites Two-spotted_spider_mite\3b90769e-82f9-4b5f-93dd-6c2666f3c952___Com.G_SpM_FL 8924.JPG,Tomato___Spider_mites Two-spotted_spider_mite,33
+..\..\data\plantvillage_raw\Tomato___Spider_mites Two-spotted_spider_mite\1948cb2f-39fc-44f4-ab8c-00aa77fbe07f___Com.G_SpM_FL 8674.JPG,Tomato___Spider_mites Two-spotted_spider_mite,33
+..\..\data\plantvillage_raw\Tomato___Spider_mites Two-spotted_spider_mite\9ebfbe4c-8615-4aa4-8288-3855e9555fb5___Com.G_SpM_FL 9588.JPG,Tomato___Spider_mites Two-spotted_spider_mite,33
+..\..\data\plantvillage_raw\Tomato___Spider_mites Two-spotted_spider_mite\3d59267d-cf74-4354-a41c-d3f79783fcfd___Com.G_SpM_FL 8667.JPG,Tomato___Spider_mites Two-spotted_spider_mite,33
+..\..\data\plantvillage_raw\Tomato___Spider_mites Two-spotted_spider_mite\d9af9077-47e3-428c-bd9e-89e57a2f551b___Com.G_SpM_FL 8859.JPG,Tomato___Spider_mites Two-spotted_spider_mite,33
+..\..\data\plantvillage_raw\Tomato___Spider_mites Two-spotted_spider_mite\1075cc73-3ea9-47c1-a92d-98cda4b222b7___Com.G_SpM_FL 9467.JPG,Tomato___Spider_mites Two-spotted_spider_mite,33
+..\..\data\plantvillage_raw\Grape___Black_rot\62a898be-2abb-47e8-9750-fecdb4ba2f7a___FAM_B.Rot 3257.JPG,Grape___Black_rot,11
+..\..\data\plantvillage_raw\Grape___Black_rot\81d27128-e7b0-423c-8267-c23cb3b0ab25___FAM_B.Rot 3472.JPG,Grape___Black_rot,11
+..\..\data\plantvillage_raw\Grape___Black_rot\1375f445-5685-45b8-b309-25bfa15e1665___FAM_B.Rot 3351.JPG,Grape___Black_rot,11
+..\..\data\plantvillage_raw\Grape___Black_rot\1b49994b-904a-4f13-8c97-e72b68d9d6e4___FAM_B.Rot 3079.JPG,Grape___Black_rot,11
+..\..\data\plantvillage_raw\Grape___Black_rot\e4f1a701-09ae-4e97-ba92-f5a56862df4f___FAM_B.Rot 3509.JPG,Grape___Black_rot,11
+..\..\data\plantvillage_raw\Grape___Black_rot\ee376899-ae9e-4f14-9e05-11aa9517487f___FAM_B.Rot 0652.JPG,Grape___Black_rot,11
+..\..\data\plantvillage_raw\Grape___Black_rot\908b3c9f-a97d-4cfb-bccd-ad992160b425___FAM_B.Rot 0337.JPG,Grape___Black_rot,11
+..\..\data\plantvillage_raw\Grape___Black_rot\e2f61cc3-1dec-4ac4-a33f-e4c52d4f7fa2___FAM_B.Rot 3540.JPG,Grape___Black_rot,11
+..\..\data\plantvillage_raw\Grape___Black_rot\9aad4625-a52d-4a3d-839f-aedd88c2f300___FAM_B.Rot 0521.JPG,Grape___Black_rot,11
+..\..\data\plantvillage_raw\Grape___Black_rot\2b65c0c7-ceaa-4e42-9bf7-8df56e73e992___FAM_B.Rot 0582.JPG,Grape___Black_rot,11
+..\..\data\plantvillage_raw\Cherry_(including_sour)___healthy\17ced140-3575-471d-9a52-9d37a9e4fccd___JR_HL 4266.JPG,Cherry_(including_sour)___healthy,6
+..\..\data\plantvillage_raw\Cherry_(including_sour)___healthy\fe061ef6-f54a-4edd-8ac2-03a2397c6df8___JR_HL 4160.JPG,Cherry_(including_sour)___healthy,6
+..\..\data\plantvillage_raw\Cherry_(including_sour)___healthy\33f621c0-3ee3-4263-9eeb-a2d0916f2315___JR_HL 9506.JPG,Cherry_(including_sour)___healthy,6
+..\..\data\plantvillage_raw\Cherry_(including_sour)___healthy\810b4077-aceb-4dbc-afad-9abf732ea00b___JR_HL 9457.JPG,Cherry_(including_sour)___healthy,6
+..\..\data\plantvillage_raw\Cherry_(including_sour)___healthy\77ce070f-fe40-432e-b675-157e2d61bb43___JR_HL 4050.JPG,Cherry_(including_sour)___healthy,6
+..\..\data\plantvillage_raw\Cherry_(including_sour)___healthy\04189592-5db7-441e-a831-eaaa2d7f5d21___JR_HL 9867.JPG,Cherry_(including_sour)___healthy,6
+..\..\data\plantvillage_raw\Cherry_(including_sour)___healthy\534159ca-ce41-470a-bce3-729af336d250___JR_HL 9809.JPG,Cherry_(including_sour)___healthy,6
+..\..\data\plantvillage_raw\Cherry_(including_sour)___healthy\01958ee7-f585-4956-90aa-a40dc79102d4___JR_HL 9836.JPG,Cherry_(including_sour)___healthy,6
+..\..\data\plantvillage_raw\Cherry_(including_sour)___healthy\771c7c63-38bb-4d7a-8db1-fda6c5d91076___JR_HL 9882 copy.JPG,Cherry_(including_sour)___healthy,6
+..\..\data\plantvillage_raw\Cherry_(including_sour)___healthy\1075f5f1-8cfe-420a-a65d-7c3399b63f39___JR_HL 9827.JPG,Cherry_(including_sour)___healthy,6
+..\..\data\plantvillage_raw\Blueberry___healthy\bbb99911-f196-412a-948b-bccd2c7a1d2a___RS_HL 2328.JPG,Blueberry___healthy,4
+..\..\data\plantvillage_raw\Blueberry___healthy\4fbd6b3c-f159-4deb-8dbb-55c9efb83ef2___RS_HL 0756.JPG,Blueberry___healthy,4
+..\..\data\plantvillage_raw\Blueberry___healthy\c62293ea-4450-4b83-90ec-f09251137473___RS_HL 5059.JPG,Blueberry___healthy,4
+..\..\data\plantvillage_raw\Blueberry___healthy\051a4fe4-3cc0-4826-8b36-b1a0f821fc68___RS_HL 0542.JPG,Blueberry___healthy,4
+..\..\data\plantvillage_raw\Blueberry___healthy\a3a74345-7db1-4392-8e47-60fecd28ed1b___RS_HL 5255.JPG,Blueberry___healthy,4
+..\..\data\plantvillage_raw\Blueberry___healthy\d022d49d-d932-405f-82ef-69fa0607ff83___RS_HL 5045.JPG,Blueberry___healthy,4
+..\..\data\plantvillage_raw\Blueberry___healthy\e0f99bbf-1e29-415c-ae6e-e41ee41ca771___RS_HL 0398.JPG,Blueberry___healthy,4
+..\..\data\plantvillage_raw\Blueberry___healthy\f97695c2-6a4d-445e-896a-1d9d8839779e___RS_HL 5176.JPG,Blueberry___healthy,4
+..\..\data\plantvillage_raw\Blueberry___healthy\aaf04542-b3d0-45c6-a6f8-3c231a88b015___RS_HL 0771.JPG,Blueberry___healthy,4
+..\..\data\plantvillage_raw\Blueberry___healthy\3f1a83ac-2cf8-463f-8b35-654d37c361d0___RS_HL 2440.JPG,Blueberry___healthy,4
+..\..\data\plantvillage_raw\Peach___Bacterial_spot\16b0b452-18c6-4c1e-a8d8-b26162e80127___Rutg._Bact.S 1158.JPG,Peach___Bacterial_spot,16
+..\..\data\plantvillage_raw\Peach___Bacterial_spot\df1c0493-640e-4878-988e-338ca6a88a2b___Rutg._Bact.S 1392.JPG,Peach___Bacterial_spot,16
+..\..\data\plantvillage_raw\Peach___Bacterial_spot\ac322f8d-beb4-4e75-9179-52b42e4fc127___Rutg._Bact.S 1082.JPG,Peach___Bacterial_spot,16
+..\..\data\plantvillage_raw\Peach___Bacterial_spot\025fdbf8-0339-4821-b788-d2a92b974d31___Rutg._Bact.S 2047.JPG,Peach___Bacterial_spot,16
+..\..\data\plantvillage_raw\Peach___Bacterial_spot\80138b30-b2ed-4c81-831d-f98f99c46b19___Rut._Bact.S 1227.JPG,Peach___Bacterial_spot,16
+..\..\data\plantvillage_raw\Peach___Bacterial_spot\c9ab9ef1-d86c-44e5-b260-6c98041c3094___Rut._Bact.S 0835.JPG,Peach___Bacterial_spot,16
+..\..\data\plantvillage_raw\Peach___Bacterial_spot\32631f9d-5d1b-4e76-a662-adaf51a5c262___Rut._Bact.S 0745.JPG,Peach___Bacterial_spot,16
+..\..\data\plantvillage_raw\Peach___Bacterial_spot\acd6a848-da90-4763-9c8b-1c431afc1881___Rut._Bact.S 0931.JPG,Peach___Bacterial_spot,16
+..\..\data\plantvillage_raw\Peach___Bacterial_spot\5d54b4d2-9abe-4bc7-94f0-6227926ba812___Rutg._Bact.S 1810.JPG,Peach___Bacterial_spot,16
+..\..\data\plantvillage_raw\Peach___Bacterial_spot\746bf9dd-fc83-4654-8859-8c4b78df53d7___Rutg._Bact.S 2328.JPG,Peach___Bacterial_spot,16
+..\..\data\plantvillage_raw\Orange___Haunglongbing_(Citrus_greening)\e5a792e0-2883-42d1-8705-4b0fe7c071de___CREC_HLB 3895.JPG,Orange___Haunglongbing_(Citrus_greening),15
+..\..\data\plantvillage_raw\Orange___Haunglongbing_(Citrus_greening)\7219ee0a-c6d5-45be-b49d-8ff4078b10fb___CREC_HLB 4535.JPG,Orange___Haunglongbing_(Citrus_greening),15
+..\..\data\plantvillage_raw\Orange___Haunglongbing_(Citrus_greening)\c89b126a-c740-4fc1-8846-596b90518dc1___CREC_HLB 4091.JPG,Orange___Haunglongbing_(Citrus_greening),15
+..\..\data\plantvillage_raw\Orange___Haunglongbing_(Citrus_greening)\8c213aec-1de6-4117-b9a1-2cb2018af6a5___CREC_HLB 5138.JPG,Orange___Haunglongbing_(Citrus_greening),15
+..\..\data\plantvillage_raw\Orange___Haunglongbing_(Citrus_greening)\d9e3e9ab-2c91-4801-a3e0-58246ac9360e___CREC_HLB 7936.JPG,Orange___Haunglongbing_(Citrus_greening),15
+..\..\data\plantvillage_raw\Orange___Haunglongbing_(Citrus_greening)\3fd16679-a2a0-44fe-b87f-78e51b945d51___CREC_HLB 7413.JPG,Orange___Haunglongbing_(Citrus_greening),15
+..\..\data\plantvillage_raw\Orange___Haunglongbing_(Citrus_greening)\6d8afa94-f738-4793-8d27-fa3958158c6f___CREC_HLB 7235.JPG,Orange___Haunglongbing_(Citrus_greening),15
+..\..\data\plantvillage_raw\Orange___Haunglongbing_(Citrus_greening)\129822bf-da18-407a-b34f-85e39dc4f5bf___CREC_HLB 5065.JPG,Orange___Haunglongbing_(Citrus_greening),15
+..\..\data\plantvillage_raw\Orange___Haunglongbing_(Citrus_greening)\a7394213-135c-4be2-a53a-e9c20c1a1ee5___CREC_HLB 7892.JPG,Orange___Haunglongbing_(Citrus_greening),15
+..\..\data\plantvillage_raw\Orange___Haunglongbing_(Citrus_greening)\54acea05-c2c7-4b8f-abab-dcb88c6e1cf0___UF.Citrus_HLB_Lab 1263.JPG,Orange___Haunglongbing_(Citrus_greening),15
+..\..\data\plantvillage_raw\Tomato___healthy\81314c2b-1def-41c8-a6b4-1cd37d1e482a___RS_HL 0175.JPG,Tomato___healthy,37
+..\..\data\plantvillage_raw\Tomato___healthy\c3a27dc9-0abc-4828-9163-f55530332cab___GH_HL Leaf 228.JPG,Tomato___healthy,37
+..\..\data\plantvillage_raw\Tomato___healthy\61db52ae-d868-4ba0-bac0-b2c9dc539cd8___RS_HL 0140.JPG,Tomato___healthy,37
+..\..\data\plantvillage_raw\Tomato___healthy\8e117b61-5360-49c8-aa55-4e90f8fae129___GH_HL Leaf 261.JPG,Tomato___healthy,37
+..\..\data\plantvillage_raw\Tomato___healthy\ec2ace5b-0368-4012-a46e-21236926193c___RS_HL 0086.JPG,Tomato___healthy,37
+..\..\data\plantvillage_raw\Tomato___healthy\a06cd500-b782-4be6-8f7a-377c9ed5ceab___RS_HL 9648.JPG,Tomato___healthy,37
+..\..\data\plantvillage_raw\Tomato___healthy\6dde71bb-a416-41eb-a629-7b4541e85cfc___RS_HL 9734.JPG,Tomato___healthy,37
+..\..\data\plantvillage_raw\Tomato___healthy\af78f888-bd62-44bb-8223-6be0cf0950fc___GH_HL Leaf 491.JPG,Tomato___healthy,37
+..\..\data\plantvillage_raw\Tomato___healthy\f6884753-9a44-4f1c-a99b-ef40faa2df5a___RS_HL 0492.JPG,Tomato___healthy,37
+..\..\data\plantvillage_raw\Tomato___healthy\91a223de-d549-43cd-8ffe-81b650b28edd___RS_HL 0028.JPG,Tomato___healthy,37
+..\..\data\plantvillage_raw\Corn_(maize)___Common_rust_\RS_Rust 2749.JPG,Corn_(maize)___Common_rust_,8
+..\..\data\plantvillage_raw\Corn_(maize)___Common_rust_\RS_Rust 2323.JPG,Corn_(maize)___Common_rust_,8
+..\..\data\plantvillage_raw\Corn_(maize)___Common_rust_\RS_Rust 2628.JPG,Corn_(maize)___Common_rust_,8
+..\..\data\plantvillage_raw\Corn_(maize)___Common_rust_\RS_Rust 1890.JPG,Corn_(maize)___Common_rust_,8
+..\..\data\plantvillage_raw\Corn_(maize)___Common_rust_\RS_Rust 1742.JPG,Corn_(maize)___Common_rust_,8
+..\..\data\plantvillage_raw\Corn_(maize)___Common_rust_\RS_Rust 1885.JPG,Corn_(maize)___Common_rust_,8
+..\..\data\plantvillage_raw\Corn_(maize)___Common_rust_\RS_Rust 2495.JPG,Corn_(maize)___Common_rust_,8
+..\..\data\plantvillage_raw\Corn_(maize)___Common_rust_\RS_Rust 1571.JPG,Corn_(maize)___Common_rust_,8
+..\..\data\plantvillage_raw\Corn_(maize)___Common_rust_\RS_Rust 1591.JPG,Corn_(maize)___Common_rust_,8
+..\..\data\plantvillage_raw\Corn_(maize)___Common_rust_\RS_Rust 2326.JPG,Corn_(maize)___Common_rust_,8
+..\..\data\plantvillage_raw\Grape___Esca_(Black_Measles)\cd837043-ba7c-4499-b266-a821dc1b83d2___FAM_B.Msls 1807.JPG,Grape___Esca_(Black_Measles),12
+..\..\data\plantvillage_raw\Grape___Esca_(Black_Measles)\d2d21ea0-7616-4f7a-9b35-1909d72de459___FAM_B.Msls 1878.JPG,Grape___Esca_(Black_Measles),12
+..\..\data\plantvillage_raw\Grape___Esca_(Black_Measles)\9dcd95af-8c0e-467d-85a7-4aae82e603b8___FAM_B.Msls 4040.JPG,Grape___Esca_(Black_Measles),12
+..\..\data\plantvillage_raw\Grape___Esca_(Black_Measles)\65406222-97ef-4ce4-9bbc-5ef3476a559b___FAM_B.Msls 3828.JPG,Grape___Esca_(Black_Measles),12
+..\..\data\plantvillage_raw\Grape___Esca_(Black_Measles)\8616d3aa-0f67-49f1-a169-1e9b79a2a00e___FAM_B.Msls 4191.JPG,Grape___Esca_(Black_Measles),12
+..\..\data\plantvillage_raw\Grape___Esca_(Black_Measles)\8188058c-d400-4781-9074-c884a21be48a___FAM_B.Msls 1314.JPG,Grape___Esca_(Black_Measles),12
+..\..\data\plantvillage_raw\Grape___Esca_(Black_Measles)\f21538e8-7615-4629-9bcd-3ad47cc60c42___FAM_B.Msls 4465.JPG,Grape___Esca_(Black_Measles),12
+..\..\data\plantvillage_raw\Grape___Esca_(Black_Measles)\6b16600f-d675-4639-a387-24b38714b9dd___FAM_B.Msls 1208.JPG,Grape___Esca_(Black_Measles),12
+..\..\data\plantvillage_raw\Grape___Esca_(Black_Measles)\5d67369a-2e23-415f-abb2-a4d0bdbc1bdc___FAM_B.Msls 1273.JPG,Grape___Esca_(Black_Measles),12
+..\..\data\plantvillage_raw\Grape___Esca_(Black_Measles)\67d5e8c9-6dc2-4436-9fa1-b3236b97080f___FAM_B.Msls 4377.JPG,Grape___Esca_(Black_Measles),12
+..\..\data\plantvillage_raw\Squash___Powdery_mildew\b73f1a2b-025f-44e5-a3be-eacbb767c4cd___UMD_Powd.M 0133.JPG,Squash___Powdery_mildew,25
+..\..\data\plantvillage_raw\Squash___Powdery_mildew\4a3a39fa-29d8-4577-b7b3-dcfa77e7e483___UMD_Powd.M 0030.JPG,Squash___Powdery_mildew,25
+..\..\data\plantvillage_raw\Squash___Powdery_mildew\2e61ce4d-2c86-4124-8b0c-87149b10b80e___UMD_Powd.M 0693.JPG,Squash___Powdery_mildew,25
+..\..\data\plantvillage_raw\Squash___Powdery_mildew\3fa89418-7b78-4d63-b190-78802401416f___MD_Powd.M 1023.JPG,Squash___Powdery_mildew,25
+..\..\data\plantvillage_raw\Squash___Powdery_mildew\6cfdb859-1350-4c34-babd-ca86b0500c32___MD_Powd.M 0646.JPG,Squash___Powdery_mildew,25
+..\..\data\plantvillage_raw\Squash___Powdery_mildew\a493003e-cadd-4da2-b0b5-2c18b92acf88___MD_Powd.M 0612.JPG,Squash___Powdery_mildew,25
+..\..\data\plantvillage_raw\Squash___Powdery_mildew\57f40726-2ad0-4dc4-943e-7748144f67cc___MD_Powd.M 0078.JPG,Squash___Powdery_mildew,25
+..\..\data\plantvillage_raw\Squash___Powdery_mildew\924ec707-be19-4535-919a-07379668a4e1___MD_Powd.M 9952.JPG,Squash___Powdery_mildew,25
+..\..\data\plantvillage_raw\Squash___Powdery_mildew\f03abd0a-dc87-48b8-974f-dd27f534c06c___MD_Powd.M 0228.JPG,Squash___Powdery_mildew,25
+..\..\data\plantvillage_raw\Squash___Powdery_mildew\dc65ec60-b81a-4ef3-980b-1db9be389ebd___UMD_Powd.M 0531.JPG,Squash___Powdery_mildew,25
+..\..\data\plantvillage_raw\Apple___healthy\ae67e27b-7937-4094-9263-580fcff3718d___RS_HL 7663.JPG,Apple___healthy,3
+..\..\data\plantvillage_raw\Apple___healthy\cb237ceb-a536-4864-a5df-34aafa90dc5e___RS_HL 7871.JPG,Apple___healthy,3
+..\..\data\plantvillage_raw\Apple___healthy\5adf1cdb-17bc-4871-ad87-ccdf715cfdb7___RS_HL 7309.JPG,Apple___healthy,3
+..\..\data\plantvillage_raw\Apple___healthy\4c7d424b-d418-4b72-84a9-2a639eabb5ec___RS_HL 5734.JPG,Apple___healthy,3
+..\..\data\plantvillage_raw\Apple___healthy\7b236824-defb-40ae-8f83-76c00cf8b822___RS_HL 6222.JPG,Apple___healthy,3
+..\..\data\plantvillage_raw\Apple___healthy\78e648c6-a360-4fa8-b8ab-1225b164b7fd___RS_HL 7243.JPG,Apple___healthy,3
+..\..\data\plantvillage_raw\Apple___healthy\c1fb257d-b00b-4a71-baad-92a73af09f52___RS_HL 5745.JPG,Apple___healthy,3
+..\..\data\plantvillage_raw\Apple___healthy\449205c0-c994-4e4f-9ea4-ef7fa45f2151___RS_HL 7730.JPG,Apple___healthy,3
+..\..\data\plantvillage_raw\Apple___healthy\77273304-be77-4b74-a4ed-cd42826f4635___RS_HL 8178.JPG,Apple___healthy,3
+..\..\data\plantvillage_raw\Apple___healthy\cbd14a0d-dbbd-42b7-a28e-4ad56133b425___RS_HL 7491.JPG,Apple___healthy,3
+..\..\data\plantvillage_raw\Grape___Leaf_blight_(Isariopsis_Leaf_Spot)\39979d2b-4083-4db6-a7a1-7a539fdcc1da___FAM_L.Blight 3756.JPG,Grape___Leaf_blight_(Isariopsis_Leaf_Spot),13
+..\..\data\plantvillage_raw\Grape___Leaf_blight_(Isariopsis_Leaf_Spot)\3c66a30a-dfa2-4907-ba71-711015c21c9a___FAM_L.Blight 3660.JPG,Grape___Leaf_blight_(Isariopsis_Leaf_Spot),13
+..\..\data\plantvillage_raw\Grape___Leaf_blight_(Isariopsis_Leaf_Spot)\696b7583-64a9-468d-bd05-656c93856c21___FAM_L.Blight 4650.JPG,Grape___Leaf_blight_(Isariopsis_Leaf_Spot),13
+..\..\data\plantvillage_raw\Grape___Leaf_blight_(Isariopsis_Leaf_Spot)\3a864d40-54f3-493c-9b05-4b0205dd7c82___FAM_L.Blight 1620.JPG,Grape___Leaf_blight_(Isariopsis_Leaf_Spot),13
+..\..\data\plantvillage_raw\Grape___Leaf_blight_(Isariopsis_Leaf_Spot)\c801581b-6e85-4c4e-8d0a-b9a87299a8f6___FAM_L.Blight 4660.JPG,Grape___Leaf_blight_(Isariopsis_Leaf_Spot),13
+..\..\data\plantvillage_raw\Grape___Leaf_blight_(Isariopsis_Leaf_Spot)\921265d1-78f1-4d39-b250-9c85262edbae___FAM_L.Blight 4961.JPG,Grape___Leaf_blight_(Isariopsis_Leaf_Spot),13
+..\..\data\plantvillage_raw\Grape___Leaf_blight_(Isariopsis_Leaf_Spot)\7b2c7c27-0773-4a19-a834-f196edbf5217___FAM_L.Blight 0811.JPG,Grape___Leaf_blight_(Isariopsis_Leaf_Spot),13
+..\..\data\plantvillage_raw\Grape___Leaf_blight_(Isariopsis_Leaf_Spot)\ed5c8c75-0e44-4f65-b25c-05fb69b16655___FAM_L.Blight 1592.JPG,Grape___Leaf_blight_(Isariopsis_Leaf_Spot),13
+..\..\data\plantvillage_raw\Grape___Leaf_blight_(Isariopsis_Leaf_Spot)\521b781a-56f3-4cf7-a841-9ecd82ecd3d7___FAM_L.Blight 1407.JPG,Grape___Leaf_blight_(Isariopsis_Leaf_Spot),13
+..\..\data\plantvillage_raw\Grape___Leaf_blight_(Isariopsis_Leaf_Spot)\7abb01f9-fba8-4f04-a8b4-aacbe78adf77___FAM_L.Blight 4993.JPG,Grape___Leaf_blight_(Isariopsis_Leaf_Spot),13
+..\..\data\plantvillage_raw\Strawberry___Leaf_scorch\268b9962-a649-48ec-9162-6f9cf4bd6111___RS_L.Scorch 1454.JPG,Strawberry___Leaf_scorch,26
+..\..\data\plantvillage_raw\Strawberry___Leaf_scorch\2318c34f-6d18-421c-87ef-6c87cba47c79___RS_L.Scorch 9933.JPG,Strawberry___Leaf_scorch,26
+..\..\data\plantvillage_raw\Strawberry___Leaf_scorch\6d1f842b-d10d-4e78-a277-e8e909c38346___RS_L.Scorch 9950.JPG,Strawberry___Leaf_scorch,26
+..\..\data\plantvillage_raw\Strawberry___Leaf_scorch\e9bf9c32-460b-483d-967c-51e43c9f91ae___RS_L.Scorch 0838.JPG,Strawberry___Leaf_scorch,26
+..\..\data\plantvillage_raw\Strawberry___Leaf_scorch\4df58d4e-39bf-4f90-bfc0-8d4e79f287ea___RS_L.Scorch 9969.JPG,Strawberry___Leaf_scorch,26
+..\..\data\plantvillage_raw\Strawberry___Leaf_scorch\b234ecfc-d547-4ef5-b32f-d49a252b473c___RS_L.Scorch 0943.JPG,Strawberry___Leaf_scorch,26
+..\..\data\plantvillage_raw\Strawberry___Leaf_scorch\1f77b357-fb4d-4454-95a1-0b351ba4b3f2___RS_L.Scorch 0123.JPG,Strawberry___Leaf_scorch,26
+..\..\data\plantvillage_raw\Strawberry___Leaf_scorch\99ac9cd2-8c79-4f36-b708-c5521025418b___RS_L.Scorch 9928.JPG,Strawberry___Leaf_scorch,26
+..\..\data\plantvillage_raw\Strawberry___Leaf_scorch\dcce349c-539c-43b7-8062-bd76b04fec67___RS_L.Scorch 1041.JPG,Strawberry___Leaf_scorch,26
+..\..\data\plantvillage_raw\Strawberry___Leaf_scorch\8e704613-f271-417f-8d8a-8b510a327a77___RS_L.Scorch 1398.JPG,Strawberry___Leaf_scorch,26
+..\..\data\plantvillage_raw\Tomato___Bacterial_spot\10c418e8-59b3-4d9f-a22b-7762b538e758___UF.GRC_BS_Lab Leaf 0900.JPG,Tomato___Bacterial_spot,28
+..\..\data\plantvillage_raw\Tomato___Bacterial_spot\3926a14d-ed26-4c2b-9dcc-a15370eae355___GCREC_Bact.Sp 5647.JPG,Tomato___Bacterial_spot,28
+..\..\data\plantvillage_raw\Tomato___Bacterial_spot\b6b93fa0-be86-452b-86ff-dc7863af16ba___UF.GRC_BS_Lab Leaf 8785.JPG,Tomato___Bacterial_spot,28
+..\..\data\plantvillage_raw\Tomato___Bacterial_spot\89574ff7-f883-44a9-85c4-e9fc2cf16033___GCREC_Bact.Sp 6079.JPG,Tomato___Bacterial_spot,28
+..\..\data\plantvillage_raw\Tomato___Bacterial_spot\140ee344-ae36-403a-ace1-21d45f67ce57___GCREC_Bact.Sp 2969.JPG,Tomato___Bacterial_spot,28
+..\..\data\plantvillage_raw\Tomato___Bacterial_spot\81581795-ff9e-4e07-9135-e421e03d96e9___GCREC_Bact.Sp 5652.JPG,Tomato___Bacterial_spot,28
+..\..\data\plantvillage_raw\Tomato___Bacterial_spot\3fb6cd38-45c6-4ea1-bbc0-00d5b76b289d___GCREC_Bact.Sp 6104.JPG,Tomato___Bacterial_spot,28
+..\..\data\plantvillage_raw\Tomato___Bacterial_spot\e76265f7-6ce4-4448-856e-84a4cfb94bd0___GCREC_Bact.Sp 5862.JPG,Tomato___Bacterial_spot,28
+..\..\data\plantvillage_raw\Tomato___Bacterial_spot\f1f7f16d-7794-4ac9-9962-32a5320d38fd___GCREC_Bact.Sp 6234.JPG,Tomato___Bacterial_spot,28
+..\..\data\plantvillage_raw\Tomato___Bacterial_spot\c977dd39-0fe7-4370-a7db-58c62b386f22___GCREC_Bact.Sp 6089.JPG,Tomato___Bacterial_spot,28
+..\..\data\plantvillage_raw\Tomato___Tomato_Yellow_Leaf_Curl_Virus\bb1e3988-1c45-4b77-bdad-cc7c6585e505___UF.GRC_YLCV_Lab 03185.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,35
+..\..\data\plantvillage_raw\Tomato___Tomato_Yellow_Leaf_Curl_Virus\f007d282-37d7-4acc-b463-afc4a6152fac___UF.GRC_YLCV_Lab 01937.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,35
+..\..\data\plantvillage_raw\Tomato___Tomato_Yellow_Leaf_Curl_Virus\18b6a9b7-6d7a-4479-bbf3-8190a742cdc8___YLCV_GCREC 5185.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,35
+..\..\data\plantvillage_raw\Tomato___Tomato_Yellow_Leaf_Curl_Virus\5a83bed0-6cb4-4ccf-a7d9-631c13a1a140___YLCV_GCREC 2229.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,35
+..\..\data\plantvillage_raw\Tomato___Tomato_Yellow_Leaf_Curl_Virus\1a9afa3d-6040-40b0-8393-7772576dabc1___UF.GRC_YLCV_Lab 09604.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,35
+..\..\data\plantvillage_raw\Tomato___Tomato_Yellow_Leaf_Curl_Virus\f401d3a2-f638-4260-a97f-fe6aa1811b71___UF.GRC_YLCV_Lab 02245.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,35
+..\..\data\plantvillage_raw\Tomato___Tomato_Yellow_Leaf_Curl_Virus\e43d1ae1-6b35-4452-b7c1-bd9e2768a619___YLCV_GCREC 5264.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,35
+..\..\data\plantvillage_raw\Tomato___Tomato_Yellow_Leaf_Curl_Virus\c7553db4-6241-4e27-b7a0-c423b2b62821___YLCV_GCREC 5329.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,35
+..\..\data\plantvillage_raw\Tomato___Tomato_Yellow_Leaf_Curl_Virus\034a033b-6c59-4a45-a159-291561c711be___UF.GRC_YLCV_Lab 01627.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,35
+..\..\data\plantvillage_raw\Tomato___Tomato_Yellow_Leaf_Curl_Virus\012ee431-b6ec-4dd5-8646-008bd2f554fe___YLCV_NREC 0064.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,35
+..\..\data\plantvillage_raw\Soybean___healthy\0a207ca3-c17e-4718-aa3f-9629c22279e4___RS_HL 3310.JPG,Soybean___healthy,24
+..\..\data\plantvillage_raw\Soybean___healthy\5eeff50d-b418-434c-8305-e48e64f06c01___RS_HL 5889.JPG,Soybean___healthy,24
+..\..\data\plantvillage_raw\Soybean___healthy\f3e61ff2-2d28-418c-aef2-cc5362eaaa57___RS_HL 5162.JPG,Soybean___healthy,24
+..\..\data\plantvillage_raw\Soybean___healthy\c606f357-d8b8-426d-be13-dd488dd387d3___RS_HL 3453.JPG,Soybean___healthy,24
+..\..\data\plantvillage_raw\Soybean___healthy\aba8a6b8-1af8-4459-b6cb-ee360591e777___RS_HL 6259.JPG,Soybean___healthy,24
+..\..\data\plantvillage_raw\Soybean___healthy\ff9887d9-1cf0-44d1-b1c5-cf991d759211___RS_HL 6230.JPG,Soybean___healthy,24
+..\..\data\plantvillage_raw\Soybean___healthy\bb2a83f9-0716-4b93-ae0f-d0616ebdebad___RS_HL 3466.JPG,Soybean___healthy,24
+..\..\data\plantvillage_raw\Soybean___healthy\6c7589d5-d425-4da2-91c9-84bdeb11114c___RS_HL 7126.JPG,Soybean___healthy,24
+..\..\data\plantvillage_raw\Soybean___healthy\fb6ad492-9808-48af-b847-41cf19cd7998___RS_HL 4012.JPG,Soybean___healthy,24
+..\..\data\plantvillage_raw\Soybean___healthy\48b05303-389a-416a-840e-3b5d1d6a98b1___RS_HL 3038.JPG,Soybean___healthy,24
+"..\..\data\plantvillage_raw\Pepper,_bell___healthy\d16ad561-8a05-45ca-a454-812e922eca83___JR_HL 8242.JPG","Pepper,_bell___healthy",19
+"..\..\data\plantvillage_raw\Pepper,_bell___healthy\843ef0a7-5eed-45b5-98b4-4c2fc94084cf___JR_HL 7922.JPG","Pepper,_bell___healthy",19
+"..\..\data\plantvillage_raw\Pepper,_bell___healthy\721628fb-84f1-409f-b03d-f527a8b90ac6___JR_HL 8417.JPG","Pepper,_bell___healthy",19
+"..\..\data\plantvillage_raw\Pepper,_bell___healthy\e64cc93e-5968-4cec-9ded-9dd9c0ae4ae1___JR_HL 8518.JPG","Pepper,_bell___healthy",19
+"..\..\data\plantvillage_raw\Pepper,_bell___healthy\4ebbed7f-321d-45e8-839e-b1af56445be5___JR_HL 6007.JPG","Pepper,_bell___healthy",19
+"..\..\data\plantvillage_raw\Pepper,_bell___healthy\53339b41-66f9-4fea-8b87-acd5f341a0c3___JR_HL 5946.JPG","Pepper,_bell___healthy",19
+"..\..\data\plantvillage_raw\Pepper,_bell___healthy\48704549-8dc8-45f4-ac1f-2cd3cdb2a6d9___JR_HL 8251.JPG","Pepper,_bell___healthy",19
+"..\..\data\plantvillage_raw\Pepper,_bell___healthy\1ce80571-2358-4616-b04a-14bbdfd2af6b___JR_HL 8340.JPG","Pepper,_bell___healthy",19
+"..\..\data\plantvillage_raw\Pepper,_bell___healthy\7541f271-f44a-4c7c-9602-b64149e9fa2a___JR_HL 7571.JPG","Pepper,_bell___healthy",19
+"..\..\data\plantvillage_raw\Pepper,_bell___healthy\f02b5ae2-2313-481b-8347-09459952aada___JR_HL 7894.JPG","Pepper,_bell___healthy",19
+..\..\data\plantvillage_raw\Cherry_(including_sour)___Powdery_mildew\df8ae90b-7bb7-4e17-bc88-20c58ea9e82b___FREC_Pwd.M 4696.JPG,Cherry_(including_sour)___Powdery_mildew,5
+..\..\data\plantvillage_raw\Cherry_(including_sour)___Powdery_mildew\d10450db-0969-4618-b9e9-0405c2ce0ef9___FREC_Pwd.M 0464.JPG,Cherry_(including_sour)___Powdery_mildew,5
+..\..\data\plantvillage_raw\Cherry_(including_sour)___Powdery_mildew\c28e81c2-a058-4f06-935c-80ba96dd7d4c___FREC_Pwd.M 0534.JPG,Cherry_(including_sour)___Powdery_mildew,5
+..\..\data\plantvillage_raw\Cherry_(including_sour)___Powdery_mildew\13e496f2-bbec-4238-b143-a5a607d1e86d___FREC_Pwd.M 4726.JPG,Cherry_(including_sour)___Powdery_mildew,5
+..\..\data\plantvillage_raw\Cherry_(including_sour)___Powdery_mildew\30f5084a-f9c5-4ba0-839f-c000a0ad0608___FREC_Pwd.M 5131.JPG,Cherry_(including_sour)___Powdery_mildew,5
+..\..\data\plantvillage_raw\Cherry_(including_sour)___Powdery_mildew\f6bb0a43-56e1-423a-9da5-0e2e71f0d9a6___FREC_Pwd.M 5149.JPG,Cherry_(including_sour)___Powdery_mildew,5
+..\..\data\plantvillage_raw\Cherry_(including_sour)___Powdery_mildew\2b4e1ad2-bea7-450b-9d25-35700becc958___FREC_Pwd.M 4805.JPG,Cherry_(including_sour)___Powdery_mildew,5
+..\..\data\plantvillage_raw\Cherry_(including_sour)___Powdery_mildew\4e37a789-6cb3-4721-ad87-1a60f0d14912___FREC_Pwd.M 4836.JPG,Cherry_(including_sour)___Powdery_mildew,5
+..\..\data\plantvillage_raw\Cherry_(including_sour)___Powdery_mildew\631167a9-9bde-44c5-8344-461589dd9a75___FREC_Pwd.M 4862.JPG,Cherry_(including_sour)___Powdery_mildew,5
+..\..\data\plantvillage_raw\Cherry_(including_sour)___Powdery_mildew\d70696ef-e9b2-418a-b729-51b4abad93d1___FREC_Pwd.M 0274.JPG,Cherry_(including_sour)___Powdery_mildew,5
+..\..\data\plantvillage_raw\Tomato___Septoria_leaf_spot\efd5cf0c-f431-4190-911f-edfbcad47c2b___Matt.S_CG 6019.JPG,Tomato___Septoria_leaf_spot,32
+..\..\data\plantvillage_raw\Tomato___Septoria_leaf_spot\6cebad3a-afa4-4c38-9bcc-3977af4434d1___Matt.S_CG 2793.JPG,Tomato___Septoria_leaf_spot,32
+..\..\data\plantvillage_raw\Tomato___Septoria_leaf_spot\ecdeac10-f463-4f66-a264-78c0f69f5ea3___Matt.S_CG 7473.JPG,Tomato___Septoria_leaf_spot,32
+..\..\data\plantvillage_raw\Tomato___Septoria_leaf_spot\e9d6c8b2-2174-4f01-ad8a-ef6a8ed1cfb7___Keller.St_CG 1993.JPG,Tomato___Septoria_leaf_spot,32
+..\..\data\plantvillage_raw\Tomato___Septoria_leaf_spot\fce4cdc2-400f-4afc-ac78-147a63ab43f1___Matt.S_CG 7596.JPG,Tomato___Septoria_leaf_spot,32
+..\..\data\plantvillage_raw\Tomato___Septoria_leaf_spot\115872f2-53a2-4ed9-a394-01882a0d30db___Keller.St_CG 1914.JPG,Tomato___Septoria_leaf_spot,32
+..\..\data\plantvillage_raw\Tomato___Septoria_leaf_spot\d0262a47-cb25-4411-a26c-8e838e1c288e___Matt.S_CG 6827.JPG,Tomato___Septoria_leaf_spot,32
+..\..\data\plantvillage_raw\Tomato___Septoria_leaf_spot\9b545b69-98e0-461b-a822-b95ffef9821f___Matt.S_CG 6327.JPG,Tomato___Septoria_leaf_spot,32
+..\..\data\plantvillage_raw\Tomato___Septoria_leaf_spot\9143d8ef-3d8a-48e8-9345-a5eb988091ef___Matt.S_CG 6821.JPG,Tomato___Septoria_leaf_spot,32
+..\..\data\plantvillage_raw\Tomato___Septoria_leaf_spot\13bc2fc9-24ab-44c5-bf5d-ea0d1a68798f___Matt.S_CG 0980.JPG,Tomato___Septoria_leaf_spot,32
+..\..\data\plantvillage_raw\Potato___Late_blight\0f50da52-cb4a-4391-982a-d6cf9c9d9917___RS_LB 2581.JPG,Potato___Late_blight,21
+..\..\data\plantvillage_raw\Potato___Late_blight\f4e6847d-d381-4849-9ff1-930cfb597d08___RS_LB 5097.JPG,Potato___Late_blight,21
+..\..\data\plantvillage_raw\Potato___Late_blight\73fb0463-c023-4749-8c37-dd11304de9b1___RS_LB 3112.JPG,Potato___Late_blight,21
+..\..\data\plantvillage_raw\Potato___Late_blight\3221ccec-f264-4046-8252-77a8a357562b___RS_LB 4637.JPG,Potato___Late_blight,21
+..\..\data\plantvillage_raw\Potato___Late_blight\1c207156-339d-4ec9-9153-9edb3bc95b5f___RS_LB 4833.JPG,Potato___Late_blight,21
+..\..\data\plantvillage_raw\Potato___Late_blight\df0f75cf-febd-4fde-84a0-7c4da9f97fd2___RS_LB 2534.JPG,Potato___Late_blight,21
+..\..\data\plantvillage_raw\Potato___Late_blight\546fcdf5-862b-42fb-931d-a51a85dc843c___RS_LB 4403.JPG,Potato___Late_blight,21
+..\..\data\plantvillage_raw\Potato___Late_blight\bd70c718-5846-42a1-8b05-22792ec98738___RS_LB 4992.JPG,Potato___Late_blight,21
+..\..\data\plantvillage_raw\Potato___Late_blight\2a3e5c22-1e37-4ba0-8686-cf7482e4e8d3___RS_LB 4126.JPG,Potato___Late_blight,21
+..\..\data\plantvillage_raw\Potato___Late_blight\dc0ad08c-a096-4ad2-9a69-597c10e12f71___RS_LB 4869.JPG,Potato___Late_blight,21
+..\..\data\plantvillage_raw\Tomato___Leaf_Mold\6a72d24d-5705-4647-8a8c-77d2f268c08a___Crnl_L.Mold 8708.JPG,Tomato___Leaf_Mold,31
+..\..\data\plantvillage_raw\Tomato___Leaf_Mold\d93b58b0-81cd-4e29-93b3-6f3d8fc9e6f3___Crnl_L.Mold 6966.JPG,Tomato___Leaf_Mold,31
+..\..\data\plantvillage_raw\Tomato___Leaf_Mold\90f6e771-bfb7-4e54-aa8c-6e295af7dc6e___Crnl_L.Mold 8761.JPG,Tomato___Leaf_Mold,31
+..\..\data\plantvillage_raw\Tomato___Leaf_Mold\454b480b-2ac5-4992-bc5e-5ac95311214c___Crnl_L.Mold 6544.JPG,Tomato___Leaf_Mold,31
+..\..\data\plantvillage_raw\Tomato___Leaf_Mold\624b9411-3aef-4d0e-a62a-f7feb5fad021___Crnl_L.Mold 6881.JPG,Tomato___Leaf_Mold,31
+..\..\data\plantvillage_raw\Tomato___Leaf_Mold\354c1fb7-f8ee-4a39-af91-0e5ef49b20bb___Crnl_L.Mold 8959.JPG,Tomato___Leaf_Mold,31
+..\..\data\plantvillage_raw\Tomato___Leaf_Mold\9f8e73b0-a649-44db-b77c-547a8ef7912d___Crnl_L.Mold 9171.JPG,Tomato___Leaf_Mold,31
+..\..\data\plantvillage_raw\Tomato___Leaf_Mold\7c8dcf96-0825-49a2-8309-bb02524c64da___Crnl_L.Mold 8775.JPG,Tomato___Leaf_Mold,31
+..\..\data\plantvillage_raw\Tomato___Leaf_Mold\6337ca93-b6c5-439e-964b-9ad0b984c227___Crnl_L.Mold 6642.JPG,Tomato___Leaf_Mold,31
+..\..\data\plantvillage_raw\Tomato___Leaf_Mold\52790cd9-3f4a-4da8-8786-37c17a102dd0___Crnl_L.Mold 6692.JPG,Tomato___Leaf_Mold,31
+..\..\data\plantvillage_raw\Peach___healthy\62aa8c46-3dac-4ddf-b567-a86132ffaabc___Rutg._HL 2466.JPG,Peach___healthy,17
+..\..\data\plantvillage_raw\Peach___healthy\88025ed3-53e8-4f5d-b9a2-3c67a01cae05___Rutg._HL 3563.JPG,Peach___healthy,17
+..\..\data\plantvillage_raw\Peach___healthy\20bc6354-137f-4418-ad54-37cd28ee80b5___Rutg._HL 3554.JPG,Peach___healthy,17
+..\..\data\plantvillage_raw\Peach___healthy\a2f68cd8-68fc-41f9-a5e8-c1eea81a69ad___Rutg._HL 3557.JPG,Peach___healthy,17
+..\..\data\plantvillage_raw\Peach___healthy\e365fd19-4922-44ea-ae2a-ab3cf9b9dc00___Rutg._HL 3689.JPG,Peach___healthy,17
+..\..\data\plantvillage_raw\Peach___healthy\85ae31a4-9a9d-4684-b2df-fbc5abb051bf___Rutg._HL 3755.JPG,Peach___healthy,17
+..\..\data\plantvillage_raw\Peach___healthy\c6c82c0e-794e-4041-b69d-c4aeef046c20___Rutg._HL 2435.JPG,Peach___healthy,17
+..\..\data\plantvillage_raw\Peach___healthy\370b3158-f35d-4c1f-af3e-21c80f4d4adb___Rutg._HL 3673.JPG,Peach___healthy,17
+..\..\data\plantvillage_raw\Peach___healthy\3412d130-23e9-46eb-944a-82337b9555c6___Rutg._HL 3646.JPG,Peach___healthy,17
+..\..\data\plantvillage_raw\Peach___healthy\b8698ad1-cca2-4b3e-8099-a9cab136d5d6___Rutg._HL 3608.JPG,Peach___healthy,17
+..\..\data\plantvillage_raw\Apple___Black_rot\56d05ee6-f6d5-4c34-838e-4ff2c0592d5d___JR_FrgE.S 2822.JPG,Apple___Black_rot,1
+..\..\data\plantvillage_raw\Apple___Black_rot\1cf5102a-468b-4410-80bf-af6aeadc780c___JR_FrgE.S 2924.JPG,Apple___Black_rot,1
+..\..\data\plantvillage_raw\Apple___Black_rot\b1fbd9e5-c3b6-4aac-a77e-87ca51994e4f___JR_FrgE.S 8752.JPG,Apple___Black_rot,1
+..\..\data\plantvillage_raw\Apple___Black_rot\c762e867-0f8b-459e-b870-10090256d9bf___JR_FrgE.S 8723.JPG,Apple___Black_rot,1
+..\..\data\plantvillage_raw\Apple___Black_rot\aaac9e5e-60de-4b93-89c2-e5b18accaf57___JR_FrgE.S 3075.JPG,Apple___Black_rot,1
+..\..\data\plantvillage_raw\Apple___Black_rot\7530c184-6aa8-40fa-9f8d-7e5f0b3e5a7e___JR_FrgE.S 3045.JPG,Apple___Black_rot,1
+..\..\data\plantvillage_raw\Apple___Black_rot\4cdea367-e77f-4d29-a99c-23ec18260ee9___JR_FrgE.S 3066.JPG,Apple___Black_rot,1
+..\..\data\plantvillage_raw\Apple___Black_rot\c418f9e9-92e8-46ce-ba41-50b0f9b45d38___JR_FrgE.S 8585.JPG,Apple___Black_rot,1
+..\..\data\plantvillage_raw\Apple___Black_rot\a59e57c9-a916-447d-95a0-959f1fb51447___JR_FrgE.S 8819.JPG,Apple___Black_rot,1
+..\..\data\plantvillage_raw\Apple___Black_rot\f3bac530-dd9a-43b3-b3cf-9860315f3d18___JR_FrgE.S 8800.JPG,Apple___Black_rot,1
+..\..\data\plantvillage_raw\Apple___Apple_scab\affb666c-6915-48e6-ba8a-92385af75826___FREC_Scab 3395.JPG,Apple___Apple_scab,0
+..\..\data\plantvillage_raw\Apple___Apple_scab\deda82bc-976d-4dd8-8599-283d622249bb___FREC_Scab 3085.JPG,Apple___Apple_scab,0
+..\..\data\plantvillage_raw\Apple___Apple_scab\919f1400-c9b6-4343-9708-0e70deabb85d___FREC_Scab 2941.JPG,Apple___Apple_scab,0
+..\..\data\plantvillage_raw\Apple___Apple_scab\63a29431-0e93-4e5d-b28d-3956edd10d01___FREC_Scab 3197.JPG,Apple___Apple_scab,0
+..\..\data\plantvillage_raw\Apple___Apple_scab\270dd6be-95f4-4fd1-8423-b698663b3f72___FREC_Scab 2954.JPG,Apple___Apple_scab,0
+..\..\data\plantvillage_raw\Apple___Apple_scab\745cfcfa-5b39-46ad-8c40-96086e71f6ee___FREC_Scab 3448.JPG,Apple___Apple_scab,0
+..\..\data\plantvillage_raw\Apple___Apple_scab\d736e5ee-f15e-453e-a14a-390d226e24a7___FREC_Scab 3322.JPG,Apple___Apple_scab,0
+..\..\data\plantvillage_raw\Apple___Apple_scab\9cbb6419-1670-45d5-a8ad-90cf9eaac971___FREC_Scab 3075.JPG,Apple___Apple_scab,0
+..\..\data\plantvillage_raw\Apple___Apple_scab\1962d1ec-fb66-4583-b631-81cd23ecf063___FREC_Scab 3238.JPG,Apple___Apple_scab,0
+..\..\data\plantvillage_raw\Apple___Apple_scab\b006c4b8-5f33-4794-91bd-7aaa430e6ceb___FREC_Scab 3498.JPG,Apple___Apple_scab,0
+..\..\data\plantvillage_raw\Tomato___Tomato_mosaic_virus\176ff795-1f59-4248-8374-bf5a88187934___PSU_CG 2160.JPG,Tomato___Tomato_mosaic_virus,36
+..\..\data\plantvillage_raw\Tomato___Tomato_mosaic_virus\3790abe5-03cb-4d5c-bfaa-9dcbc64debb2___PSU_CG 2402.JPG,Tomato___Tomato_mosaic_virus,36
+..\..\data\plantvillage_raw\Tomato___Tomato_mosaic_virus\86965ac5-b790-4218-a3c6-216d10da5211___PSU_CG 2066.JPG,Tomato___Tomato_mosaic_virus,36
+..\..\data\plantvillage_raw\Tomato___Tomato_mosaic_virus\e03cb55d-6525-4186-a318-5c06c0691642___PSU_CG 2353.JPG,Tomato___Tomato_mosaic_virus,36
+..\..\data\plantvillage_raw\Tomato___Tomato_mosaic_virus\67076009-be77-4b3f-8de7-bc6f13df64f4___PSU_CG 2209.JPG,Tomato___Tomato_mosaic_virus,36
+..\..\data\plantvillage_raw\Tomato___Tomato_mosaic_virus\135dcfad-367c-483b-921b-5d24986c471c___PSU_CG 2221.JPG,Tomato___Tomato_mosaic_virus,36
+..\..\data\plantvillage_raw\Tomato___Tomato_mosaic_virus\271772e3-6aeb-4d46-9233-ad877d12971f___PSU_CG 2317.JPG,Tomato___Tomato_mosaic_virus,36
+..\..\data\plantvillage_raw\Tomato___Tomato_mosaic_virus\6804695f-56f8-4ff9-90f8-69ee95097463___PSU_CG 2067.JPG,Tomato___Tomato_mosaic_virus,36
+..\..\data\plantvillage_raw\Tomato___Tomato_mosaic_virus\830ed62d-ec4b-4df9-97fe-fddf36d7c3cb___PSU_CG 2301.JPG,Tomato___Tomato_mosaic_virus,36
+..\..\data\plantvillage_raw\Tomato___Tomato_mosaic_virus\c44f307f-dd40-495d-abfa-e2f68dc31ff6___PSU_CG 2312.JPG,Tomato___Tomato_mosaic_virus,36
+..\..\data\plantvillage_raw\Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot\cc60499e-6802-47fd-b4cb-8ec70207e464___RS_GLSp 9305.JPG,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,7
+..\..\data\plantvillage_raw\Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot\598ba05d-f9b0-46da-803f-ed4276534ede___RS_GLSp 4414.JPG,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,7
+..\..\data\plantvillage_raw\Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot\ba7f5741-75f8-4ac1-9107-ca73e244ac9b___RS_GLSp 9350.JPG,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,7
+..\..\data\plantvillage_raw\Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot\aa7c5620-2ec9-4b2c-9091-8ce30597661e___RS_GLSp 9363.JPG,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,7
+..\..\data\plantvillage_raw\Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot\f0519795-ad80-4e8c-9b03-71843202c86e___RS_GLSp 7284.JPG,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,7
+..\..\data\plantvillage_raw\Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot\801db508-6c7c-45b4-9687-13c73e1e074f___RS_GLSp 7279.JPG,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,7
+..\..\data\plantvillage_raw\Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot\3af22715-5f08-4b3b-8c88-6264a73accba___RS_GLSp 7293.JPG,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,7
+..\..\data\plantvillage_raw\Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot\7ff116fc-5095-4377-bcf1-b173f05c9e7b___RS_GLSp 7323.JPG,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,7
+..\..\data\plantvillage_raw\Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot\0657e6c0-5a6d-4ef3-807a-4e31e57fb683___RS_GLSp 7344 copy.jpg,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,7
+..\..\data\plantvillage_raw\Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot\48beb71e-555f-4510-9951-a57f7edce204___RS_GLSp 9334.JPG,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,7
+..\..\data\plantvillage_raw\Tomato___Target_Spot\fef53f75-6350-4320-b510-5e11e21becab___Com.G_TgS_FL 0692.JPG,Tomato___Target_Spot,34
+..\..\data\plantvillage_raw\Tomato___Target_Spot\d7d2bf3e-2e90-4f21-8c2f-df9baffac2e9___Com.G_TgS_FL 8354.JPG,Tomato___Target_Spot,34
+..\..\data\plantvillage_raw\Tomato___Target_Spot\5e77f244-af69-4b7e-aba2-40cda5efd445___Com.G_TgS_FL 1065.JPG,Tomato___Target_Spot,34
+..\..\data\plantvillage_raw\Tomato___Target_Spot\81d1e646-7151-40a9-8c98-cbb96e5b2e8a___Com.G_TgS_FL 8160.JPG,Tomato___Target_Spot,34
+..\..\data\plantvillage_raw\Tomato___Target_Spot\f76c81a2-941e-4a7b-8ce1-ae366c83d87e___Com.G_TgS_FL 0708.JPG,Tomato___Target_Spot,34
+..\..\data\plantvillage_raw\Tomato___Target_Spot\e2998cee-2749-4ab4-8c8b-ddcd836f7f14___Com.G_TgS_FL 0666.JPG,Tomato___Target_Spot,34
+..\..\data\plantvillage_raw\Tomato___Target_Spot\68d28b97-72a6-41e1-8195-4afa7fa7169d___Com.G_TgS_FL 7986.JPG,Tomato___Target_Spot,34
+..\..\data\plantvillage_raw\Tomato___Target_Spot\89e3fc22-17bc-469b-8443-ffb4ed9a0c2f___Com.G_TgS_FL 8168.JPG,Tomato___Target_Spot,34
+..\..\data\plantvillage_raw\Tomato___Target_Spot\e20383b7-7f4c-4fb4-bcab-9db5df104d8b___Com.G_TgS_FL 9911.JPG,Tomato___Target_Spot,34
+..\..\data\plantvillage_raw\Tomato___Target_Spot\b4631e7a-13d0-458a-bd08-6a6e38f66780___Com.G_TgS_FL 9913.JPG,Tomato___Target_Spot,34
+..\..\data\plantvillage_raw\Strawberry___healthy\fad0fc0b-4619-422e-8c59-d5bab6469af4___RS_HL 4737.JPG,Strawberry___healthy,27
+..\..\data\plantvillage_raw\Strawberry___healthy\0db3e0a5-45c6-4cb4-96ec-943862dad781___RS_HL 1817.JPG,Strawberry___healthy,27
+..\..\data\plantvillage_raw\Strawberry___healthy\ffc5256e-56f2-4448-827a-81bbd1b06be6___RS_HL 4574.JPG,Strawberry___healthy,27
+..\..\data\plantvillage_raw\Strawberry___healthy\29050f21-a393-473e-9f9c-7fd99feef9a7___RS_HL 4533.JPG,Strawberry___healthy,27
+..\..\data\plantvillage_raw\Strawberry___healthy\57c57efe-e32c-447b-b60d-cdedf0f86b28___RS_HL 4673.JPG,Strawberry___healthy,27
+..\..\data\plantvillage_raw\Strawberry___healthy\941bf773-f9a3-4807-b742-496cc43913f4___RS_HL 4851.JPG,Strawberry___healthy,27
+..\..\data\plantvillage_raw\Strawberry___healthy\60856065-b1f0-45bb-aa6f-e2d569990834___RS_HL 4355.JPG,Strawberry___healthy,27
+..\..\data\plantvillage_raw\Strawberry___healthy\b549b207-9f09-46cb-a2f6-bc4ffca961bf___RS_HL 1831.JPG,Strawberry___healthy,27
+..\..\data\plantvillage_raw\Strawberry___healthy\d50fa8fa-015b-41f6-a2aa-18efcf041f6e___RS_HL 2188.JPG,Strawberry___healthy,27
+..\..\data\plantvillage_raw\Strawberry___healthy\d454c3f8-ca2e-4935-9c09-3b6a480ac097___RS_HL 1870.JPG,Strawberry___healthy,27
+"..\..\data\plantvillage_raw\Pepper,_bell___Bacterial_spot\a1e9e014-6dba-4e27-9990-bff1cb95c5d5___JR_B.Spot 9026.JPG","Pepper,_bell___Bacterial_spot",18
+"..\..\data\plantvillage_raw\Pepper,_bell___Bacterial_spot\994dd8b0-a87e-485a-be38-cb01b8843e44___JR_B.Spot 8857.JPG","Pepper,_bell___Bacterial_spot",18
+"..\..\data\plantvillage_raw\Pepper,_bell___Bacterial_spot\f04c0c6c-ac82-4ac1-abbb-336630ea6363___JR_B.Spot 3129.JPG","Pepper,_bell___Bacterial_spot",18
+"..\..\data\plantvillage_raw\Pepper,_bell___Bacterial_spot\f75755aa-4cac-4e64-9244-453eb4697044___NREC_B.Spot 1964.JPG","Pepper,_bell___Bacterial_spot",18
+"..\..\data\plantvillage_raw\Pepper,_bell___Bacterial_spot\e184272e-73aa-4b9c-a03b-1597c761de1f___JR_B.Spot 8938.JPG","Pepper,_bell___Bacterial_spot",18
+"..\..\data\plantvillage_raw\Pepper,_bell___Bacterial_spot\51227dc9-baed-4d63-92ec-70f3361b480b___NREC_B.Spot 9161.JPG","Pepper,_bell___Bacterial_spot",18
+"..\..\data\plantvillage_raw\Pepper,_bell___Bacterial_spot\3bf80a4f-7a2b-4cdf-a93f-dfa12ddb4128___NREC_B.Spot 9233.JPG","Pepper,_bell___Bacterial_spot",18
+"..\..\data\plantvillage_raw\Pepper,_bell___Bacterial_spot\9bb027f3-c76e-4d97-8564-8af1632dd3a9___JR_B.Spot 3217.JPG","Pepper,_bell___Bacterial_spot",18
+"..\..\data\plantvillage_raw\Pepper,_bell___Bacterial_spot\b9e58d0f-1b01-43b0-8c50-154b12f5a5f1___JR_B.Spot 8983.JPG","Pepper,_bell___Bacterial_spot",18
+"..\..\data\plantvillage_raw\Pepper,_bell___Bacterial_spot\0705b53e-4c54-4fce-9bc0-833db0619f3d___JR_B.Spot 9068.JPG","Pepper,_bell___Bacterial_spot",18
+..\..\data\plantvillage_raw\Grape___healthy\120e3a97-f879-4047-8811-077c723cb069___Mt.N.V_HL 9058.JPG,Grape___healthy,14
+..\..\data\plantvillage_raw\Grape___healthy\5b2c9b7e-4f3a-4850-bd70-35230df9c794___Mt.N.V_HL 8933.JPG,Grape___healthy,14
+..\..\data\plantvillage_raw\Grape___healthy\d966ee8e-abdc-4841-94a5-ae1bed9da16c___Mt.N.V_HL 9094.JPG,Grape___healthy,14
+..\..\data\plantvillage_raw\Grape___healthy\a889fb1b-e7cb-4026-a42e-a09558e00ca8___Mt.N.V_HL 9020.JPG,Grape___healthy,14
+..\..\data\plantvillage_raw\Grape___healthy\eb3c315d-2ec9-4923-a602-9bce8c2db303___Mt.N.V_HL 6188.JPG,Grape___healthy,14
+..\..\data\plantvillage_raw\Grape___healthy\b16eb75f-59e3-42f6-9ec1-747503223c6c___Mt.N.V_HL 6039.JPG,Grape___healthy,14
+..\..\data\plantvillage_raw\Grape___healthy\dc89d1b9-0c5c-4178-b341-c8675d04dad3___Mt.N.V_HL 8971.JPG,Grape___healthy,14
+..\..\data\plantvillage_raw\Grape___healthy\c3b72cd8-977b-4a6e-a833-7bcc87873882___Mt.N.V_HL 9068.JPG,Grape___healthy,14
+..\..\data\plantvillage_raw\Grape___healthy\71af6c2b-b3ed-4629-8aaa-7b60187caee1___Mt.N.V_HL 9069.JPG,Grape___healthy,14
+..\..\data\plantvillage_raw\Grape___healthy\d68b653c-4fe7-49ee-80d4-1f0c84092242___Mt.N.V_HL 6077.JPG,Grape___healthy,14
+..\..\data\plantvillage_raw\Tomato___Early_blight\a2ec9710-99ea-4dc5-a88c-69974e0557dc___RS_Erly.B 9412.JPG,Tomato___Early_blight,29
+..\..\data\plantvillage_raw\Tomato___Early_blight\59cbcb57-16e3-4e35-a1d6-8672678c9d8d___RS_Erly.B 6489.JPG,Tomato___Early_blight,29
+..\..\data\plantvillage_raw\Tomato___Early_blight\68d12608-22a0-4b11-ab99-37cb4cd6fdce___RS_Erly.B 6392.JPG,Tomato___Early_blight,29
+..\..\data\plantvillage_raw\Tomato___Early_blight\3d9a4538-4797-45fe-8cff-104237e19368___RS_Erly.B 7729.JPG,Tomato___Early_blight,29
+..\..\data\plantvillage_raw\Tomato___Early_blight\fe856320-407c-4390-9960-a6a539371182___RS_Erly.B 7624.JPG,Tomato___Early_blight,29
+..\..\data\plantvillage_raw\Tomato___Early_blight\31e2b9eb-6005-493f-b1c7-293f3dd309dc___RS_Erly.B 7859.JPG,Tomato___Early_blight,29
+..\..\data\plantvillage_raw\Tomato___Early_blight\a00845f3-9a14-474b-967c-82b7ea7b314f___RS_Erly.B 7550.JPG,Tomato___Early_blight,29
+..\..\data\plantvillage_raw\Tomato___Early_blight\27ba7432-8547-436c-9b97-adf3cbe15575___RS_Erly.B 7544.JPG,Tomato___Early_blight,29
+..\..\data\plantvillage_raw\Tomato___Early_blight\56e77ea3-5b58-409c-991d-c6d1e3740f65___RS_Erly.B 7358.JPG,Tomato___Early_blight,29
+..\..\data\plantvillage_raw\Tomato___Early_blight\3c5b8470-8596-44bf-baa3-164a03e1c818___RS_Erly.B 9611.JPG,Tomato___Early_blight,29
+..\..\data\plantvillage_raw\Potato___healthy\683b04ad-7941-4819-9965-ba32c725eb22___RS_HL 1861.JPG,Potato___healthy,22
+..\..\data\plantvillage_raw\Potato___healthy\57e262fc-e0ba-44db-a967-5ba6f1826e49___RS_HL 1897.JPG,Potato___healthy,22
+..\..\data\plantvillage_raw\Potato___healthy\43fd6ace-3712-494a-9aba-de5482d22561___RS_HL 1968.JPG,Potato___healthy,22
+..\..\data\plantvillage_raw\Potato___healthy\f30983c0-6e20-43cc-8672-4622ca34c830___RS_HL 1949.JPG,Potato___healthy,22
+..\..\data\plantvillage_raw\Potato___healthy\07dfb451-4378-49d1-b699-33a5fc49ff07___RS_HL 5399.JPG,Potato___healthy,22
+..\..\data\plantvillage_raw\Potato___healthy\468d3107-f09a-4f0d-8b9d-f08d7c49738f___RS_HL 1747.JPG,Potato___healthy,22
+..\..\data\plantvillage_raw\Potato___healthy\b61b9d33-59ea-41b0-a554-c382eb6128c5___RS_HL 1919.JPG,Potato___healthy,22
+..\..\data\plantvillage_raw\Potato___healthy\57c2663b-5d1d-4476-b067-38b2149c3b2d___RS_HL 1796.JPG,Potato___healthy,22
+..\..\data\plantvillage_raw\Potato___healthy\20ac28d6-5708-4e31-8676-1b1979de094f___RS_HL 1735.JPG,Potato___healthy,22
+..\..\data\plantvillage_raw\Potato___healthy\c07db642-c675-4066-99b6-56bc8207fb37___RS_HL 4164.JPG,Potato___healthy,22

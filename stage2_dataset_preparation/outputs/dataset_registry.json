@@ -20,10 +20,6 @@
           "description": "Class sizes range ~200\u20135,000 images.",
           "implication_for_research": "Macro-F1 is the primary metric (not accuracy). All splits are stratified."
         },
-        "near_duplicates": {
-          "description": "Near-duplicate images from in-dataset augmentation during construction.",
-          "implication_for_research": "pHash deduplication applied across train/test splits (Subtask 7) to prevent test accuracy inflation."
-        },
         "single_leaf_framing": {
           "description": "Single isolated leaf per image \u2014 no multi-leaf scenes.",
           "implication_for_research": "Model may not generalise to multi-leaf field images. Acknowledged as a project limitation in the dissertation."
@@ -43,7 +39,7 @@
       "justification": "The only large-scale publicly available plant disease dataset with genuine field conditions. Evaluation-only status ensures any accuracy improvement over generic I-JEPA reflects true generalisation, not in-distribution performance.",
       "known_limitations": {
         "small_scale": {
-          "description": "~2,569 images \u2014 insufficient for training.",
+          "description": "~2.5K images \u2014 insufficient for training.",
           "implication_for_research": "Cannot be used for training. Enforced programmatically in all data loaders."
         },
         "label_noise": {
@@ -51,7 +47,7 @@
           "implication_for_research": "PlantDoc accuracy is a noisy lower bound. Small differences (<3%) on PlantDoc should not be over-interpreted."
         },
         "incomplete_overlap": {
-          "description": "Only ~17\u201320 disease-crop combinations overlap with PlantVillage.",
+          "description": "Only ~16 disease-crop combinations overlap with PlantVillage.",
           "implication_for_research": "Cross-domain evaluation uses the intersection only. PlantDoc-exclusive classes constitute a zero-shot sub-experiment."
         }
       }

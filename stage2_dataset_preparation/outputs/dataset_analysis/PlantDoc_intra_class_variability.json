@@ -3,196 +3,196 @@
     "mean_pairwise_l2": 21.9903,
     "std_pairwise_l2": 6.8761,
     "colour_cv": 0.2715,
-    "texture_std": NaN,
+    "texture_std": 0.0294,
     "n_images_sampled": 30
   },
   "Apple rust leaf": {
     "mean_pairwise_l2": 16.6468,
     "std_pairwise_l2": 4.3174,
     "colour_cv": 0.2381,
-    "texture_std": NaN,
+    "texture_std": 0.0222,
     "n_images_sampled": 30
   },
   "Apple Scab Leaf": {
     "mean_pairwise_l2": 17.7603,
     "std_pairwise_l2": 4.9757,
     "colour_cv": 0.2775,
-    "texture_std": NaN,
+    "texture_std": 0.0272,
     "n_images_sampled": 30
   },
   "Bell_pepper leaf": {
     "mean_pairwise_l2": 17.7518,
     "std_pairwise_l2": 5.0051,
     "colour_cv": 0.2596,
-    "texture_std": NaN,
+    "texture_std": 0.0352,
     "n_images_sampled": 30
   },
   "Bell_pepper leaf spot": {
     "mean_pairwise_l2": 17.8617,
     "std_pairwise_l2": 3.9836,
     "colour_cv": 0.2404,
-    "texture_std": NaN,
+    "texture_std": 0.0395,
     "n_images_sampled": 30
   },
   "Blueberry leaf": {
     "mean_pairwise_l2": 21.843,
     "std_pairwise_l2": 7.5319,
     "colour_cv": 0.382,
-    "texture_std": NaN,
+    "texture_std": 0.0381,
     "n_images_sampled": 30
   },
   "Cherry leaf": {
     "mean_pairwise_l2": 20.4405,
     "std_pairwise_l2": 6.9609,
     "colour_cv": 0.3755,
-    "texture_std": NaN,
+    "texture_std": 0.0377,
     "n_images_sampled": 30
   },
   "Corn Gray leaf spot": {
     "mean_pairwise_l2": 15.005,
     "std_pairwise_l2": 3.1753,
     "colour_cv": 0.1915,
-    "texture_std": NaN,
+    "texture_std": 0.0298,
     "n_images_sampled": 30
   },
   "Corn leaf blight": {
     "mean_pairwise_l2": 15.2923,
     "std_pairwise_l2": 3.1128,
     "colour_cv": 0.1613,
-    "texture_std": NaN,
+    "texture_std": 0.023,
     "n_images_sampled": 30
   },
   "Corn rust leaf": {
     "mean_pairwise_l2": 14.5191,
     "std_pairwise_l2": 2.7125,
     "colour_cv": 0.1941,
-    "texture_std": NaN,
+    "texture_std": 0.0238,
     "n_images_sampled": 30
   },
   "grape leaf": {
     "mean_pairwise_l2": 23.1751,
     "std_pairwise_l2": 7.8898,
     "colour_cv": 0.4356,
-    "texture_std": NaN,
+    "texture_std": 0.0425,
     "n_images_sampled": 30
   },
   "grape leaf black rot": {
     "mean_pairwise_l2": 16.8021,
     "std_pairwise_l2": 3.6726,
     "colour_cv": 0.2185,
-    "texture_std": NaN,
+    "texture_std": 0.0255,
     "n_images_sampled": 30
   },
   "Peach leaf": {
     "mean_pairwise_l2": 23.3387,
     "std_pairwise_l2": 6.5774,
     "colour_cv": 0.3302,
-    "texture_std": NaN,
+    "texture_std": 0.0383,
     "n_images_sampled": 30
   },
   "Potato leaf early blight": {
     "mean_pairwise_l2": 17.4669,
     "std_pairwise_l2": 4.2931,
     "colour_cv": 0.2817,
-    "texture_std": NaN,
+    "texture_std": 0.0295,
     "n_images_sampled": 30
   },
   "Potato leaf late blight": {
     "mean_pairwise_l2": 17.6324,
     "std_pairwise_l2": 5.3871,
     "colour_cv": 0.3057,
-    "texture_std": NaN,
+    "texture_std": 0.0242,
     "n_images_sampled": 30
   },
   "Raspberry leaf": {
     "mean_pairwise_l2": 21.3123,
     "std_pairwise_l2": 7.2035,
     "colour_cv": 0.3272,
-    "texture_std": NaN,
+    "texture_std": 0.0306,
     "n_images_sampled": 30
   },
   "Soyabean leaf": {
     "mean_pairwise_l2": 22.8174,
     "std_pairwise_l2": 7.4706,
     "colour_cv": 0.3622,
-    "texture_std": NaN,
+    "texture_std": 0.0275,
     "n_images_sampled": 30
   },
   "Squash Powdery mildew leaf": {
     "mean_pairwise_l2": 14.916,
     "std_pairwise_l2": 2.4142,
     "colour_cv": 0.17,
-    "texture_std": NaN,
+    "texture_std": 0.0213,
     "n_images_sampled": 30
   },
   "Strawberry leaf": {
     "mean_pairwise_l2": 23.3364,
     "std_pairwise_l2": 5.5556,
     "colour_cv": 0.3048,
-    "texture_std": NaN,
+    "texture_std": 0.0281,
     "n_images_sampled": 30
   },
   "Tomato Early blight leaf": {
     "mean_pairwise_l2": 14.8371,
     "std_pairwise_l2": 2.9049,
     "colour_cv": 0.176,
-    "texture_std": NaN,
+    "texture_std": 0.0265,
     "n_images_sampled": 30
   },
   "Tomato leaf": {
     "mean_pairwise_l2": 20.8615,
     "std_pairwise_l2": 7.609,
     "colour_cv": 0.3804,
-    "texture_std": NaN,
+    "texture_std": 0.0234,
     "n_images_sampled": 30
   },
   "Tomato leaf bacterial spot": {
     "mean_pairwise_l2": 16.6398,
     "std_pairwise_l2": 3.9887,
     "colour_cv": 0.2572,
-    "texture_std": NaN,
+    "texture_std": 0.0306,
     "n_images_sampled": 30
   },
   "Tomato leaf late blight": {
     "mean_pairwise_l2": 15.9131,
     "std_pairwise_l2": 3.1911,
     "colour_cv": 0.1995,
-    "texture_std": NaN,
+    "texture_std": 0.0319,
     "n_images_sampled": 30
   },
   "Tomato leaf mosaic virus": {
     "mean_pairwise_l2": 16.1451,
     "std_pairwise_l2": 3.4501,
     "colour_cv": 0.1884,
-    "texture_std": NaN,
+    "texture_std": 0.0251,
     "n_images_sampled": 30
   },
   "Tomato leaf yellow virus": {
     "mean_pairwise_l2": 15.6176,
     "std_pairwise_l2": 4.2011,
     "colour_cv": 0.2129,
-    "texture_std": NaN,
+    "texture_std": 0.0226,
     "n_images_sampled": 30
   },
   "Tomato mold leaf": {
     "mean_pairwise_l2": 15.5538,
     "std_pairwise_l2": 3.6461,
     "colour_cv": 0.1999,
-    "texture_std": NaN,
+    "texture_std": 0.0329,
     "n_images_sampled": 30
   },
   "Tomato Septoria leaf spot": {
     "mean_pairwise_l2": 18.6266,
     "std_pairwise_l2": 4.7474,
     "colour_cv": 0.2666,
-    "texture_std": NaN,
+    "texture_std": 0.0373,
     "n_images_sampled": 30
   },
   "Tomato two spotted spider mites leaf": {
     "mean_pairwise_l2": 8.5957,
     "std_pairwise_l2": 0.0,
     "colour_cv": 0.0578,
-    "texture_std": NaN,
+    "texture_std": 0.0033,
     "n_images_sampled": 2
   }
 }
