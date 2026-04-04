@@ -1,0 +1,15 @@
+{
+  "baseline": "B2",
+  "model": "EfficientNet-B3 (timm, ImageNet pretrained)",
+  "total_params": "12.2M",
+  "optimiser": "AdamW",
+  "backbone_lr": 0.0001,
+  "head_lr": 0.001,
+  "weight_decay": 0.01,
+  "batch_size": 32,
+  "max_epochs": 2,
+  "patience": 2,
+  "amp": true,
+  "image_size": 224,
+  "note": "Using 224x224 input (not EfficientNet native 300) for fair ViT comparison"
+}
