@@ -4,7 +4,8 @@
   "checks": [
     "train_vs_test",
     "plantvillage_vs_plantdoc",
-    "sscd_alternative"
+    "sscd_alternative",
+    "cleanlab"
   ],
   "status": "PASSED",
   "issues_requiring_action": 0,
@@ -38,6 +39,10 @@
         "4. Query each test image; flag cosine similarity > 0.9 as likely copy",
         "5. Manual review of flagged pairs before removal"
       ]
+    },
+    "cleanlab": {
+      "status": "PENDING \u2014 requires Stage 3",
+      "action": "After ResNet-50 baseline training: save out-of-fold softmax probabilities as oof_probabilities.npy (shape: N_train \u00d7 N_classes) and oof_labels.npy, then re-run this cell."
     }
   }
 }

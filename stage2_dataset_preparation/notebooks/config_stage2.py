@@ -25,6 +25,13 @@ OUTPUTS_DIR  = PROJECT_ROOT / "stage2_dataset_preparation/outputs"
 ANALYSIS_OUT = OUTPUTS_DIR / "dataset_analysis"
 SPLITS_DIR   = OUTPUTS_DIR / "splits"
 LOGS_DIR     = OUTPUTS_DIR / "logs"
+TAXONOMY_OUT = OUTPUTS_DIR / "taxonomy"
+PREPROC_OUT   = OUTPUTS_DIR / "preprocessing"
+FRACTIONS_DIR = SPLITS_DIR / "fractions"
+NSHOT_DIR = SPLITS_DIR / "nshots"
+AUG_OUT      = OUTPUTS_DIR / "augmentation"
+QUALITY_OUT  = OUTPUTS_DIR / "quality_verification"
+
 
 # Raw dataset locations — update these to match your local filesystem
 PLANTVILLAGE_RAW_DIR = DATA_DIR / "plantvillage_raw"
@@ -50,8 +57,8 @@ IMAGE_CHANNELS = 3
 # These are placeholders; run subtask4_preprocessing.py to compute real values.
 # Using ImageNet stats (mean=[0.485,0.456,0.406]) is INCORRECT for plant data
 # as the distribution is dominated by greens, not balanced RGB.
-NORM_MEAN_PLACEHOLDER = [0.465809, 0.487659, 0.409572]
-NORM_STD_PLACEHOLDER  = [0.19489, 0.169946, 0.213739]
+NORM_MEAN_PLACEHOLDER = [0.466726, 0.488969, 0.41028]
+NORM_STD_PLACEHOLDER  = [0.195034, 0.170282, 0.213409]
 
 # ─── DATASET SPLITS ───────────────────────────────────────────────────────────
 # Stratified split ratios — must sum to 1.0
@@ -88,7 +95,7 @@ PHASH_THRESHOLD = 10
 PHASH_HASH_SIZE = 16
 
 # Minimum images per class to consider a class valid for training
-MIN_IMAGES_PER_CLASS = 10
+MIN_PER_CLASS   = 10
 
 # ─── TAXONOMY ─────────────────────────────────────────────────────────────────
 # Five top-level pathogen categories used by Leaf-JEPA.

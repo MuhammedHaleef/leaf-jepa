@@ -1,8 +1,8 @@
 
 import torchvision.transforms as T
 
-NORM_MEAN = [0.465809, 0.487659, 0.409572]
-NORM_STD  = [0.19489, 0.169946, 0.213739]
+NORM_MEAN = [0.466726, 0.488969, 0.41028]
+NORM_STD  = [0.195034, 0.170282, 0.213409]
 
 def get_pretrain_transform():
     return T.Compose([
