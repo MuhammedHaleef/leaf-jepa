@@ -367,8 +367,11 @@ def load_ijepa_encoder(checkpoint_path, model_name="vit_huge_patch14_224",
     """
     import timm
 
+    # I-JEPA does NOT use a CLS token — only 256 patch embeddings.
+    # no_embed_class=True tells timm to skip the CLS position in pos_embed.
     model = timm.create_model(model_name, pretrained=False,
-                              num_classes=0, global_pool="avg")
+                              num_classes=0, global_pool="avg",
+                              no_embed_class=True)
 
     ckpt = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
 
@@ -387,16 +390,30 @@ def load_ijepa_encoder(checkpoint_path, model_name="vit_huge_patch14_224",
     else:
         state_dict = ckpt
 
-    # Clean up key prefixes
+    # Clean up key prefixes and remap known naming differences
     cleaned = OrderedDict()
     for k, v in state_dict.items():
         k = k.replace("module.", "").replace("backbone.", "")
+        # I-JEPA checkpoint uses "norm" for final LayerNorm,
+        # timm uses "fc_norm" when global_pool="avg"
+        if k == "norm.weight":
+            k = "fc_norm.weight"
+        elif k == "norm.bias":
+            k = "fc_norm.bias"
         cleaned[k] = v
+
+    # Remove cls_token if present — I-JEPA doesn't use it
+    # but timm may still define the parameter
+    cleaned.pop("cls_token", None)
 
     missing, unexpected = model.load_state_dict(cleaned, strict=False)
     print(f"  Loaded checkpoint: {Path(checkpoint_path).name}")
     print(f"  Missing keys:  {len(missing)}")
     print(f"  Unexpected keys: {len(unexpected)}")
+    if unexpected:
+        print(f"  Unexpected (safe to ignore): {unexpected[:5]}")
+    if missing:
+        print(f"  Missing (check these): {missing[:5]}")
 
     return model.to(device)
 
