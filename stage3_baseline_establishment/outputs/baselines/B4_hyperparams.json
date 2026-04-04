@@ -1,0 +1,16 @@
+{
+  "baseline": "B4",
+  "model": "I-JEPA ViT-H/14 Full Fine-Tune",
+  "total_params": "~632M (ALL UNFROZEN)",
+  "backbone_lr": 5e-05,
+  "head_lr": 0.001,
+  "weight_decay": 0.05,
+  "batch_size": 16,
+  "grad_accum": 4,
+  "effective_batch": 64,
+  "max_epochs": 2,
+  "patience": 2,
+  "lr_decay_factor": 0.7,
+  "gradient_checkpointing": true,
+  "amp": true
+}
