@@ -31,7 +31,7 @@ from collections import OrderedDict
 import numpy as np
 import torch
 import torch.nn as nn
-from torch.cuda.amp import GradScaler
+from torch.amp import GradScaler
 
 # Version-compatible autocast
 try:
