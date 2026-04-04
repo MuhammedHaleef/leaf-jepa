@@ -1,0 +1,39 @@
+{
+  "baseline": "B1",
+  "model": "ResNet-50 (torchvision, ImageNet pretrained)",
+  "total_params": "25.6M",
+  "optimiser": "AdamW",
+  "backbone_lr": 0.0001,
+  "head_lr": 0.001,
+  "weight_decay": 0.01,
+  "batch_size": 32,
+  "max_epochs": 2,
+  "patience": 2,
+  "criterion": "CrossEntropyLoss",
+  "scheduler": "CosineAnnealingLR",
+  "amp": true,
+  "norm_mean": [
+    0.466726,
+    0.488969,
+    0.41028
+  ],
+  "norm_std": [
+    0.195034,
+    0.170282,
+    0.213409
+  ],
+  "image_crop": 224,
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "fractions": [
+    0.01,
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ]
+}
