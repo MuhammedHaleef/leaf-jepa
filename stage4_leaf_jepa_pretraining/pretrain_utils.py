@@ -35,6 +35,18 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
+# Version-compatible autocast
+try:
+    from torch.amp import autocast as _autocast
+    def autocast_ctx(device="cuda", enabled=True):
+        return _autocast(device_type=device, enabled=enabled)
+except ImportError:
+    from torch.cuda.amp import autocast as _autocast
+    def autocast_ctx(device="cuda", enabled=True):
+        return _autocast(enabled=enabled)
+
+from tqdm import tqdm
+
 # ============================================================
 # Reproducibility
 # ============================================================
@@ -275,6 +287,16 @@ class SaliencyMap:
                          .unfold(1, self.patch_size, self.patch_size)  # (H, W, ps, ps)
         hue_mean = hue_patches.reshape(H, W, -1).mean(dim=-1)  # (H, W)
 
+        # Add saturation signal (low sat = yellowing)
+        R2,G2,B2 = img_rgb[0],img_rgb[1],img_rgb[2]
+        Cmax2 = torch.max(torch.stack([R2,G2,B2]),dim=0).values
+        Cmin2 = torch.min(torch.stack([R2,G2,B2]),dim=0).values
+        sat = (Cmax2 - Cmin2) / (Cmax2 + 1e-8)
+        sat_patches = sat.unfold(0,self.patch_size,self.patch_size) \
+            .unfold(1,self.patch_size,self.patch_size)
+        sat_mean = sat_patches.reshape(H,W,-1).mean(-1)
+
+
         # Saliency = deviation from healthy hue
         deviation = (hue_mean - self.healthy_hue_center) ** 2
         saliency  = 1.0 - torch.exp(-deviation / (2 * self.healthy_hue_sigma ** 2))
@@ -284,7 +306,12 @@ class SaliencyMap:
         saliency = saliency + 0.05
         saliency = saliency / saliency.sum()
 
-        return saliency
+        # Low saturation = more salient (yellow/necrotic)
+        sat_sal = 1.0 - sat_mean
+        # Combine: weighted sum
+        saliency_combined = 0.6 * saliency + 0.4 * sat_sal.numpy().flatten()
+
+        return saliency_combined
 
 
 class DiseaseRegionBiasedMasking(MultiBlockMasking):
@@ -740,7 +767,7 @@ def pretrain_step(imgs: torch.Tensor,
     should_step = ((step_idx + 1) % accumulate_steps == 0)
 
     if scaler is not None:
-        with torch.cuda.amp.autocast():
+        with autocast_ctx():
             loss, grad_norm = _forward_loss(
                 imgs, context_encoder, target_encoder, predictor,
                 context_idx_batch, target_idx_batch, loss_type, device
@@ -848,7 +875,7 @@ def pretrain_one_epoch(context_encoder: nn.Module,
     predictor.train()
     target_encoder.eval()  # Target encoder never in train mode
 
-    scaler = torch.cuda.amp.GradScaler() if (use_amp and device.type == "cuda") else None
+    scaler = torch.amp.GradScaler() if (use_amp and device.type == "cuda") else None
 
     total_loss = 0.0
     total_grad_norm = 0.0
@@ -856,8 +883,8 @@ def pretrain_one_epoch(context_encoder: nn.Module,
     t0 = time.time()
 
     optimizer.zero_grad()
-
-    for step_idx, (imgs, _labels) in enumerate(loader):
+    pbar = tqdm(enumerate(loader), total=len(loader), desc=f"Epoch {epoch}")
+    for step_idx, (imgs, _labels) in pbar:
         metrics = pretrain_step(
             imgs, context_encoder, target_encoder, predictor,
             masking_fn, saliency_fn, optimizer, scaler, device,
@@ -871,6 +898,9 @@ def pretrain_one_epoch(context_encoder: nn.Module,
         total_loss     += metrics["loss"]
         total_grad_norm+= metrics["grad_norm"]
         n_batches      += 1
+
+        if step_idx % 10 == 0:
+            pbar.set_postfix(loss=metrics['loss'])
 
         if step_idx % 50 == 0:
             print(f"    Epoch {epoch} | Step {step_idx}/{len(loader)} | "
@@ -963,7 +993,7 @@ class LinearProbeMonitor:
         feats, labels = [], []
         for imgs, lbs in loader:
             imgs = imgs.to(self.device)
-            with torch.cuda.amp.autocast(enabled=(self.device.type == "cuda")):
+            with autocast_ctx(enabled=(self.device.type == "cuda")):
                 f = encoder(imgs)  # (B, D) with global_pool='avg'
             feats.append(f.cpu())
             labels.extend(lbs.numpy())

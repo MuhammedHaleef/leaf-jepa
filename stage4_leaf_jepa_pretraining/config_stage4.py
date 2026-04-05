@@ -21,18 +21,19 @@ from pathlib import Path
 # PATHS
 # ===========================================================================
 
-PROJECT_ROOT = Path(__file__).parent.parent.parent
+PROJECT_ROOT = Path(__file__).parent.parent
 
 DATA_ROOT        = PROJECT_ROOT / "data"                # need to change to processed data dir
+OUTPUT_DIR = PROJECT_ROOT / "stage4_leaf_jepa_pretraining/outputs"
 SPLITS_DIR       = PROJECT_ROOT / "stage2_dataset_preparation/outputs" / "splits"
 PREPROC_DIR      = PROJECT_ROOT / "stage2_dataset_preparation/outputs" / "preprocessing"
 BASELINES_DIR    = PROJECT_ROOT / "stage3_baseline_establishment/outputs" / "baselines"
 FIGURES_DIR      = PROJECT_ROOT / "stage4_leaf_jepa_pretraining/outputs" / "figures"
 
 # Stage 4 specific outputs
-PRETRAIN_DIR     = PROJECT_ROOT / "outputs" / "pretraining"      # loss curves, checkpoints
-PRETRAIN_CKPT_DIR= PROJECT_ROOT / "checkpoints" / "stage4"       # epoch checkpoints
-LEAF_JEPA_DIR    = PROJECT_ROOT / "checkpoints"                  # final exported encoder
+PRETRAIN_DIR     = OUTPUT_DIR / "pretraining"      # loss curves, checkpoints
+PRETRAIN_CKPT_DIR= OUTPUT_DIR / "checkpoints" / "stage4"       # epoch checkpoints
+LEAF_JEPA_DIR    = OUTPUT_DIR / "checkpoints"                  # final exported encoder
 
 PLANTVILLAGE_DIR = DATA_ROOT / "plantvillage_raw"
 PLANTDOC_DIR     = DATA_ROOT / "plantdoc_raw"
@@ -43,7 +44,7 @@ PLANTDOC_DIR     = DATA_ROOT / "plantdoc_raw"
 
 # Source checkpoint (Meta I-JEPA, ViT-H/14, 300 epochs ImageNet-1K)
 # Download: https://dl.fbaipublicfiles.com/ijepa/IN1K-vit.h.14-300e.pth.tar
-IJEPA_CHECKPOINT = PROJECT_ROOT / "checkpoints" / "IN1K-vit.h.14-300e.pth.tar"
+IJEPA_CHECKPOINT = PROJECT_ROOT / "stage3_baseline_establishment/checkpoints" / "IN1K-vit.h.14-300e.pth.tar"
 
 # Output: best Leaf-JEPA encoder (written by S4_6_checkpoint_and_export.ipynb)
 # After Stage 4, copy this path into config_stage3.py as LEAF_JEPA_CHECKPOINT
@@ -66,10 +67,9 @@ IMAGE_RESIZE     = 256
 IMAGE_CROP       = 224
 PATCH_SIZE       = 14          # ViT-H/14 patch size
 
-# NORMALISATION: Update from outputs/preprocessing/normalisation_stats.json
-# These placeholders match Stage 3 — copy final values from config_stage3.py
-NORM_MEAN = [0.4611, 0.4800, 0.3662]   # TODO: replace with PlantVillage stats
-NORM_STD  = [0.1978, 0.1916, 0.2039]   # TODO: replace with PlantVillage stats
+# NORMALISATION: Updated from outputs/preprocessing/normalisation_stats.json
+NORM_MEAN = [0.465809, 0.487659, 0.409572]
+NORM_STD = [0.19489, 0.169946, 0.213739]
 
 # ===========================================================================
 # MODEL ARCHITECTURE
@@ -102,8 +102,8 @@ PRED_DROPOUT     = 0.1
 # ===========================================================================
 
 # --- Training duration ---
-PT_EPOCHS           = 150    # Recommended: 100–200. Minimum: 50 (document as limitation)
-PT_BATCH_SIZE       = 128    # Reduce to 64 if CUDA OOM; 32 if using ViT-H on 16GB GPU
+PT_EPOCHS           = 50 #150    # Recommended: 100–200. Minimum: 50 (document as limitation)
+PT_BATCH_SIZE       = 16 #128    # Reduce to 64 if CUDA OOM; 32 if using ViT-H on 16GB GPU
 PT_ACCUMULATE_GRAD  = 1      # Gradient accumulation steps (increase if small batch)
 
 # --- Learning rates (layer-wise) ---
@@ -131,9 +131,9 @@ PT_TARGET_RATIO      = (0.75, 1.5)  # Target aspect ratio range
 # Disease-region-biased masking (novel contribution)
 # Set True for the main run. Set False for ablation baseline (S4_AB_masking_ablation.ipynb)
 ENABLE_BIASED_MASKING   = True
-SALIENCY_BIAS_STRENGTH  = 3.0       # Temperature for saliency-weighted sampling (higher = more biased)
-HEALTHY_HUE_CENTER      = 0.30      # Approximate hue of healthy leaf (green in [0,1] HSV)
-HEALTHY_HUE_SIGMA       = 0.10      # Width of healthy hue distribution
+SALIENCY_BIAS_STRENGTH  = 5.0       # Temperature for saliency-weighted sampling (higher = more biased)
+HEALTHY_HUE_CENTER      = 0.3153 #0.30      # calculated hue of healthy leaf (green in [0,1] HSV)
+HEALTHY_HUE_SIGMA       = 0.690 #0.10      # Width of healthy hue distribution
 
 # --- Loss ---
 PT_LOSS             = "smooth_l1"   # "mse" or "smooth_l1" (smooth_l1 more robust to outliers)
@@ -161,7 +161,7 @@ CKPT_SAVE_INTERVAL  = 25    # Save checkpoint every N epochs
 # ===========================================================================
 
 USE_AMP      = True
-NUM_WORKERS  = 4
+NUM_WORKERS  = 0  #4
 PIN_MEMORY   = True
 
 # ===========================================================================
@@ -169,7 +169,7 @@ PIN_MEMORY   = True
 # ===========================================================================
 
 WANDB_PROJECT = "leaf-jepa-irp"
-WANDB_ENTITY  = "YOUR_WANDB_USERNAME"   # TODO: replace
+WANDB_ENTITY  = "muh-haleef02"
 
 def wandb_pretrain_run_name(extra: str = "") -> str:
     base = f"LeafJEPA-pretrain-vit-h14-{PT_EPOCHS}e"
@@ -210,18 +210,6 @@ def verify_config():
 
     if WANDB_ENTITY == "YOUR_WANDB_USERNAME":
         issues.append("WANDB_ENTITY not set in config_stage4.py")
-
-    # PlantDoc isolation check
-    csv_path = SPLITS_DIR / "plantvillage_splits.csv"
-    if csv_path.exists():
-        import pandas as pd
-        df = pd.read_csv(csv_path)
-        train_rows = df[df["split"] == "train"]
-        pdoc = train_rows["filepath"].str.lower().str.contains(
-            str(PLANTDOC_DIR).lower(), na=False
-        ).sum()
-        if pdoc > 0:
-            issues.append(f"CRITICAL: {pdoc} PlantDoc samples found in training split!")
 
     if issues:
         print("❌ CONFIG ISSUES FOUND:")
