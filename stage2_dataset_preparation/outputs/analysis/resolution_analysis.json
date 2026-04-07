@@ -18,13 +18,13 @@
       "min": 69,
       "max": 6000
     },
-    "upscale_required_pct": 4.5,
-    "upscaled_count": 90,
+    "upscale_required_pct": 4.0,
+    "upscaled_count": 80,
     "worst_upscale_factor": 3.25,
     "aspect_ratio": {
-      "mean": 1.24,
-      "std": 0.36,
-      "pct_nonsquare": 81.45
+      "mean": 1.25,
+      "std": 0.37,
+      "pct_nonsquare": 80.95
     },
     "note": "Evaluation only \u2014 no augmentation applied, resolution variance is fixed noise"
   }

@@ -6,9 +6,9 @@
   "backbone_lr": 0.0001,
   "head_lr": 0.001,
   "weight_decay": 0.01,
-  "batch_size": 32,
-  "max_epochs": 2,
-  "patience": 2,
+  "batch_size": 64,
+  "max_epochs": 50,
+  "patience": 7,
   "amp": true,
   "image_size": 224,
   "note": "Using 224x224 input (not EfficientNet native 300) for fair ViT comparison"

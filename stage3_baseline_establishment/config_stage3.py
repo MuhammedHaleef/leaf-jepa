@@ -106,7 +106,7 @@ FT_GRAD_CKPT     = True   # gradient checkpointing to save VRAM
 # WANDB
 # ===========================================================================
 WANDB_PROJECT = "leaf-jepa-irp"
-WANDB_ENTITY  = "muh-haleef02"
+WANDB_ENTITY  = "muh-haleef02-inform"
 
 # ===========================================================================
 # CLEANLAB

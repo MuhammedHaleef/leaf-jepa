@@ -8,8 +8,8 @@
   "batch_size": 16,
   "grad_accum": 4,
   "effective_batch": 64,
-  "max_epochs": 2,
-  "patience": 2,
+  "max_epochs": 25,
+  "patience": 5,
   "lr_decay_factor": 0.7,
   "gradient_checkpointing": true,
   "amp": true

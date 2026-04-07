@@ -3,10 +3,10 @@
   "model": "I-JEPA ViT-H/14 (generic, ImageNet pretrained) + Linear Head",
   "encoder_params": "632M (ALL FROZEN)",
   "head_params": "~49K (1280 x 38 + 38)",
-  "checkpoint": "D:\\IRP\\leaf-jepa\\stage3_baseline_establishment\\checkpoints\\IN1K-vit.h.14-300e.pth.tar",
+  "checkpoint": "/workspace/leaf-jepa/stage3_baseline_establishment/checkpoints/IN1K-vit.h.14-300e.pth.tar",
   "optimiser": "AdamW (head only)",
   "lr": 0.001,
   "batch_size": 256,
-  "max_epochs": 5,
-  "patience": 3
+  "max_epochs": 100,
+  "patience": 10
 }

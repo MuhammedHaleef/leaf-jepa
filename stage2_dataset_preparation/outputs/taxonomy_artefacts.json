@@ -447,9 +447,9 @@
     }
   },
   "plantdoc_full_class_list": [
+    "Apple Scab Leaf",
     "Apple leaf",
     "Apple rust leaf",
-    "Apple Scab Leaf",
     "Bell_pepper leaf",
     "Bell_pepper leaf spot",
     "Blueberry leaf",
@@ -457,8 +457,6 @@
     "Corn Gray leaf spot",
     "Corn leaf blight",
     "Corn rust leaf",
-    "grape leaf",
-    "grape leaf black rot",
     "Peach leaf",
     "Potato leaf early blight",
     "Potato leaf late blight",
@@ -467,13 +465,15 @@
     "Squash Powdery mildew leaf",
     "Strawberry leaf",
     "Tomato Early blight leaf",
+    "Tomato Septoria leaf spot",
     "Tomato leaf",
     "Tomato leaf bacterial spot",
     "Tomato leaf late blight",
     "Tomato leaf mosaic virus",
     "Tomato leaf yellow virus",
     "Tomato mold leaf",
-    "Tomato Septoria leaf spot",
-    "Tomato two spotted spider mites leaf"
+    "Tomato two spotted spider mites leaf",
+    "grape leaf",
+    "grape leaf black rot"
   ]
 }
