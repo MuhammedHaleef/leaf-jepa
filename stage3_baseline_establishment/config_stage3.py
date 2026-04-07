@@ -64,7 +64,8 @@ IMAGE_CROP   = 224
 # ===========================================================================
 RANDOM_SEED      = 42
 SUBSET_SEEDS     = [42, 123, 456]
-LABEL_FRACTIONS  = [0.01, 0.05, 0.10, 0.25, 0.50, 1.00]
+LABEL_FRACTIONS  = [0.50, 1.00]
+# LABEL_FRACTIONS  = [0.01, 0.05, 0.10, 0.25, 0.50, 1.00]
 TRAIN_RATIO      = 0.70
 VAL_RATIO        = 0.15
 TEST_RATIO       = 0.15

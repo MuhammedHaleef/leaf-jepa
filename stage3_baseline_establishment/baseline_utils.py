@@ -320,7 +320,7 @@ def plot_tsne(features, labels, class_names, save_path, title="t-SNE", perplexit
 
     print(f"  Running t-SNE on {features.shape[0]} samples...")
     tsne = TSNE(n_components=2, perplexity=perplexity, random_state=42,
-                n_iter=1000, init="pca", learning_rate="auto")
+                init="pca", learning_rate="auto")
     embedded = tsne.fit_transform(features)
 
     fig, ax = plt.subplots(figsize=(14, 12))
