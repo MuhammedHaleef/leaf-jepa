@@ -1,0 +1,18 @@
+plantvillage_label,plantdoc_label,canonical_name,eppo_pathogen,pathogen_category
+Apple___Apple_scab,Apple Scab Leaf,Apple Scab,Venturia inaequalis,Fungal
+Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Corn Gray leaf spot,Gray Leaf Spot (Corn),Cercospora zeae-maydis,Fungal
+Corn_(maize)___Common_rust_,Corn rust leaf,Common Rust (Corn),Puccinia sorghi,Fungal
+Corn_(maize)___Northern_Leaf_Blight,Corn leaf blight,Northern Leaf Blight (Corn),Setosphaeria turcica,Fungal
+Grape___Black_rot,grape leaf black rot,Grape Black Rot,Guignardia bidwellii,Fungal
+Potato___Early_blight,Potato leaf early blight,Potato Early Blight,Alternaria solani,Fungal
+Potato___Late_blight,Potato leaf late blight,Potato Late Blight,Phytophthora infestans,Fungal
+Tomato___Early_blight,Tomato Early blight leaf,Tomato Early Blight,Alternaria solani,Fungal
+Tomato___Late_blight,Tomato leaf late blight,Tomato Late Blight,Phytophthora infestans,Fungal
+Tomato___Septoria_leaf_spot,Tomato Septoria leaf spot,Tomato Septoria Leaf Spot,Septoria lycopersici,Fungal
+Tomato___Bacterial_spot,Tomato leaf bacterial spot,Tomato Bacterial Spot,Xanthomonas vesicatoria,Bacterial
+Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato leaf yellow virus,Tomato YLCV,Tomato Yellow Leaf Curl Virus (TYLCV),Viral
+Tomato___Tomato_mosaic_virus,Tomato leaf mosaic virus,Tomato Mosaic Virus,Tomato Mosaic Virus (ToMV),Viral
+Apple___healthy,Apple leaf,Healthy Apple,,Healthy
+Grape___healthy,grape leaf,Healthy Grape,,Healthy
+Peach___healthy,Peach leaf,Healthy Peach,,Healthy
+Tomato___healthy,Tomato leaf,Healthy Tomato,,Healthy

@@ -8,8 +8,8 @@
       "Abiotic",
       "Healthy"
     ],
-    "total_entries": 37,
-    "shared_with_plantdoc": 16
+    "total_entries": 38,
+    "shared_with_plantdoc": 17
   },
   "entries": [
     {
@@ -93,6 +93,26 @@
       "severity": "Very High"
     },
     {
+      "plantvillage_label": "Grape___Esca_(Black_Measles)",
+      "eppo_pathogen": "Phaeomoniella chlamydospora / Phaeoacremonium spp.",
+      "common_name": "Grape Esca (Black Measles)",
+      "crop": "Grape (Vitis vinifera)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": null,
+      "visual_symptoms": "Interveinal chlorosis and necrosis; tiger-stripe pattern; marginal scorch",
+      "severity": "Very High"
+    },
+    {
+      "plantvillage_label": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "eppo_pathogen": "Pseudocercospora vitis",
+      "common_name": "Grape Leaf Spot",
+      "crop": "Grape (Vitis vinifera)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": null,
+      "visual_symptoms": "Irregular dark brown spots; yellowish halo; premature defoliation",
+      "severity": "Medium"
+    },
+    {
       "plantvillage_label": "Potato___Early_blight",
       "eppo_pathogen": "Alternaria solani",
       "common_name": "Potato Early Blight",
@@ -111,6 +131,26 @@
       "plantdoc_label": "Potato leaf late blight",
       "visual_symptoms": "Water-soaked dark lesions; white mould underside in humid conditions; rapid progression",
       "severity": "Very High"
+    },
+    {
+      "plantvillage_label": "Squash___Powdery_mildew",
+      "eppo_pathogen": "Podosphaeria xanthii",
+      "common_name": "Squash Powdery Mildew",
+      "crop": "Squash (Cucurbita pepo)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": null,
+      "visual_symptoms": "White powdery circular patches on upper surface; lesions coalesce",
+      "severity": "Medium"
+    },
+    {
+      "plantvillage_label": "Strawberry___Leaf_scorch",
+      "eppo_pathogen": "Diplocarpon earlianum",
+      "common_name": "Strawberry Leaf Scorch",
+      "crop": "Strawberry (Fragaria \u00d7 ananassa)",
+      "pathogen_category": "Fungal",
+      "plantdoc_label": null,
+      "visual_symptoms": "Irregular dark purple spots; necrotic grey centres; marginal leaf burn",
+      "severity": "Medium"
     },
     {
       "plantvillage_label": "Tomato___Early_blight",
@@ -160,46 +200,6 @@
       "pathogen_category": "Fungal",
       "plantdoc_label": null,
       "visual_symptoms": "Concentric ring lesions; dark brown with lighter centre",
-      "severity": "Medium"
-    },
-    {
-      "plantvillage_label": "Strawberry___Leaf_scorch",
-      "eppo_pathogen": "Diplocarpon earlianum",
-      "common_name": "Strawberry Leaf Scorch",
-      "crop": "Strawberry (Fragaria \u00d7 ananassa)",
-      "pathogen_category": "Fungal",
-      "plantdoc_label": null,
-      "visual_symptoms": "Irregular dark purple spots; necrotic grey centres; marginal leaf burn",
-      "severity": "Medium"
-    },
-    {
-      "plantvillage_label": "Squash___Powdery_mildew",
-      "eppo_pathogen": "Podosphaeria xanthii",
-      "common_name": "Squash Powdery Mildew",
-      "crop": "Squash (Cucurbita pepo)",
-      "pathogen_category": "Fungal",
-      "plantdoc_label": null,
-      "visual_symptoms": "White powdery circular patches on upper surface; lesions coalesce",
-      "severity": "Medium"
-    },
-    {
-      "plantvillage_label": "Grape___Esca_(Black_Measles)",
-      "eppo_pathogen": "Phaeomoniella chlamydospora / Phaeoacremonium spp.",
-      "common_name": "Grape Esca (Black Measles)",
-      "crop": "Grape (Vitis vinifera)",
-      "pathogen_category": "Fungal",
-      "plantdoc_label": null,
-      "visual_symptoms": "Interveinal chlorosis and necrosis; tiger-stripe pattern; marginal scorch",
-      "severity": "Very High"
-    },
-    {
-      "plantvillage_label": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
-      "eppo_pathogen": "Pseudocercospora vitis",
-      "common_name": "Grape Leaf Spot",
-      "crop": "Grape (Vitis vinifera)",
-      "pathogen_category": "Fungal",
-      "plantdoc_label": null,
-      "visual_symptoms": "Irregular dark brown spots; yellowish halo; premature defoliation",
       "severity": "Medium"
     },
     {
@@ -320,6 +320,16 @@
       "pathogen_category": "Healthy",
       "plantdoc_label": "grape leaf",
       "visual_symptoms": "Uniform green; palmate lobed; no mould or spots",
+      "severity": "None"
+    },
+    {
+      "plantvillage_label": "Peach___healthy",
+      "eppo_pathogen": null,
+      "common_name": "Healthy Peach",
+      "crop": "Peach (Prunus persica)",
+      "pathogen_category": "Healthy",
+      "plantdoc_label": "Peach leaf",
+      "visual_symptoms": "Lanceolate leaves; smooth, serrated margins; vibrant green color; no necrotic spots or curling",
       "severity": "None"
     },
     {

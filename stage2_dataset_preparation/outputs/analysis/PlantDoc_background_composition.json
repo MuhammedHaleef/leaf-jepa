@@ -1,0 +1,198 @@
+{
+  "Apple leaf": {
+    "leaf_ratio": 0.4172,
+    "background_ratio": 0.5828,
+    "entropy_mean": 3.9659,
+    "centre_edge_ratio": 1.7939,
+    "n_images_sampled": 40
+  },
+  "Apple rust leaf": {
+    "leaf_ratio": 0.6005,
+    "background_ratio": 0.3995,
+    "entropy_mean": 5.1475,
+    "centre_edge_ratio": 1.2162,
+    "n_images_sampled": 40
+  },
+  "Apple Scab Leaf": {
+    "leaf_ratio": 0.6124,
+    "background_ratio": 0.3876,
+    "entropy_mean": 5.0127,
+    "centre_edge_ratio": 1.2998,
+    "n_images_sampled": 40
+  },
+  "Bell_pepper leaf": {
+    "leaf_ratio": 0.606,
+    "background_ratio": 0.394,
+    "entropy_mean": 5.4141,
+    "centre_edge_ratio": 1.1324,
+    "n_images_sampled": 40
+  },
+  "Bell_pepper leaf spot": {
+    "leaf_ratio": 0.6094,
+    "background_ratio": 0.3906,
+    "entropy_mean": 5.1717,
+    "centre_edge_ratio": 1.2881,
+    "n_images_sampled": 40
+  },
+  "Blueberry leaf": {
+    "leaf_ratio": 0.4863,
+    "background_ratio": 0.5137,
+    "entropy_mean": 4.8675,
+    "centre_edge_ratio": 1.4635,
+    "n_images_sampled": 40
+  },
+  "Cherry leaf": {
+    "leaf_ratio": 0.5988,
+    "background_ratio": 0.4012,
+    "entropy_mean": 4.8174,
+    "centre_edge_ratio": 2.054,
+    "n_images_sampled": 40
+  },
+  "Corn Gray leaf spot": {
+    "leaf_ratio": 0.586,
+    "background_ratio": 0.414,
+    "entropy_mean": 5.1579,
+    "centre_edge_ratio": 1.0534,
+    "n_images_sampled": 40
+  },
+  "Corn leaf blight": {
+    "leaf_ratio": 0.5901,
+    "background_ratio": 0.4099,
+    "entropy_mean": 5.21,
+    "centre_edge_ratio": 1.095,
+    "n_images_sampled": 40
+  },
+  "Corn rust leaf": {
+    "leaf_ratio": 0.4958,
+    "background_ratio": 0.5042,
+    "entropy_mean": 5.1437,
+    "centre_edge_ratio": 1.0969,
+    "n_images_sampled": 40
+  },
+  "grape leaf": {
+    "leaf_ratio": 0.5441,
+    "background_ratio": 0.4559,
+    "entropy_mean": 4.2281,
+    "centre_edge_ratio": 1.7956,
+    "n_images_sampled": 40
+  },
+  "grape leaf black rot": {
+    "leaf_ratio": 0.6397,
+    "background_ratio": 0.3603,
+    "entropy_mean": 5.0489,
+    "centre_edge_ratio": 1.3469,
+    "n_images_sampled": 40
+  },
+  "Peach leaf": {
+    "leaf_ratio": 0.3878,
+    "background_ratio": 0.6122,
+    "entropy_mean": 4.3229,
+    "centre_edge_ratio": 1.7591,
+    "n_images_sampled": 40
+  },
+  "Potato leaf early blight": {
+    "leaf_ratio": 0.5404,
+    "background_ratio": 0.4596,
+    "entropy_mean": 5.079,
+    "centre_edge_ratio": 1.4706,
+    "n_images_sampled": 40
+  },
+  "Potato leaf late blight": {
+    "leaf_ratio": 0.6401,
+    "background_ratio": 0.3599,
+    "entropy_mean": 5.2877,
+    "centre_edge_ratio": 1.241,
+    "n_images_sampled": 40
+  },
+  "Raspberry leaf": {
+    "leaf_ratio": 0.5526,
+    "background_ratio": 0.4474,
+    "entropy_mean": 4.8293,
+    "centre_edge_ratio": 1.55,
+    "n_images_sampled": 40
+  },
+  "Soyabean leaf": {
+    "leaf_ratio": 0.4954,
+    "background_ratio": 0.5046,
+    "entropy_mean": 4.2873,
+    "centre_edge_ratio": 1.89,
+    "n_images_sampled": 40
+  },
+  "Squash Powdery mildew leaf": {
+    "leaf_ratio": 0.6718,
+    "background_ratio": 0.3282,
+    "entropy_mean": 5.2759,
+    "centre_edge_ratio": 0.9635,
+    "n_images_sampled": 40
+  },
+  "Strawberry leaf": {
+    "leaf_ratio": 0.5386,
+    "background_ratio": 0.4614,
+    "entropy_mean": 4.2378,
+    "centre_edge_ratio": 1.7401,
+    "n_images_sampled": 40
+  },
+  "Tomato Early blight leaf": {
+    "leaf_ratio": 0.5679,
+    "background_ratio": 0.4321,
+    "entropy_mean": 5.3183,
+    "centre_edge_ratio": 1.1555,
+    "n_images_sampled": 40
+  },
+  "Tomato leaf": {
+    "leaf_ratio": 0.5068,
+    "background_ratio": 0.4932,
+    "entropy_mean": 4.4684,
+    "centre_edge_ratio": 2.2253,
+    "n_images_sampled": 40
+  },
+  "Tomato leaf bacterial spot": {
+    "leaf_ratio": 0.5834,
+    "background_ratio": 0.4166,
+    "entropy_mean": 5.2997,
+    "centre_edge_ratio": 1.2627,
+    "n_images_sampled": 40
+  },
+  "Tomato leaf late blight": {
+    "leaf_ratio": 0.6037,
+    "background_ratio": 0.3963,
+    "entropy_mean": 5.162,
+    "centre_edge_ratio": 1.2652,
+    "n_images_sampled": 40
+  },
+  "Tomato leaf mosaic virus": {
+    "leaf_ratio": 0.6674,
+    "background_ratio": 0.3326,
+    "entropy_mean": 5.2242,
+    "centre_edge_ratio": 1.1049,
+    "n_images_sampled": 40
+  },
+  "Tomato leaf yellow virus": {
+    "leaf_ratio": 0.7292,
+    "background_ratio": 0.2708,
+    "entropy_mean": 5.2438,
+    "centre_edge_ratio": 1.2033,
+    "n_images_sampled": 40
+  },
+  "Tomato mold leaf": {
+    "leaf_ratio": 0.6492,
+    "background_ratio": 0.3508,
+    "entropy_mean": 5.2215,
+    "centre_edge_ratio": 1.2187,
+    "n_images_sampled": 40
+  },
+  "Tomato Septoria leaf spot": {
+    "leaf_ratio": 0.5771,
+    "background_ratio": 0.4229,
+    "entropy_mean": 5.0619,
+    "centre_edge_ratio": 1.1928,
+    "n_images_sampled": 40
+  },
+  "Tomato two spotted spider mites leaf": {
+    "leaf_ratio": 0.7147,
+    "background_ratio": 0.2853,
+    "entropy_mean": 5.551,
+    "centre_edge_ratio": 1.0725,
+    "n_images_sampled": 2
+  }
+}

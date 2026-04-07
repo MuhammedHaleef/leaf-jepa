@@ -21,7 +21,6 @@ Stage  : 3 — Baseline Establishment
 """
 
 import json
-import time
 import sys, os
 import random
 import copy
@@ -31,17 +30,8 @@ from collections import OrderedDict
 import numpy as np
 import torch
 import torch.nn as nn
-from torch.amp import GradScaler
+from torch.amp import GradScaler, autocast
 
-# Version-compatible autocast
-try:
-    from torch.amp import autocast as _autocast
-    def autocast_ctx(device="cuda", enabled=True):
-        return _autocast(device_type=device, enabled=enabled)
-except ImportError:
-    from torch.cuda.amp import autocast as _autocast
-    def autocast_ctx(device="cuda", enabled=True):
-        return _autocast(enabled=enabled)
 from torch.utils.data import Dataset, DataLoader, Subset
 from torchvision import transforms
 from PIL import Image
@@ -51,6 +41,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import seaborn as sns
+
+from stage2_dataset_preparation.outputs.augmentation.transforms import (
+    get_pretrain_transform, get_eval_transform, get_finetune_transform
+)
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # REPRODUCIBILITY
@@ -79,7 +73,7 @@ class PlantVillageDataset(Dataset):
         {"paths": ["/abs/path/img1.jpg", ...], "labels": [0, 1, ...],
          "class_names": ["Apple___healthy", ...]}
     """
-    VALID_EXT = {".jpg", ".jpeg", ".png", ".bmp", ".tiff", ".webp"}
+    VALID_EXT = {".jpg", ".jpeg", ".png"}
 
     def __init__(self, paths, labels, transform=None):
         self.paths = [Path(p) for p in paths]
@@ -121,36 +115,36 @@ def load_fraction_split(splits_dir: Path, fraction: float, seed: int):
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# TRANSFORMS
+# TRANSFORMS - Loaded from STAGE 2 - Augmentation strategy OUTPUT transforms.py
 # ═══════════════════════════════════════════════════════════════════════════════
 
-def get_transforms(phase: str, norm_mean: list, norm_std: list,
-                   image_resize: int = 256, image_crop: int = 224):
-    """
-    Return transforms for a given phase.
-
-    Phases:
-      'train'  — random resize crop + horizontal flip + colour jitter + normalise
-      'val'    — deterministic: resize 256 -> centre crop 224 -> normalise
-      'test'   — identical to 'val'
-    """
-    normalise = transforms.Normalize(mean=norm_mean, std=norm_std)
-
-    if phase == "train":
-        return transforms.Compose([
-            transforms.RandomResizedCrop(image_crop, scale=(0.8, 1.0)),
-            transforms.RandomHorizontalFlip(p=0.5),
-            transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.05),
-            transforms.ToTensor(),
-            normalise,
-        ])
-    else:  # val or test — deterministic
-        return transforms.Compose([
-            transforms.Resize(image_resize),
-            transforms.CenterCrop(image_crop),
-            transforms.ToTensor(),
-            normalise,
-        ])
+# def get_transforms(phase: str, norm_mean: list, norm_std: list,
+#                    image_resize: int = 256, image_crop: int = 224):
+#     """
+#     Return transforms for a given phase.
+#
+#     Phases:
+#       'train'  — random resize crop + horizontal flip + colour jitter + normalise
+#       'val'    — deterministic: resize 256 -> centre crop 224 -> normalise
+#       'test'   — identical to 'val'
+#     """
+#     normalise = transforms.Normalize(mean=norm_mean, std=norm_std)
+#
+#     if phase == "train":
+#         return transforms.Compose([
+#             transforms.RandomResizedCrop(image_crop, scale=(0.8, 1.0)),
+#             transforms.RandomHorizontalFlip(p=0.5),
+#             transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.05),
+#             transforms.ToTensor(),
+#             normalise,
+#         ])
+#     else:  # val or test — deterministic
+#         return transforms.Compose([
+#             transforms.Resize(image_resize),
+#             transforms.CenterCrop(image_crop),
+#             transforms.ToTensor(),
+#             normalise,
+#         ])
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -176,7 +170,7 @@ def train_one_epoch(model, loader, criterion, optimiser, scaler, device,
         images = images.to(device, non_blocking=True)
         labels = labels.to(device, non_blocking=True)
 
-        with autocast_ctx(enabled=scaler.is_enabled()):
+        with autocast(device_type="cuda", enabled=scaler.is_enabled()):
             outputs = model(images)
             loss = criterion(outputs, labels) / grad_accum_steps
 
@@ -209,7 +203,7 @@ def evaluate(model, loader, device, num_classes=38):
         for images, labels in tqdm(loader, desc="  Evaluating", leave=False,
                                    bar_format="{l_bar}{bar:30}{r_bar}"):
             images = images.to(device, non_blocking=True)
-            with autocast_ctx(enabled=True):
+            with autocast(device_type="cuda", enabled=True):
                 outputs = model(images)
             preds = outputs.argmax(dim=1).cpu().numpy()
             all_preds.extend(preds)
@@ -240,7 +234,7 @@ def get_oof_probabilities(model, loader, device):
     with torch.no_grad():
         for images, _ in loader:
             images = images.to(device, non_blocking=True)
-            with autocast_ctx(enabled=True):
+            with autocast(device_type="cuda", enabled=True):
                 outputs = model(images)
             probs = torch.softmax(outputs.float(), dim=1).cpu().numpy()
             all_probs.append(probs)
@@ -460,8 +454,8 @@ def label_efficiency_sweep(
     """
     import wandb
 
-    train_tf = get_transforms("train", norm_mean, norm_std)
-    eval_tf  = get_transforms("val", norm_mean, norm_std)
+    train_tf = get_pretrain_transform()
+    eval_tf  = get_eval_transform()
 
     val_ds   = PlantVillageDataset(val_paths, val_labels, transform=eval_tf)
     test_ds  = PlantVillageDataset(test_paths, test_labels, transform=eval_tf)

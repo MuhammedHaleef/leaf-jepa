@@ -1,0 +1,97 @@
+{
+  "plantvillage": {
+    "total_images": 54305,
+    "num_classes": 38,
+    "mean_per_class": 1429.1,
+    "min_per_class": {
+      "class": "Potato___healthy",
+      "count": 152
+    },
+    "max_per_class": {
+      "class": "Orange___Haunglongbing_(Citrus_greening)",
+      "count": 5507
+    },
+    "imbalance_ratio": 36.2,
+    "gini_coefficient": 0.4,
+    "underrepresented_classes": {
+      "Potato___healthy": 152,
+      "Apple___Cedar_apple_rust": 275,
+      "Peach___healthy": 360,
+      "Raspberry___healthy": 371,
+      "Tomato___Tomato_mosaic_virus": 373,
+      "Grape___healthy": 423,
+      "Strawberry___healthy": 456,
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": 513,
+      "Apple___Black_rot": 621,
+      "Apple___Apple_scab": 630
+    },
+    "class_weights": {
+      "Apple___Apple_scab": 1.2474,
+      "Apple___Black_rot": 1.2654,
+      "Apple___Cedar_apple_rust": 2.8576,
+      "Apple___healthy": 0.4777,
+      "Blueberry___healthy": 0.5232,
+      "Cherry_(including_sour)___Powdery_mildew": 0.747,
+      "Cherry_(including_sour)___healthy": 0.9202,
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": 1.5318,
+      "Corn_(maize)___Common_rust_": 0.6593,
+      "Corn_(maize)___Northern_Leaf_Blight": 0.7978,
+      "Corn_(maize)___healthy": 0.6763,
+      "Grape___Black_rot": 0.666,
+      "Grape___Esca_(Black_Measles)": 0.5682,
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": 0.7303,
+      "Grape___healthy": 1.8578,
+      "Orange___Haunglongbing_(Citrus_greening)": 0.1427,
+      "Peach___Bacterial_spot": 0.3421,
+      "Peach___healthy": 2.1829,
+      "Pepper,_bell___Bacterial_spot": 0.7882,
+      "Pepper,_bell___healthy": 0.5317,
+      "Potato___Early_blight": 0.7858,
+      "Potato___Late_blight": 0.7858,
+      "Potato___healthy": 5.17,
+      "Raspberry___healthy": 2.1182,
+      "Soybean___healthy": 0.1544,
+      "Squash___Powdery_mildew": 0.4282,
+      "Strawberry___Leaf_scorch": 0.7086,
+      "Strawberry___healthy": 1.7233,
+      "Tomato___Bacterial_spot": 0.3695,
+      "Tomato___Early_blight": 0.7858,
+      "Tomato___Late_blight": 0.4116,
+      "Tomato___Leaf_Mold": 0.8255,
+      "Tomato___Septoria_leaf_spot": 0.4437,
+      "Tomato___Spider_mites Two-spotted_spider_mite": 0.4689,
+      "Tomato___Target_Spot": 0.5597,
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": 0.1467,
+      "Tomato___Tomato_mosaic_virus": 2.1068,
+      "Tomato___healthy": 0.4939
+    },
+    "weight_range": [
+      0.1427,
+      5.17
+    ]
+  },
+  "plantdoc": {
+    "total_images": 2578,
+    "num_classes": 28,
+    "mean_per_class": 92.1,
+    "min_per_class": {
+      "class": "Tomato two spotted spider mites leaf",
+      "count": 2
+    },
+    "max_per_class": {
+      "class": "Corn leaf blight",
+      "count": 192
+    },
+    "imbalance_ratio": 96.0,
+    "gini_coefficient": 0.2048,
+    "underrepresented_classes": {
+      "Tomato two spotted spider mites leaf": 2
+    },
+    "min_eval_samples": 10,
+    "excluded_classes": {
+      "Tomato two spotted spider mites leaf": 2
+    },
+    "retained_classes_count": 27,
+    "retained_images_count": 2576
+  }
+}

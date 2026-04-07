@@ -1,0 +1,15 @@
+{
+  "status": "PENDING \u2014 requires Stage 3 baseline model",
+  "why": "PlantVillage estimated 5\u201315% label noise from inter-rater studies. Label noise causes PEFT methods to learn incorrect class boundaries, confounding method comparisons.",
+  "prerequisite": "ResNet-50 (or I-JEPA + linear head) trained with 5-fold cross-validation",
+  "steps": [
+    "1. Save out-of-fold softmax probabilities: shape (N_train, N_classes) as oof_probabilities.npy",
+    "2. Save corresponding integer labels as oof_labels.npy",
+    "3. Run: from cleanlab.filter import find_label_issues",
+    "4.      issues = find_label_issues(labels=labels, pred_probs=probs, return_indices_ranked_by='self_confidence')",
+    "5. Remove images with CleanLab confidence > 0.9 from training split",
+    "6. Log ALL removed images: path, original label, confidence score",
+    "7. Re-run baseline on cleaned data \u2014 report accuracy delta"
+  ],
+  "expected_outcome": "+1\u20133% accuracy after removing confirmed mislabels"
+}

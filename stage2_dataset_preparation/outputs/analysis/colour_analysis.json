@@ -1,0 +1,614 @@
+{
+  "plantvillage": {
+    "profiles": {
+      "Apple___Apple_scab": {
+        "R": 0.3814,
+        "G": 0.4246,
+        "B": 0.3998,
+        "G_minus_R": 0.0432
+      },
+      "Apple___Black_rot": {
+        "R": 0.4668,
+        "G": 0.4901,
+        "B": 0.4462,
+        "G_minus_R": 0.0233
+      },
+      "Apple___Cedar_apple_rust": {
+        "R": 0.462,
+        "G": 0.4806,
+        "B": 0.3955,
+        "G_minus_R": 0.0186
+      },
+      "Apple___healthy": {
+        "R": 0.4217,
+        "G": 0.4493,
+        "B": 0.4522,
+        "G_minus_R": 0.0276
+      },
+      "Blueberry___healthy": {
+        "R": 0.5636,
+        "G": 0.5813,
+        "B": 0.5455,
+        "G_minus_R": 0.0178
+      },
+      "Cherry_(including_sour)___healthy": {
+        "R": 0.5356,
+        "G": 0.5582,
+        "B": 0.4693,
+        "G_minus_R": 0.0226
+      },
+      "Cherry_(including_sour)___Powdery_mildew": {
+        "R": 0.4507,
+        "G": 0.48,
+        "B": 0.401,
+        "G_minus_R": 0.0294
+      },
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+        "R": 0.4534,
+        "G": 0.4761,
+        "B": 0.3727,
+        "G_minus_R": 0.0227
+      },
+      "Corn_(maize)___Common_rust_": {
+        "R": 0.3475,
+        "G": 0.3769,
+        "B": 0.2665,
+        "G_minus_R": 0.0293
+      },
+      "Corn_(maize)___healthy": {
+        "R": 0.5089,
+        "G": 0.6441,
+        "B": 0.4761,
+        "G_minus_R": 0.1352
+      },
+      "Corn_(maize)___Northern_Leaf_Blight": {
+        "R": 0.4605,
+        "G": 0.4906,
+        "B": 0.3898,
+        "G_minus_R": 0.0301
+      },
+      "Grape___Black_rot": {
+        "R": 0.4442,
+        "G": 0.472,
+        "B": 0.3853,
+        "G_minus_R": 0.0278
+      },
+      "Grape___Esca_(Black_Measles)": {
+        "R": 0.476,
+        "G": 0.4955,
+        "B": 0.4176,
+        "G_minus_R": 0.0195
+      },
+      "Grape___healthy": {
+        "R": 0.5044,
+        "G": 0.5552,
+        "B": 0.4567,
+        "G_minus_R": 0.0507
+      },
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+        "R": 0.4977,
+        "G": 0.5127,
+        "B": 0.3588,
+        "G_minus_R": 0.015
+      },
+      "Orange___Haunglongbing_(Citrus_greening)": {
+        "R": 0.4054,
+        "G": 0.4122,
+        "B": 0.2788,
+        "G_minus_R": 0.0068
+      },
+      "Peach___Bacterial_spot": {
+        "R": 0.4856,
+        "G": 0.4719,
+        "B": 0.3957,
+        "G_minus_R": -0.0137
+      },
+      "Peach___healthy": {
+        "R": 0.5081,
+        "G": 0.487,
+        "B": 0.4732,
+        "G_minus_R": -0.0211
+      },
+      "Pepper,_bell___Bacterial_spot": {
+        "R": 0.464,
+        "G": 0.4784,
+        "B": 0.389,
+        "G_minus_R": 0.0144
+      },
+      "Pepper,_bell___healthy": {
+        "R": 0.4879,
+        "G": 0.5336,
+        "B": 0.4508,
+        "G_minus_R": 0.0457
+      },
+      "Potato___Early_blight": {
+        "R": 0.5277,
+        "G": 0.5442,
+        "B": 0.4433,
+        "G_minus_R": 0.0165
+      },
+      "Potato___healthy": {
+        "R": 0.4936,
+        "G": 0.5218,
+        "B": 0.4437,
+        "G_minus_R": 0.0282
+      },
+      "Potato___Late_blight": {
+        "R": 0.4712,
+        "G": 0.4744,
+        "B": 0.4177,
+        "G_minus_R": 0.0032
+      },
+      "Raspberry___healthy": {
+        "R": 0.4904,
+        "G": 0.5256,
+        "B": 0.4241,
+        "G_minus_R": 0.0352
+      },
+      "Soybean___healthy": {
+        "R": 0.5279,
+        "G": 0.5647,
+        "B": 0.5196,
+        "G_minus_R": 0.0368
+      },
+      "Squash___Powdery_mildew": {
+        "R": 0.4752,
+        "G": 0.5251,
+        "B": 0.4183,
+        "G_minus_R": 0.0499
+      },
+      "Strawberry___healthy": {
+        "R": 0.4688,
+        "G": 0.528,
+        "B": 0.4306,
+        "G_minus_R": 0.0592
+      },
+      "Strawberry___Leaf_scorch": {
+        "R": 0.5607,
+        "G": 0.5515,
+        "B": 0.4601,
+        "G_minus_R": -0.0092
+      },
+      "Tomato___Bacterial_spot": {
+        "R": 0.3939,
+        "G": 0.4199,
+        "B": 0.3583,
+        "G_minus_R": 0.026
+      },
+      "Tomato___Early_blight": {
+        "R": 0.434,
+        "G": 0.4461,
+        "B": 0.3961,
+        "G_minus_R": 0.0121
+      },
+      "Tomato___healthy": {
+        "R": 0.4391,
+        "G": 0.4635,
+        "B": 0.4284,
+        "G_minus_R": 0.0245
+      },
+      "Tomato___Late_blight": {
+        "R": 0.4521,
+        "G": 0.4529,
+        "B": 0.4012,
+        "G_minus_R": 0.0008
+      },
+      "Tomato___Leaf_Mold": {
+        "R": 0.4317,
+        "G": 0.4602,
+        "B": 0.4581,
+        "G_minus_R": 0.0285
+      },
+      "Tomato___Septoria_leaf_spot": {
+        "R": 0.5075,
+        "G": 0.517,
+        "B": 0.4581,
+        "G_minus_R": 0.0094
+      },
+      "Tomato___Spider_mites Two-spotted_spider_mite": {
+        "R": 0.488,
+        "G": 0.4787,
+        "B": 0.4352,
+        "G_minus_R": -0.0093
+      },
+      "Tomato___Target_Spot": {
+        "R": 0.4657,
+        "G": 0.4718,
+        "B": 0.4409,
+        "G_minus_R": 0.0061
+      },
+      "Tomato___Tomato_mosaic_virus": {
+        "R": 0.45,
+        "G": 0.4433,
+        "B": 0.449,
+        "G_minus_R": -0.0067
+      },
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+        "R": 0.4469,
+        "G": 0.4743,
+        "B": 0.3537,
+        "G_minus_R": 0.0273
+      }
+    },
+    "pairwise_closest": [
+      {
+        "class_a": "Apple___Cedar_apple_rust",
+        "class_b": "Pepper,_bell___Bacterial_spot",
+        "rgb_distance": 0.00715
+      },
+      {
+        "class_a": "Apple___Cedar_apple_rust",
+        "class_b": "Corn_(maize)___Northern_Leaf_Blight",
+        "rgb_distance": 0.01161
+      },
+      {
+        "class_a": "Apple___Cedar_apple_rust",
+        "class_b": "Cherry_(including_sour)___Powdery_mildew",
+        "rgb_distance": 0.01258
+      },
+      {
+        "class_a": "Corn_(maize)___Northern_Leaf_Blight",
+        "class_b": "Pepper,_bell___Bacterial_spot",
+        "rgb_distance": 0.01272
+      },
+      {
+        "class_a": "Squash___Powdery_mildew",
+        "class_b": "Strawberry___healthy",
+        "rgb_distance": 0.01417
+      },
+      {
+        "class_a": "Pepper,_bell___healthy",
+        "class_b": "Potato___healthy",
+        "rgb_distance": 0.0149
+      },
+      {
+        "class_a": "Apple___healthy",
+        "class_b": "Tomato___Leaf_Mold",
+        "rgb_distance": 0.01593
+      },
+      {
+        "class_a": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+        "class_b": "Grape___Black_rot",
+        "rgb_distance": 0.01613
+      },
+      {
+        "class_a": "Raspberry___healthy",
+        "class_b": "Squash___Powdery_mildew",
+        "rgb_distance": 0.01628
+      },
+      {
+        "class_a": "Cherry_(including_sour)___Powdery_mildew",
+        "class_b": "Pepper,_bell___Bacterial_spot",
+        "rgb_distance": 0.01798
+      },
+      {
+        "class_a": "Cherry_(including_sour)___Powdery_mildew",
+        "class_b": "Corn_(maize)___Northern_Leaf_Blight",
+        "rgb_distance": 0.01827
+      },
+      {
+        "class_a": "Cherry_(including_sour)___Powdery_mildew",
+        "class_b": "Grape___Black_rot",
+        "rgb_distance": 0.01878
+      },
+      {
+        "class_a": "Apple___Black_rot",
+        "class_b": "Tomato___Target_Spot",
+        "rgb_distance": 0.01908
+      },
+      {
+        "class_a": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+        "class_b": "Pepper,_bell___Bacterial_spot",
+        "rgb_distance": 0.01958
+      },
+      {
+        "class_a": "Tomato___Early_blight",
+        "class_b": "Tomato___Late_blight",
+        "rgb_distance": 0.02
+      }
+    ],
+    "pairwise_farthest": [
+      {
+        "class_a": "Corn_(maize)___Common_rust_",
+        "class_b": "Strawberry___Leaf_scorch",
+        "rgb_distance": 0.33678
+      },
+      {
+        "class_a": "Blueberry___healthy",
+        "class_b": "Orange___Haunglongbing_(Citrus_greening)",
+        "rgb_distance": 0.3532
+      },
+      {
+        "class_a": "Corn_(maize)___Common_rust_",
+        "class_b": "Soybean___healthy",
+        "rgb_distance": 0.36314
+      },
+      {
+        "class_a": "Corn_(maize)___Common_rust_",
+        "class_b": "Corn_(maize)___healthy",
+        "rgb_distance": 0.376
+      },
+      {
+        "class_a": "Blueberry___healthy",
+        "class_b": "Corn_(maize)___Common_rust_",
+        "rgb_distance": 0.40782
+      }
+    ]
+  },
+  "plantdoc": {
+    "profiles": {
+      "Apple leaf": {
+        "R": 0.6695,
+        "G": 0.7045,
+        "B": 0.5559,
+        "G_minus_R": 0.035
+      },
+      "Apple rust leaf": {
+        "R": 0.4465,
+        "G": 0.5017,
+        "B": 0.3147,
+        "G_minus_R": 0.0552
+      },
+      "Apple Scab Leaf": {
+        "R": 0.4472,
+        "G": 0.5286,
+        "B": 0.3373,
+        "G_minus_R": 0.0813
+      },
+      "Bell_pepper leaf": {
+        "R": 0.4317,
+        "G": 0.5121,
+        "B": 0.3143,
+        "G_minus_R": 0.0804
+      },
+      "Bell_pepper leaf spot": {
+        "R": 0.4615,
+        "G": 0.54,
+        "B": 0.3718,
+        "G_minus_R": 0.0784
+      },
+      "Blueberry leaf": {
+        "R": 0.5077,
+        "G": 0.5236,
+        "B": 0.38,
+        "G_minus_R": 0.0159
+      },
+      "Cherry leaf": {
+        "R": 0.5024,
+        "G": 0.5651,
+        "B": 0.3907,
+        "G_minus_R": 0.0627
+      },
+      "Corn Gray leaf spot": {
+        "R": 0.4578,
+        "G": 0.5253,
+        "B": 0.373,
+        "G_minus_R": 0.0675
+      },
+      "Corn leaf blight": {
+        "R": 0.4141,
+        "G": 0.4777,
+        "B": 0.3322,
+        "G_minus_R": 0.0635
+      },
+      "Corn rust leaf": {
+        "R": 0.4829,
+        "G": 0.5176,
+        "B": 0.3419,
+        "G_minus_R": 0.0347
+      },
+      "grape leaf": {
+        "R": 0.5734,
+        "G": 0.6602,
+        "B": 0.465,
+        "G_minus_R": 0.0868
+      },
+      "grape leaf black rot": {
+        "R": 0.4507,
+        "G": 0.5298,
+        "B": 0.3411,
+        "G_minus_R": 0.0791
+      },
+      "Peach leaf": {
+        "R": 0.6767,
+        "G": 0.6743,
+        "B": 0.4993,
+        "G_minus_R": -0.0024
+      },
+      "Potato leaf early blight": {
+        "R": 0.4247,
+        "G": 0.4946,
+        "B": 0.347,
+        "G_minus_R": 0.0698
+      },
+      "Potato leaf late blight": {
+        "R": 0.3933,
+        "G": 0.4826,
+        "B": 0.3223,
+        "G_minus_R": 0.0892
+      },
+      "Raspberry leaf": {
+        "R": 0.5259,
+        "G": 0.5946,
+        "B": 0.3788,
+        "G_minus_R": 0.0687
+      },
+      "Soyabean leaf": {
+        "R": 0.5845,
+        "G": 0.6568,
+        "B": 0.4934,
+        "G_minus_R": 0.0723
+      },
+      "Squash Powdery mildew leaf": {
+        "R": 0.4326,
+        "G": 0.5239,
+        "B": 0.3842,
+        "G_minus_R": 0.0914
+      },
+      "Strawberry leaf": {
+        "R": 0.6071,
+        "G": 0.6991,
+        "B": 0.5033,
+        "G_minus_R": 0.092
+      },
+      "Tomato Early blight leaf": {
+        "R": 0.4203,
+        "G": 0.4795,
+        "B": 0.3195,
+        "G_minus_R": 0.0592
+      },
+      "Tomato leaf": {
+        "R": 0.5633,
+        "G": 0.6556,
+        "B": 0.49,
+        "G_minus_R": 0.0923
+      },
+      "Tomato leaf bacterial spot": {
+        "R": 0.4609,
+        "G": 0.5247,
+        "B": 0.3746,
+        "G_minus_R": 0.0638
+      },
+      "Tomato leaf late blight": {
+        "R": 0.4002,
+        "G": 0.4987,
+        "B": 0.3589,
+        "G_minus_R": 0.0984
+      },
+      "Tomato leaf mosaic virus": {
+        "R": 0.4355,
+        "G": 0.5344,
+        "B": 0.3575,
+        "G_minus_R": 0.0989
+      },
+      "Tomato leaf yellow virus": {
+        "R": 0.4484,
+        "G": 0.5282,
+        "B": 0.3208,
+        "G_minus_R": 0.0798
+      },
+      "Tomato mold leaf": {
+        "R": 0.4527,
+        "G": 0.5256,
+        "B": 0.3615,
+        "G_minus_R": 0.073
+      },
+      "Tomato Septoria leaf spot": {
+        "R": 0.4537,
+        "G": 0.5301,
+        "B": 0.3779,
+        "G_minus_R": 0.0764
+      },
+      "Tomato two spotted spider mites leaf": {
+        "R": 0.4197,
+        "G": 0.5108,
+        "B": 0.2961,
+        "G_minus_R": 0.0911
+      }
+    },
+    "pairwise_closest": [
+      {
+        "class_a": "Corn Gray leaf spot",
+        "class_b": "Tomato leaf bacterial spot",
+        "rgb_distance": 0.00354
+      },
+      {
+        "class_a": "Apple Scab Leaf",
+        "class_b": "grape leaf black rot",
+        "rgb_distance": 0.0053
+      },
+      {
+        "class_a": "Corn Gray leaf spot",
+        "class_b": "Tomato Septoria leaf spot",
+        "rgb_distance": 0.00799
+      },
+      {
+        "class_a": "Tomato Septoria leaf spot",
+        "class_b": "Tomato leaf bacterial spot",
+        "rgb_distance": 0.00959
+      },
+      {
+        "class_a": "Corn Gray leaf spot",
+        "class_b": "Tomato mold leaf",
+        "rgb_distance": 0.01258
+      },
+      {
+        "class_a": "Bell_pepper leaf spot",
+        "class_b": "Tomato Septoria leaf spot",
+        "rgb_distance": 0.014
+      },
+      {
+        "class_a": "Corn leaf blight",
+        "class_b": "Tomato Early blight leaf",
+        "rgb_distance": 0.01425
+      },
+      {
+        "class_a": "Bell_pepper leaf spot",
+        "class_b": "Corn Gray leaf spot",
+        "rgb_distance": 0.01521
+      },
+      {
+        "class_a": "Tomato leaf bacterial spot",
+        "class_b": "Tomato mold leaf",
+        "rgb_distance": 0.01548
+      },
+      {
+        "class_a": "Bell_pepper leaf spot",
+        "class_b": "Tomato leaf bacterial spot",
+        "rgb_distance": 0.01557
+      },
+      {
+        "class_a": "Apple Scab Leaf",
+        "class_b": "Tomato leaf yellow virus",
+        "rgb_distance": 0.01655
+      },
+      {
+        "class_a": "Tomato Septoria leaf spot",
+        "class_b": "Tomato mold leaf",
+        "rgb_distance": 0.01704
+      },
+      {
+        "class_a": "Apple rust leaf",
+        "class_b": "Bell_pepper leaf",
+        "rgb_distance": 0.01809
+      },
+      {
+        "class_a": "Tomato leaf mosaic virus",
+        "class_b": "Tomato mold leaf",
+        "rgb_distance": 0.01973
+      },
+      {
+        "class_a": "Bell_pepper leaf spot",
+        "class_b": "Tomato mold leaf",
+        "rgb_distance": 0.01977
+      }
+    ],
+    "pairwise_farthest": [
+      {
+        "class_a": "Apple leaf",
+        "class_b": "Tomato leaf late blight",
+        "rgb_distance": 0.39203
+      },
+      {
+        "class_a": "Apple leaf",
+        "class_b": "Corn leaf blight",
+        "rgb_distance": 0.4083
+      },
+      {
+        "class_a": "Apple leaf",
+        "class_b": "Tomato two spotted spider mites leaf",
+        "rgb_distance": 0.40916
+      },
+      {
+        "class_a": "Apple leaf",
+        "class_b": "Tomato Early blight leaf",
+        "rgb_distance": 0.41062
+      },
+      {
+        "class_a": "Apple leaf",
+        "class_b": "Potato leaf late blight",
+        "rgb_distance": 0.42438
+      }
+    ]
+  }
+}

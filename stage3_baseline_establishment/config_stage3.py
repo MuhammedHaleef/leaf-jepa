@@ -22,7 +22,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 
 DATA_DIR         = PROJECT_ROOT / "data"
 PLANTVILLAGE_DIR = DATA_DIR / "plantvillage_raw"
-PLANTDOC_DIR     = DATA_DIR / "plantdoc_raw"
+PLANTDOC_DIR     = DATA_DIR / "plantdoc_processed"
 
 OUTPUTS_DIR      = PROJECT_ROOT / "stage3_baseline_establishment/outputs"
 SPLITS_DIR       = PROJECT_ROOT / "stage2_dataset_preparation/outputs/splits"
@@ -72,12 +72,12 @@ TEST_RATIO       = 0.15
 # ===========================================================================
 # TRAINING HYPERPARAMETERS — CNN baselines (B1, B2)
 # ===========================================================================
-CNN_BATCH_SIZE   = 32 #64 # reduce to 32 if OOM
+CNN_BATCH_SIZE   = 64 # reduce to 32 if OOM (local device)
 CNN_LR           = 1e-4
 CNN_HEAD_LR      = 1e-3
 CNN_WEIGHT_DECAY = 0.01
-CNN_EPOCHS       = 2 #50
-CNN_PATIENCE     = 2 #7
+CNN_EPOCHS       = 50 #2 (local device)
+CNN_PATIENCE     = 7 #2 (local device)
 CNN_GRAD_ACCUM   = 1
 
 # ===========================================================================
@@ -86,8 +86,8 @@ CNN_GRAD_ACCUM   = 1
 LP_BATCH_SIZE    = 256
 LP_LR            = 1e-3
 LP_WEIGHT_DECAY  = 0.0
-LP_EPOCHS        = 5 #100
-LP_PATIENCE      = 3 #10
+LP_EPOCHS        = 100 #5 (local device)
+LP_PATIENCE      = 10 #3 (local device)
 
 # ===========================================================================
 # TRAINING HYPERPARAMETERS — I-JEPA full fine-tune (B4)
@@ -96,8 +96,8 @@ FT_BATCH_SIZE    = 16     # small due to 632M params
 FT_LR            = 5e-5   # backbone LR
 FT_HEAD_LR       = 1e-3
 FT_WEIGHT_DECAY  = 0.05
-FT_EPOCHS        = 2 #25
-FT_PATIENCE      = 2 #5
+FT_EPOCHS        = 25 #2 (local device)
+FT_PATIENCE      = 5 #2 (local device)
 FT_GRAD_ACCUM    = 4      # effective batch = 16 * 4 = 64
 FT_LR_DECAY      = 0.70   # layerwise LR decay factor
 FT_GRAD_CKPT     = True   # gradient checkpointing to save VRAM
@@ -114,7 +114,7 @@ WANDB_ENTITY  = "muh-haleef02"
 CLEANLAB_QUALITY_THRESHOLD = 0.1  # samples below this are flagged as mislabelled
 
 # ===========================================================================
-# VERIFY CONFIG — call at the top of every notebook
+# VERIFY CONFIG
 # ===========================================================================
 def verify_config():
     """Run basic sanity checks. Call this at the start of every notebook."""

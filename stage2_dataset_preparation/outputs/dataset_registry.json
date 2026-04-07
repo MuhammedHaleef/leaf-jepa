@@ -31,7 +31,7 @@
       "paper_link": "https://arxiv.org/abs/1511.08060",
       "scale": {
         "images": 2578,
-        "classes": 27,
+        "classes": 28,
         "crop_species": 13
       },
       "imaging_conditions": "Real-world field: variable lighting, backgrounds, angles, quality.",
