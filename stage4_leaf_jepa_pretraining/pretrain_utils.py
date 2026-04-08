@@ -35,15 +35,11 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-# Version-compatible autocast
-try:
-    from torch.amp import autocast as _autocast
-    def autocast_ctx(device="cuda", enabled=True):
-        return _autocast(device_type=device, enabled=enabled)
-except ImportError:
-    from torch.cuda.amp import autocast as _autocast
-    def autocast_ctx(device="cuda", enabled=True):
-        return _autocast(enabled=enabled)
+from stage2_dataset_preparation.outputs.augmentation.transforms import (
+    get_pretrain_transform, get_eval_transform, get_finetune_transform
+)
+
+from torch.amp import autocast
 
 from tqdm import tqdm
 
@@ -92,39 +88,23 @@ class PlantVillagePretrainDataset(Dataset):
         return img, int(row["label_idx"])
 
 
-def get_pretrain_transform(norm_mean: List[float], norm_std: List[float],
-                            image_crop: int = 224, image_resize: int = 256):
-    """
-    Aggressive pretraining augmentation pipeline from Stage 2.
-    Hue jitter ≤ 0.05 — protects disease colour signal (immutable Stage 2 constraint).
-    """
-    return transforms.Compose([
-        transforms.RandomResizedCrop(
-            image_crop, scale=(0.2, 1.0),
-            interpolation=transforms.InterpolationMode.BICUBIC
-        ),
-        transforms.RandomHorizontalFlip(),
-        transforms.RandomVerticalFlip(),
-        transforms.RandomApply([
-            transforms.ColorJitter(
-                brightness=0.4, contrast=0.4, saturation=0.2, hue=0.05
-            )
-        ], p=0.8),
-        transforms.RandomGrayscale(p=0.2),
-        transforms.RandomApply([transforms.GaussianBlur(kernel_size=23)], p=0.5),
-        transforms.ToTensor(),
-        transforms.Normalize(mean=norm_mean, std=norm_std),
-    ])
-
-
-def get_eval_transform(norm_mean, norm_std, image_crop=224, image_resize=256):
-    return transforms.Compose([
-        transforms.Resize(image_resize,
-                          interpolation=transforms.InterpolationMode.BICUBIC),
-        transforms.CenterCrop(image_crop),
-        transforms.ToTensor(),
-        transforms.Normalize(mean=norm_mean, std=norm_std),
-    ])
+# def get_pretrain_transform(norm_mean: List[float], norm_std: List[float],
+#                             image_crop: int = 224, image_resize: int = 256):
+#     """
+#     Aggressive pretraining augmentation pipeline from Stage 2.
+#     Hue jitter ≤ 0.05 — protects disease colour signal (immutable Stage 2 constraint).
+#     """
+#     return
+#
+#
+# def get_eval_transform(norm_mean, norm_std, image_crop=224, image_resize=256):
+#     return transforms.Compose([
+#         transforms.Resize(image_resize,
+#                           interpolation=transforms.InterpolationMode.BICUBIC),
+#         transforms.CenterCrop(image_crop),
+#         transforms.ToTensor(),
+#         transforms.Normalize(mean=norm_mean, std=norm_std),
+#     ])
 
 
 # ============================================================
@@ -246,8 +226,8 @@ class SaliencyMap:
     def __init__(self,
                  patch_size: int = 14,
                  image_size: int = 224,
-                 healthy_hue_center: float = 0.30,
-                 healthy_hue_sigma: float  = 0.10):
+                 healthy_hue_center=0.3153,
+                 healthy_hue_sigma= 0.0690):
         self.patch_size         = patch_size
         self.image_size         = image_size
         self.H                  = image_size // patch_size
@@ -767,7 +747,7 @@ def pretrain_step(imgs: torch.Tensor,
     should_step = ((step_idx + 1) % accumulate_steps == 0)
 
     if scaler is not None:
-        with autocast_ctx():
+        with autocast(device_type="cuda"):
             loss, grad_norm = _forward_loss(
                 imgs, context_encoder, target_encoder, predictor,
                 context_idx_batch, target_idx_batch, loss_type, device
@@ -965,8 +945,8 @@ class LinearProbeMonitor:
 
     def _build_loaders(self):
         from torch.utils.data import DataLoader
-        eval_transform = get_eval_transform(self.norm_mean, self.norm_std)
-        train_transform = get_pretrain_transform(self.norm_mean, self.norm_std)
+        eval_transform = get_eval_transform()
+        train_transform = get_pretrain_transform()
 
         csv_path = self.splits_dir / "plantvillage_splits.csv"
         train_ds = PlantVillagePretrainDataset(csv_path, transform=train_transform)
@@ -993,7 +973,7 @@ class LinearProbeMonitor:
         feats, labels = [], []
         for imgs, lbs in loader:
             imgs = imgs.to(self.device)
-            with autocast_ctx(enabled=(self.device.type == "cuda")):
+            with autocast(device_type="cuda"):
                 f = encoder(imgs)  # (B, D) with global_pool='avg'
             feats.append(f.cpu())
             labels.extend(lbs.numpy())

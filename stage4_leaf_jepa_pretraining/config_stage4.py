@@ -9,9 +9,6 @@ SETUP INSTRUCTIONS (in order):
 3. Optionally enable ENABLE_BIASED_MASKING (True = novel contribution, False = ablation baseline)
 4. After Stage 4 completes, update LEAF_JEPA_CHECKPOINT in config_stage3.py with the
    path produced by S4_6_checkpoint_and_export.ipynb
-
-Do NOT modify RANDOM_SEED, SUBSET_SEEDS, LABEL_FRACTIONS, IMAGE_CROP/RESIZE, NORM_MEAN/NORM_STD,
-PATCH_SIZE, or PLANTDOC_DIR. These are immutable constants fixed in Stage 2.
 """
 
 import os
@@ -102,9 +99,9 @@ PRED_DROPOUT     = 0.1
 # ===========================================================================
 
 # --- Training duration ---
-PT_EPOCHS           = 50 #150    # Recommended: 100–200. Minimum: 50 (document as limitation)
-PT_BATCH_SIZE       = 16 #128    # Reduce to 64 if CUDA OOM; 32 if using ViT-H on 16GB GPU
-PT_ACCUMULATE_GRAD  = 1      # Gradient accumulation steps (increase if small batch)
+PT_EPOCHS           = 150 #150    # Recommended: 100–200. Minimum: 50 (document as limitation)
+PT_BATCH_SIZE       = 128   #64    # Reduce to 64 if CUDA OOM; 32 if using ViT-H on 16GB GPU
+PT_ACCUMULATE_GRAD  = 2      # Gradient accumulation steps (increase if small batch)
 
 # --- Learning rates (layer-wise) ---
 PT_LR_HEAD          = 3e-4   # Predictor (training from scratch)
@@ -131,7 +128,7 @@ PT_TARGET_RATIO      = (0.75, 1.5)  # Target aspect ratio range
 # Disease-region-biased masking (novel contribution)
 # Set True for the main run. Set False for ablation baseline (S4_AB_masking_ablation.ipynb)
 ENABLE_BIASED_MASKING   = True
-SALIENCY_BIAS_STRENGTH  = 5.0       # Temperature for saliency-weighted sampling (higher = more biased)
+SALIENCY_BIAS_STRENGTH  = 4.0       # Temperature for saliency-weighted sampling (higher = more biased)
 HEALTHY_HUE_CENTER      = 0.3153 #0.30      # calculated hue of healthy leaf (green in [0,1] HSV)
 HEALTHY_HUE_SIGMA       = 0.690 #0.10      # Width of healthy hue distribution
 
@@ -161,7 +158,7 @@ CKPT_SAVE_INTERVAL  = 25    # Save checkpoint every N epochs
 # ===========================================================================
 
 USE_AMP      = True
-NUM_WORKERS  = 0  #4
+NUM_WORKERS  = 4
 PIN_MEMORY   = True
 
 # ===========================================================================
@@ -169,7 +166,7 @@ PIN_MEMORY   = True
 # ===========================================================================
 
 WANDB_PROJECT = "leaf-jepa-irp"
-WANDB_ENTITY  = "muh-haleef02"
+WANDB_ENTITY  = "muh-haleef02-inform"
 
 def wandb_pretrain_run_name(extra: str = "") -> str:
     base = f"LeafJEPA-pretrain-vit-h14-{PT_EPOCHS}e"
