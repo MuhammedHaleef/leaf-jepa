@@ -77,6 +77,14 @@ import seaborn as sns
 
 import timm
 
+import torch.multiprocessing as mp
+
+if __name__ == '__main__':
+    try:
+        mp.set_start_method('fork', force=True)
+    except RuntimeError:
+        pass
+
 # ============================================================================
 # Reproducibility
 # ============================================================================
