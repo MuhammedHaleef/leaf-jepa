@@ -1,0 +1,19 @@
+{
+  "stage": "Stage 4 \u2014 Leaf-JEPA Pretraining",
+  "encoder": "vit_huge_patch14_224",
+  "pretrain_epochs": 125,
+  "best_epoch": 25,
+  "best_lp_val_f1": 0.8847878167335265,
+  "biased_masking": true,
+  "checkpoint_path": "/workspace/leaf-jepa/stage4_leaf_jepa_pretraining/outputs/checkpoints/leafjepa-vit-h14-best.pth",
+  "frozen_layers": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "ema_tau_start": 0.996,
+  "ema_tau_end": 0.999,
+  "pred_depth": 4,
+  "pred_dim": 256
+}

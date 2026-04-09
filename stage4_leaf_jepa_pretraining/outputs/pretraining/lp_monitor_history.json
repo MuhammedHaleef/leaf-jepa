@@ -18,5 +18,10 @@
     "pretrain_epoch": 100,
     "lp_val_macro_f1": 0.8763572524542564,
     "n_train_samples": 7602
+  },
+  {
+    "pretrain_epoch": 125,
+    "lp_val_macro_f1": 0.8561017698459822,
+    "n_train_samples": 7602
   }
 ]
