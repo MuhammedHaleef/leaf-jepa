@@ -8,5 +8,15 @@
     "pretrain_epoch": 50,
     "lp_val_macro_f1": 0.8402461561768404,
     "n_train_samples": 7602
+  },
+  {
+    "pretrain_epoch": 75,
+    "lp_val_macro_f1": 0.8781428133835313,
+    "n_train_samples": 7602
+  },
+  {
+    "pretrain_epoch": 100,
+    "lp_val_macro_f1": 0.8763572524542564,
+    "n_train_samples": 7602
   }
 ]
