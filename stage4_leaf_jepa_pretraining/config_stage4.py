@@ -89,7 +89,7 @@ NUM_PATCHES     = (IMAGE_CROP // PATCH_SIZE) ** 2   # 16x16 = 256 patches for Vi
 # Narrow by design: forces encoder to learn real abstractions (not shortcuts).
 
 PRED_DEPTH       = 4      # transformer layers
-PRED_EMBED_DIM   = 256    # hidden dimension (narrow bottleneck)
+PRED_EMBED_DIM   = 128    # hidden dimension (narrow bottleneck)
 PRED_NUM_HEADS   = 4      # attention heads
 PRED_MLP_RATIO   = 4.0    # FFN expansion ratio
 PRED_DROPOUT     = 0.1
@@ -99,13 +99,13 @@ PRED_DROPOUT     = 0.1
 # ===========================================================================
 
 # --- Training duration ---
-PT_EPOCHS           = 125 #125    # Recommended: 100–200. Minimum: 50 (document as limitation)
+PT_EPOCHS           = 50 #125    # Recommended: 100–200. Minimum: 50 (document as limitation)
 PT_BATCH_SIZE       = 128   #64    # Reduce to 64 if CUDA OOM; 32 if using ViT-H on 16GB GPU
 PT_ACCUMULATE_GRAD  = 2      # Gradient accumulation steps (increase if small batch)
 
 # --- Learning rates (layer-wise) ---
-PT_LR_HEAD          = 3e-4   # Predictor (training from scratch)
-PT_LR_ENCODER_TOP   = 1e-4   # Encoder layers 10–12 (standard adaptation)
+PT_LR_HEAD          = 1.5e-4   # Predictor (training from scratch)
+PT_LR_ENCODER_TOP   = 5e-5   # Encoder layers 10–12 (standard adaptation)
 PT_LR_ENCODER_MID   = 1e-5   # Encoder layers 5–9  (slow adaptation)
 PT_LR_ENCODER_BOT   = 0.0    # Encoder layers 1–4  (FROZEN)
 PT_WEIGHT_DECAY     = 0.04
@@ -122,13 +122,13 @@ PT_CONTEXT_RATIO    = (0.75, 1.5)   # Context block aspect ratio range
 
 # Target blocks
 PT_NUM_TARGET_BLOCKS = 4             # Number of target blocks per image
-PT_TARGET_SCALE      = (0.15, 0.20) # Each target covers 15–20% of patches
-PT_TARGET_RATIO      = (0.75, 1.5)  # Target aspect ratio range
+PT_TARGET_SCALE      = (0.1, 0.15) # Each target covers 10–15% of patches
+PT_TARGET_RATIO      = (0.5, 1.0)  # Target aspect ratio range
 
 # Disease-region-biased masking (novel contribution)
 # Set True for the main run. Set False for ablation baseline (S4_AB_masking_ablation.ipynb)
 ENABLE_BIASED_MASKING   = True
-SALIENCY_BIAS_STRENGTH  = 4.0       # Temperature for saliency-weighted sampling (higher = more biased)
+SALIENCY_BIAS_STRENGTH  = 2.0       # Temperature for saliency-weighted sampling (higher = more biased)
 HEALTHY_HUE_CENTER      = 0.3153 #0.30      # calculated hue of healthy leaf (green in [0,1] HSV)
 HEALTHY_HUE_SIGMA       = 0.690 #0.10      # Width of healthy hue distribution
 
