@@ -37,7 +37,7 @@ CHECKPOINTS_DIR  = PROJECT_ROOT / "stage3_baseline_establishment/checkpoints"
 IJEPA_CHECKPOINT = CHECKPOINTS_DIR / "IN1K-vit.h.14-300e.pth.tar"
 
 # ── UPDATE THIS after Stage 4 completes ──
-LEAF_JEPA_CHECKPOINT = None  # e.g. CHECKPOINTS_DIR / "leaf_jepa_target_encoder.pth"
+LEAF_JEPA_CHECKPOINT = PROJECT_ROOT / "stage4_leaf_jepa_pretraining/outputs/checkpoints/leafjepa-vit-h14-best.pth"  # e.g. CHECKPOINTS_DIR / "leaf_jepa_target_encoder.pth"
 
 # ===========================================================================
 # MODEL CONSTANTS
@@ -64,6 +64,7 @@ IMAGE_CROP   = 224
 # ===========================================================================
 RANDOM_SEED      = 42
 SUBSET_SEEDS     = [42, 123, 456]
+SUBSET_SEEDS     = [42, 123]
 # LABEL_FRACTIONS  = [0.50, 1.00]
 LABEL_FRACTIONS  = [0.01, 0.05, 0.10, 0.25, 0.50, 1.00]
 TRAIN_RATIO      = 0.70

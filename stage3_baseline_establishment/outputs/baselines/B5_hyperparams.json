@@ -1,0 +1,13 @@
+{
+  "baseline": "B5",
+  "model": "Leaf-JEPA ViT-H/14 Linear Probe (domain-pretrained)",
+  "encoder_params": "632M (ALL FROZEN)",
+  "head_params": "~49K",
+  "checkpoint": "/workspace/leaf-jepa/stage4_leaf_jepa_pretraining/outputs/checkpoints/leafjepa-vit-h14-best.pth",
+  "optimiser": "AdamW (head only)",
+  "lr": 0.001,
+  "batch_size": 256,
+  "max_epochs": 100,
+  "patience": 10,
+  "note": "IDENTICAL setup to B3 \u2014 only encoder weights differ"
+}
