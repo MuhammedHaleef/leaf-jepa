@@ -43,7 +43,7 @@ BASELINE_DIR     = ST3_OUT / "baselines"
 # Checkpoints
 IJEPA_CHECKPOINT      = PROJECT_ROOT / "stage3_baseline_establishment/checkpoints" / "IN1K-vit.h.14-300e.pth.tar"
 ST4_OUT = PROJECT_ROOT / "stage4_leaf_jepa_pretraining" / "outputs"
-LEAF_JEPA_CHECKPOINT   = ST4_OUT / "checkpoints" / "leaf_jepa_best.pth"
+LEAF_JEPA_CHECKPOINT   = ST4_OUT / "checkpoints" / "leafjepa-vit-h14-best.pth"
 # ^^^ Update after Stage 4 export — path printed by S4_6_checkpoint_export.ipynb
 
 # Stage 5 outputs

@@ -1,6 +1,6 @@
 {
   "standard_best_lp_f1": 0.8874100855424003,
-  "biased_best_lp_f1": 0.8847878167335265,
-  "delta": -0.00262226880887384,
+  "biased_best_lp_f1": 0.7635083862254921,
+  "delta": -0.1239016993169082,
   "ablation_epochs": 50
 }

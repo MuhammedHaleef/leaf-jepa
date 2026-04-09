@@ -128,7 +128,7 @@ PT_TARGET_RATIO      = (0.5, 1.0)  # Target aspect ratio range
 # Disease-region-biased masking (novel contribution)
 # Set True for the main run. Set False for ablation baseline (S4_AB_masking_ablation.ipynb)
 ENABLE_BIASED_MASKING   = True
-SALIENCY_BIAS_STRENGTH  = 2.0       # Temperature for saliency-weighted sampling (higher = more biased)
+SALIENCY_BIAS_STRENGTH  = 3.0       # Temperature for saliency-weighted sampling (higher = more biased)
 HEALTHY_HUE_CENTER      = 0.3153 #0.30      # calculated hue of healthy leaf (green in [0,1] HSV)
 HEALTHY_HUE_SIGMA       = 0.690 #0.10      # Width of healthy hue distribution
 
