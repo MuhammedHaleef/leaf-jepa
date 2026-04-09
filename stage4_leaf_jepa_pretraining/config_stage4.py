@@ -99,7 +99,7 @@ PRED_DROPOUT     = 0.1
 # ===========================================================================
 
 # --- Training duration ---
-PT_EPOCHS           = 150 #150    # Recommended: 100–200. Minimum: 50 (document as limitation)
+PT_EPOCHS           = 125 #125    # Recommended: 100–200. Minimum: 50 (document as limitation)
 PT_BATCH_SIZE       = 128   #64    # Reduce to 64 if CUDA OOM; 32 if using ViT-H on 16GB GPU
 PT_ACCUMULATE_GRAD  = 2      # Gradient accumulation steps (increase if small batch)
 

@@ -835,6 +835,97 @@ def _extract_patch_tokens(encoder: nn.Module, imgs: torch.Tensor) -> torch.Tenso
 # Full pretraining epoch
 # ============================================================
 
+# def pretrain_one_epoch(context_encoder: nn.Module,
+#                         target_encoder: nn.Module,
+#                         predictor: nn.Module,
+#                         loader: DataLoader,
+#                         masking_fn,
+#                         saliency_fn: Optional,
+#                         optimizer: torch.optim.Optimizer,
+#                         ema_updater: EMAUpdater,
+#                         device: torch.device,
+#                         epoch: int,
+#                         total_epochs: int,
+#                         use_amp: bool = True,
+#                         accumulate_steps: int = 1,
+#                         loss_type: str = "smooth_l1",
+#                         wandb_run=None) -> Dict:
+#     """One full pretraining epoch."""
+
+#     context_encoder.train()
+#     predictor.train()
+#     target_encoder.eval()  # Target encoder never in train mode
+
+#     scaler = torch.amp.GradScaler() if (use_amp and device.type == "cuda") else None
+
+#     total_loss = 0.0
+#     total_grad_norm = 0.0
+#     n_batches = 0
+#     t0 = time.time()
+
+#     optimizer.zero_grad()
+#     # pbar = tqdm(enumerate(loader), total=len(loader), desc=f"Epoch {epoch}")
+#     # for step_idx, (imgs, _labels) in pbar:
+#         # metrics = pretrain_step(
+#         #     imgs, context_encoder, target_encoder, predictor,
+#         #     masking_fn, saliency_fn, optimizer, scaler, device,
+#         #     loss_type=loss_type,
+#         #     accumulate_steps=accumulate_steps,
+#         #     step_idx=step_idx,
+#         # )
+
+#     #     tau = ema_updater.update(context_encoder, target_encoder)
+
+#     #     total_loss     += metrics["loss"]
+#     #     total_grad_norm+= metrics["grad_norm"]
+#     #     n_batches      += 1
+#     for step_idx, (imgs, _labels) in enumerate(tqdm(loader,desc=f"Epoch {epoch:3d}",leave=False, dynamic_ncols=True)):
+#         metrics = pretrain_step(
+#                 imgs, context_encoder, target_encoder, predictor,
+#                 masking_fn, saliency_fn, optimizer, scaler, device,
+#                 loss_type=loss_type,
+#                 accumulate_steps=accumulate_steps,
+#                 step_idx=step_idx,
+#             )
+#         tau = ema_updater.update(context_encoder, target_encoder)
+
+#         total_loss     += metrics["loss"]
+#         total_grad_norm += metrics["grad_norm"]
+#         n_batches      += 1
+
+#         # if step_idx % 10 == 0:
+#         #     pbar.set_postfix(loss=metrics['loss'])
+
+#         # if step_idx % 50 == 0:
+#         #     print(f"    Epoch {epoch} | Step {step_idx}/{len(loader)} | "
+#         #           f"Loss: {metrics['loss']:.4f} | τ: {tau:.5f}")
+
+#     epoch_loss     = total_loss / max(n_batches, 1)
+#     epoch_time     = time.time() - t0
+#     current_tau    = ema_updater.tau
+#     current_lr     = optimizer.param_groups[0]["lr"]
+
+#     result = {
+#         "epoch":      epoch,
+#         "loss":       epoch_loss,
+#         "tau":        current_tau,
+#         "lr":         current_lr,
+#         "grad_norm":  total_grad_norm / max(n_batches, 1),
+#         "epoch_time": epoch_time,
+#     }
+
+#     if wandb_run:
+#         wandb_run.log({
+#             "pretrain/loss":      epoch_loss,
+#             "pretrain/tau":       current_tau,
+#             "pretrain/lr":        current_lr,
+#             "pretrain/grad_norm": result["grad_norm"],
+#             "pretrain/epoch_time_s": epoch_time,
+#             "epoch": epoch,
+#         })
+
+#     return result
+
 def pretrain_one_epoch(context_encoder: nn.Module,
                         target_encoder: nn.Module,
                         predictor: nn.Module,
@@ -845,6 +936,7 @@ def pretrain_one_epoch(context_encoder: nn.Module,
                         ema_updater: EMAUpdater,
                         device: torch.device,
                         epoch: int,
+                        total_epochs: int,
                         use_amp: bool = True,
                         accumulate_steps: int = 1,
                         loss_type: str = "smooth_l1",
@@ -853,17 +945,25 @@ def pretrain_one_epoch(context_encoder: nn.Module,
 
     context_encoder.train()
     predictor.train()
-    target_encoder.eval()  # Target encoder never in train mode
+    target_encoder.eval()
 
     scaler = torch.amp.GradScaler() if (use_amp and device.type == "cuda") else None
 
-    total_loss = 0.0
+    total_loss      = 0.0
     total_grad_norm = 0.0
-    n_batches = 0
-    t0 = time.time()
+    n_batches       = 0
+    t0              = time.time()
 
     optimizer.zero_grad()
-    pbar = tqdm(enumerate(loader), total=len(loader), desc=f"Epoch {epoch}")
+
+    pbar = tqdm(
+        enumerate(loader),
+        total=len(loader),
+        desc=f"Epoch {epoch:3d}/{total_epochs}",
+        leave=True,
+        dynamic_ncols=True,
+    )
+
     for step_idx, (imgs, _labels) in pbar:
         metrics = pretrain_step(
             imgs, context_encoder, target_encoder, predictor,
@@ -875,43 +975,52 @@ def pretrain_one_epoch(context_encoder: nn.Module,
 
         tau = ema_updater.update(context_encoder, target_encoder)
 
-        total_loss     += metrics["loss"]
-        total_grad_norm+= metrics["grad_norm"]
-        n_batches      += 1
+        total_loss      += metrics["loss"]
+        total_grad_norm += metrics["grad_norm"]
+        n_batches       += 1
 
-        if step_idx % 10 == 0:
-            pbar.set_postfix(loss=metrics['loss'])
+        # Update tqdm bar every step — single source of truth
+        pbar.set_postfix(
+            loss=f"{metrics['loss']:.4f}",
+            tau=f"{tau:.5f}",
+            lr=f"{optimizer.param_groups[0]['lr']:.1e}",
+        )
 
-        if step_idx % 50 == 0:
-            print(f"    Epoch {epoch} | Step {step_idx}/{len(loader)} | "
-                  f"Loss: {metrics['loss']:.4f} | τ: {tau:.5f}")
-
-    epoch_loss     = total_loss / max(n_batches, 1)
+    epoch_loss     = total_loss      / max(n_batches, 1)
+    epoch_grad     = total_grad_norm / max(n_batches, 1)
     epoch_time     = time.time() - t0
     current_tau    = ema_updater.tau
     current_lr     = optimizer.param_groups[0]["lr"]
+
+    # Single clean end-of-epoch summary line
+    print(
+        f"  ✓ Epoch {epoch:3d}/{total_epochs} | "
+        f"Loss: {epoch_loss:.4f} | "
+        f"τ: {current_tau:.5f} | "
+        f"LR: {current_lr:.2e} | "
+        f"Time: {epoch_time:.0f}s"
+    )
 
     result = {
         "epoch":      epoch,
         "loss":       epoch_loss,
         "tau":        current_tau,
         "lr":         current_lr,
-        "grad_norm":  total_grad_norm / max(n_batches, 1),
+        "grad_norm":  epoch_grad,
         "epoch_time": epoch_time,
     }
 
     if wandb_run:
         wandb_run.log({
-            "pretrain/loss":      epoch_loss,
-            "pretrain/tau":       current_tau,
-            "pretrain/lr":        current_lr,
-            "pretrain/grad_norm": result["grad_norm"],
+            "pretrain/loss":         epoch_loss,
+            "pretrain/tau":          current_tau,
+            "pretrain/lr":           current_lr,
+            "pretrain/grad_norm":    epoch_grad,
             "pretrain/epoch_time_s": epoch_time,
             "epoch": epoch,
         })
 
     return result
-
 
 # ============================================================
 # Linear Probe Monitor (representation quality tracker)
@@ -973,9 +1082,25 @@ class LinearProbeMonitor:
         feats, labels = [], []
         for imgs, lbs in loader:
             imgs = imgs.to(self.device)
-            with autocast(device_type="cuda"):
-                f = encoder(imgs)  # (B, D) with global_pool='avg'
-            feats.append(f.cpu())
+            with torch.amp.autocast(device_type = "cuda"):
+                tokens = encoder.forward_features(imgs)  # (B, N+1, D) or (B, D)
+
+                # Handle both pooled and unpooled encoder outputs
+                if tokens.dim() == 3:
+                    # Has CLS + patch tokens → mean-pool patch tokens (drop CLS at index 0)
+                    f = tokens[:, 1:, :].mean(dim=1)   # (B, D)
+                elif tokens.dim() == 2:
+                    # Already pooled
+                    f = tokens                           # (B, D)
+                else:
+                    raise RuntimeError(f"Unexpected encoder output shape: {tokens.shape}")
+
+            feats.append(f.cpu().float())
+
+            
+            # with autocast(device_type="cuda"):
+            #     f = encoder(imgs)  # (B, D) with global_pool='avg'
+            # feats.append(f.cpu())
             labels.extend(lbs.numpy())
         return torch.cat(feats, dim=0).numpy(), np.array(labels)
 
@@ -1002,8 +1127,7 @@ class LinearProbeMonitor:
         X_val   = scaler_sk.transform(val_feats)
 
         clf = LogisticRegression(
-            max_iter=300, C=0.316, solver="lbfgs",
-            multi_class="multinomial", random_state=42
+            max_iter=300, C=0.316, solver="lbfgs", random_state=42
         )
         clf.fit(X_train, train_labels)
         val_preds = clf.predict(X_val)

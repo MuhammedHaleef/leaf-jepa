@@ -1,0 +1,12 @@
+[
+  {
+    "pretrain_epoch": 25,
+    "lp_val_macro_f1": 0.8774381143129057,
+    "n_train_samples": 7602
+  },
+  {
+    "pretrain_epoch": 50,
+    "lp_val_macro_f1": 0.8874100855424003,
+    "n_train_samples": 7602
+  }
+]
