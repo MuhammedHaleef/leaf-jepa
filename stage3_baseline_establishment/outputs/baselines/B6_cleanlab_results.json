@@ -1,20 +1,14 @@
 {
   "total_samples": 38013,
-  "total_issues": 112,
-  "severe_issues": 207,
+  "total_issues": 17,
+  "severe_issues": 46,
   "quality_threshold": 0.1,
   "per_class_issues": {
-    "Corn_(maize)___Northern_Leaf_Blight": 41,
-    "Tomato___Spider_mites Two-spotted_spider_mite": 20,
-    "Tomato___Late_blight": 14,
-    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": 10,
-    "Tomato___Early_blight": 9,
-    "Corn_(maize)___Common_rust_": 7,
-    "Potato___Late_blight": 5,
-    "Tomato___Septoria_leaf_spot": 3,
-    "Tomato___Target_Spot": 2,
-    "Grape___Black_rot": 1
+    "Corn_(maize)___Northern_Leaf_Blight": 8,
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": 6,
+    "Corn_(maize)___Common_rust_": 2,
+    "Tomato___Late_blight": 1
   },
-  "mean_quality_score": 0.9805508852005005,
-  "median_quality_score": 0.9999688863754272
+  "mean_quality_score": 0.9938104152679443,
+  "median_quality_score": 0.9999996423721313
 }
